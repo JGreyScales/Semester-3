@@ -1,5 +1,5 @@
 # INTRO
-Build a small Coffee Shop Order Builder with a clean class design and a robust unit tes
+Build a small Coffee Shop Order Builder with a clean class design and a robust unit tests
 
 # Technology & Conventions
 - Language/Framework: C# + MSTest
