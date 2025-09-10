@@ -20,37 +20,53 @@ Build a small Coffee Shop Order Builder with a clean class design and a robust u
 These are required to guide architecture and enable modular, testable design. Implement public APIs you deem appropriate (signatures below are suggestions).
 
 ---
+**Price calculations**
+*decimals = multiplication*
+*$ values = additions*
+*starts from lowest scope & expands out, bringing the scope value with it*
+(((
+size: small: $1, medium: $1.25, large: $1.50, extraLarge: $2.00
+milk: milk: 1.0, cream: 1.0, oat milk: 1.3, soy milk: 1.2, almond milk: 1.5
+shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
+)
+  drink: Coffee: 1.0, Chai-Tea: 1.1, Latte: 1.3, Espresso: 0.8, Cappuccino: 1.2, Decaf: 0.9
+  )
+    syrups: chocolate: $1.0, strawberry: $1.0, vanilla: $0.5
+    toppings: cinnamon: $0.3, milk foam: $0.2, espresso foam: $0.5, macha: $0.7
+    )
+      TAX: 1.13
 
+---
 ## 1. Beverage (model)
 
 - **Properties:**  
-  - `BaseDrink` (Coffee, Chai-Tea, Latte, Espresso, Cappuccino, Decaf)  
-  - `Size` (0-100) (small, medium, large, extra large as a scale)
-  - `Temp` (0-100) (Implimented as a scale)
-  - `Milk` (milk, cream, oak milk, soy milk, almond milk)  
-  - `Shots` (0–4)  
-  - `Syrups` (0–5, list)  (chocolate, strawberry, vanilla)
-  - `Toppings` (cinnamon, milk foam, espresso foam, macha)
+  - `BaseDrink` (string) (Coffee, Chai-Tea, Latte, Espresso, Cappuccino, Decaf)  
+  - `Size` (byte) (0-100) (small: 25, medium: 50, large: 75, extra large: 100)
+  - `Temp` (byte) (0-100) (veryCold: 0, cold: 25, roomtemp: 50, hot: 75 , veryHot: 100)
+  - `Milk` (string) (milk, cream, oat milk, soy milk, almond milk)  
+  - `Shots` (byte) (0–4)  
+  - `Syrups` (List<string>) (0–5, list)  (chocolate, strawberry, vanilla)
+  - `Toppings` (List<string>) (cinnamon, milk foam, espresso foam, macha)
   - `IsDecaf` (bool)
   - `IsKidFriendly` (bool)
   - `isVegan` (bool)
-  - `Allergens` (list)
+  - `Allergens` (List<string>)
   - `Price` (decimal)
-  - `Failure` (bool)
+  - `Failures` (List<string>)
 
 - **Methods**
-  - `Constructor`(toppings: list[str], syrups: list[str], shots: int, milk: str, temp: uint, size: uint, drink: str) -> Beverage object
-  - `getFailure` -> bool
+  - `Constructor`(toppings: list<String>, syrups: list<String>, shots: byte, milk: str, temp: byte, size: byte, drink: str) -> Beverage object
+  - `getFailures` -> List<string>
   - `getPrice` -> decimal
-  - `getAllergens` -> list[str]
+  - `getAllergens` -> List<string>
   - `getIsVegan` -> bool
   - `getIsKidFriendly` -> bool
-  - `getToppings` -> list[str]
-  - `getSyrups` -> list[str]
-  - `getShots` -> uint
+  - `getToppings` -> List<string>
+  - `getSyrups` -> List<string>
+  - `getShots` -> byte
   - `getMilk` -> str
-  - `getTemp` -> uint
-  - `getSize` -> uint
+  - `getTemp` -> byte
+  - `getSize` -> byte
   - `getBaseDrink` -> str
 
 - **Requirements:**  
@@ -64,7 +80,7 @@ These are required to guide architecture and enable modular, testable design. Im
   - Validates a single `Beverage`
 
 - **methods**
-  beverageIsvalid(Beverage: Beverage) -> bool
+  listErrors(Beverage: Beverage) -> list(string)
 
 
 - **Example Rules:**  
@@ -79,18 +95,29 @@ These are required to guide architecture and enable modular, testable design. Im
 
 # Order
 - **Properties:** 
-  - `Beverages` (list[BeverageObjects])
+  - `Beverages` (list<BeverageObjects>)
   - `Discount` (PromotionalDiscountObject)
+  - `Name` (string)
+  - `Date` (string)
+
+- **methods**
+  - `Constructor`(void)
+  - `addBeverage`(Beverage: Beverage) -> void
+  - `addName`(name: str) -> void
+  - `addDate`(void) -> void
+  - `addDiscounts`(void) -> void
+
+
 
 ---
 
 ## 3. BeverageClassifier
 
 - **Methods**
-  - isDecaf(Beverage: Beverage) -> bool
-  - isVegan(Beverage: Beverage) -> bool
-  - isKidSafe(Beverage: Beverage) -> bool
-  - Allergens(Beverage: Beverage) -> List
+  - `isDecaf`(Beverage: Beverage) -> bool
+  - `isVegan`(Beverage: Beverage) -> bool
+  - `isKidSafe`(Beverage: Beverage) -> bool
+  - `Allergens`(Beverage: Beverage) -> List
 
 - **Responsibility:**  
   - Categories/labels: `Caffeinated/Decaf`, `DairyFree`, `VeganFriendly`, `KidSafe` (e.g., no espresso).  
@@ -103,7 +130,7 @@ These are required to guide architecture and enable modular, testable design. Im
 ## 4. PriceCalculator
 
 - **Methods**
-  - CalculatePrice(Beverage: Beverage) -> decimal
+  - `CalculatePrice`(Beverage: Beverage) -> decimal
 
 - **Responsibility:**  
   - Calculate base price by size + add-on pricing  
@@ -120,9 +147,9 @@ These are required to guide architecture and enable modular, testable design. Im
   - `discountReason` (string)
 
 - **Methods**
-  - constructor(Beverages: list(Beverage)) -> object
-  - getDiscount() -> decimal
-  - getDiscountReason() -> String
+  - `constructor`(Beverages: list(Beverage)) -> object
+  - `getDiscount`() -> decimal
+  - `getDiscountReason`() -> String
 
   **Private**
   - BOGODiscount(Beverages: list(Beverage)) -> decimal
@@ -141,7 +168,7 @@ These are required to guide architecture and enable modular, testable design. Im
 
 ## 6. ReceiptFormatter
 - **Methods**
-  - PrintReceipt(Order: OrderOBJ) -> void
+  - `PrintReceipt`(Order: OrderOBJ) -> void
 
 - **Responsibility:**  
   - Produce receipt text with line items, discounts, totals, and warnings (e.g., allergens).  
@@ -154,16 +181,17 @@ These are required to guide architecture and enable modular, testable design. Im
 
 ## 7. AppDriver (thin UI/CLI)
 - **Methods**
-  -Main(void)
-  -printWelcomeScreen(void) -> void
-  -GetInt(void) -> int
-  -getDrink(void) -> string
-  -getBeverageSize(void) -> int
-  -getBeverageTemp(void) -> int
-  -getMilkType(void) -> string
-  -getShotCount(void) -> int
-  -getSyrups(void) -> list(string)
-  -getToppings(void) -> list(string)
+  -`Main`(void)
+  -`printWelcomeScreen`(void) -> void
+  -`GetInt`(void) -> int
+  -`getDrink`(void) -> string
+  -`getBeverageSize`(void) -> int
+  -`getBeverageTemp`(void) -> int
+  -`getMilkType`(void) -> string
+  -`getShotCount`(void) -> int
+  -`getSyrups`(void) -> list(string)
+  -`getToppings`(void) -> list(string)
+  -`getName`(void) -> string
 
 - **Responsibility:**  
   - Minimal glue to demonstrate building an order and printing a receipt.  

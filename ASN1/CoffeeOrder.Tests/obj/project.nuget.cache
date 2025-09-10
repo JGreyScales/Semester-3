@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "dvwFlV3IeIk=",
+  "dgSpecHash": "zWYg6wZjot0=",
   "success": true,
-  "projectFilePath": "D:\\Programming\\School\\03\\Asn1\\ASN1\\CoffeeOrder.Tests\\CoffeeOrder.Tests.csproj",
+  "projectFilePath": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\CoffeeOrder.Tests.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\JG\\.nuget\\packages\\microsoft.applicationinsights\\2.22.0\\microsoft.applicationinsights.2.22.0.nupkg.sha512",
     "C:\\Users\\JG\\.nuget\\packages\\microsoft.codecoverage\\17.12.0\\microsoft.codecoverage.17.12.0.nupkg.sha512",
