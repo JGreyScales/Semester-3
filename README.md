@@ -3,6 +3,8 @@ Coffee Shop Order Builder (Unit Tests + TDD)
 
 
 # SETUP STEPS
+``DOTNET 9.0``
+
 DOTNET folder on path & at the top of the list
 
 ``dotnet new console -n {name}``
