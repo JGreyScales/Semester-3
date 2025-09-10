@@ -11,4 +11,6 @@ DOTNET folder on path & at the top of the list
 
 ``cd {test_name}``
 
-`dotnet add reference ..\{name}\{name}.csproj`
+``dotnet add reference ..\{name}\{name}.csproj``
+
+``dotnet test --logger "trx;LogFileName=TestResults{num}.trx"  --results-directory {fullpath to result dir}``

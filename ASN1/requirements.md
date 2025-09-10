@@ -1,5 +1,5 @@
 # INTRO
-Build a small Coffee Shop Order Builder with a clean class design and a robust unit tests
+Build a small Coffee Shop Order Builder with a clean class design and a robust unit test
 
 # Technology & Conventions
 - Language/Framework: C# + MSTest
@@ -24,15 +24,20 @@ These are required to guide architecture and enable modular, testable design. Im
 ## 1. Beverage (model)
 
 - **Properties:**  
-  - `BaseDrink` (e.g., Latte/Tea/Chocolate)  
-  - `Size` (e.g., Tall/Grande/Venti)  
-  - `Temp` (Hot/Iced)  
-  - `Milk` (Dairy type)  
-  - `PlantMilk` (Oat/Almond/etc.)  
+  - `BaseDrink` (Coffee, Tea, Latte, Espresso, Cappuccino)  
+  - `Size` (small, medium, large, extra large) (Implimented as a scale from 0-100)
+  - `Temp` (Implimented as a scale from 0-100. 100 being very hot, 0 being very cold)
+  - `Milk` (milk, cream)  
+  - `PlantMilk` (oak milk, soy milk, almond milk)  
   - `Shots` (0–4)  
-  - `Syrups` (0–5, list)  
-  - `Toppings` (list)  
-  - Flags like `IsDecaf`, etc.  
+  - `Syrups` (0–5, list)  (chocolate, strawberry, vanilla)
+  - `Toppings` (cinnamon, milk foam, espresso foam, macha)
+  - `IsDecaf` (bool)
+  - `IsKidFriendly` (bool)
+  - `isVegan` (bool)
+  - `Allergens` (list)
+  - `Price` (decimal)
+
 
 - **Requirements:**  
   - Keep it simple and immutable where possible (or avoid mutating after construction).
@@ -42,7 +47,8 @@ These are required to guide architecture and enable modular, testable design. Im
 ## 2. OrderValidator
 
 - **Responsibility:**  
-  - Validates a single `Beverage` (and optionally a list for full order).  
+  - Validates a single `Beverage`
+  - Validates a list of `Beverage`s
 
 - **Example Rules:**  
   - Required fields present  
@@ -81,6 +87,8 @@ These are required to guide architecture and enable modular, testable design. Im
 
 - **Responsibility:**  
   - Apply coupons/promos (e.g., BOGO, `HAPPYHOUR` 20% off **Hot** drinks only).  
+    -`BOGO`
+    -`HAPPYHOUR`
 
 - **Output:**  
   - Return applied discounts/justification separate from pricing logic to preserve testability.
@@ -127,7 +135,7 @@ These are required to guide architecture and enable modular, testable design. Im
   - Plant milks like Almond should flag **“contains tree nuts”** (warning or error—your design; be consistent).
 
 - **Classification:**  
-  - `KidSafe` iff no espresso shots (or `IsDecaf == true`) and `Temp != “ExtraHot”` (if you model temperature granularity).
+  - `KidSafe` if no espresso shots (or `IsDecaf == true`) and `Temp != “ExtraHot”` (if you model temperature granularity).
 
 - **Pricing:**  
   - Base price by `Size` + per-addon prices.
