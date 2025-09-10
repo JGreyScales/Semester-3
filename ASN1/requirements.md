@@ -25,10 +25,9 @@ These are required to guide architecture and enable modular, testable design. Im
 
 - **Properties:**  
   - `BaseDrink` (Coffee, Chai-Tea, Latte, Espresso, Cappuccino, Decaf)  
-  - `Size` (small, medium, large, extra large) (Implimented as a scale from 0-100)
-  - `Temp` (Implimented as a scale from 0-100. 100 being very hot, 0 being very cold)
-  - `Milk` (milk, cream)  
-  - `PlantMilk` (oak milk, soy milk, almond milk)  
+  - `Size` (0-100) (small, medium, large, extra large as a scale)
+  - `Temp` (0-100) (Implimented as a scale)
+  - `Milk` (milk, cream, oak milk, soy milk, almond milk)  
   - `Shots` (0–4)  
   - `Syrups` (0–5, list)  (chocolate, strawberry, vanilla)
   - `Toppings` (cinnamon, milk foam, espresso foam, macha)
@@ -39,6 +38,20 @@ These are required to guide architecture and enable modular, testable design. Im
   - `Price` (decimal)
   - `Failure` (bool)
 
+- **Methods**
+  - `Constructor`(toppings: list[str], syrups: list[str], shots: int, milk: str, temp: uint, size: uint, drink: str) -> Beverage object
+  - `getFailure` -> bool
+  - `getPrice` -> decimal
+  - `getAllergens` -> list[str]
+  - `getIsVegan` -> bool
+  - `getIsKidFriendly` -> bool
+  - `getToppings` -> list[str]
+  - `getSyrups` -> list[str]
+  - `getShots` -> uint
+  - `getMilk` -> str
+  - `getTemp` -> uint
+  - `getSize` -> uint
+  - `getBaseDrink` -> str
 
 - **Requirements:**  
   - Keep it simple and immutable where possible (or avoid mutating after construction).
@@ -49,7 +62,10 @@ These are required to guide architecture and enable modular, testable design. Im
 
 - **Responsibility:**  
   - Validates a single `Beverage`
-  - Validates a list of `Beverage`s
+
+- **methods**
+  beverageIsvalid(Beverage: Beverage) -> bool
+
 
 - **Example Rules:**  
   - Required fields present  
@@ -63,13 +79,18 @@ These are required to guide architecture and enable modular, testable design. Im
 
 # Order
 - **Properties:** 
-  - `Beverages` (list)
-  - `Promotional Discount` (decimal)
-  - `Promotional Discount Reason` (string)
+  - `Beverages` (list[BeverageObjects])
+  - `Discount` (PromotionalDiscountObject)
 
 ---
 
 ## 3. BeverageClassifier
+
+- **Methods**
+  - isDecaf(Beverage: Beverage) -> bool
+  - isVegan(Beverage: Beverage) -> bool
+  - isKidSafe(Beverage: Beverage) -> bool
+  - Allergens(Beverage: Beverage) -> List
 
 - **Responsibility:**  
   - Categories/labels: `Caffeinated/Decaf`, `DairyFree`, `VeganFriendly`, `KidSafe` (e.g., no espresso).  
@@ -81,6 +102,9 @@ These are required to guide architecture and enable modular, testable design. Im
 
 ## 4. PriceCalculator
 
+- **Methods**
+  - CalculatePrice(Beverage: Beverage) -> decimal
+
 - **Responsibility:**  
   - Calculate base price by size + add-on pricing  
   - Calculate totals per beverage and for the order  
@@ -91,6 +115,19 @@ These are required to guide architecture and enable modular, testable design. Im
 ---
 
 ## 5. PromotionHelper
+- **Properties**
+  - `discount` (decimal)
+  - `discountReason` (string)
+
+- **Methods**
+  - constructor(Beverages: list(Beverage)) -> object
+  - getDiscount() -> decimal
+  - getDiscountReason() -> String
+
+  **Private**
+  - BOGODiscount(Beverages: list(Beverage)) -> decimal
+  - happyHourDiscount(Beverages: list(Beverage)) -> decimal
+  - selectBestDiscount(tuple(decimal, discountName)) -> void
 
 - **Responsibility:**  
   - Apply coupons/promos (e.g., BOGO, `HAPPYHOUR` 20% off **Hot** drinks only).  
@@ -103,6 +140,8 @@ These are required to guide architecture and enable modular, testable design. Im
 ---
 
 ## 6. ReceiptFormatter
+- **Methods**
+  - PrintReceipt(Order: OrderOBJ) -> void
 
 - **Responsibility:**  
   - Produce receipt text with line items, discounts, totals, and warnings (e.g., allergens).  
@@ -114,6 +153,17 @@ These are required to guide architecture and enable modular, testable design. Im
 ---
 
 ## 7. AppDriver (thin UI/CLI)
+- **Methods**
+  -Main(void)
+  -printWelcomeScreen(void) -> void
+  -GetInt(void) -> int
+  -getDrink(void) -> string
+  -getBeverageSize(void) -> int
+  -getBeverageTemp(void) -> int
+  -getMilkType(void) -> string
+  -getShotCount(void) -> int
+  -getSyrups(void) -> list(string)
+  -getToppings(void) -> list(string)
 
 - **Responsibility:**  
   - Minimal glue to demonstrate building an order and printing a receipt.  
