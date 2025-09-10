@@ -24,7 +24,7 @@ These are required to guide architecture and enable modular, testable design. Im
 ## 1. Beverage (model)
 
 - **Properties:**  
-  - `BaseDrink` (Coffee, Tea, Latte, Espresso, Cappuccino)  
+  - `BaseDrink` (Coffee, Chai-Tea, Latte, Espresso, Cappuccino, Decaf)  
   - `Size` (small, medium, large, extra large) (Implimented as a scale from 0-100)
   - `Temp` (Implimented as a scale from 0-100. 100 being very hot, 0 being very cold)
   - `Milk` (milk, cream)  
@@ -37,6 +37,7 @@ These are required to guide architecture and enable modular, testable design. Im
   - `isVegan` (bool)
   - `Allergens` (list)
   - `Price` (decimal)
+  - `Failure` (bool)
 
 
 - **Requirements:**  
@@ -45,6 +46,9 @@ These are required to guide architecture and enable modular, testable design. Im
 ---
 
 ## 2. OrderValidator
+
+- **Properties:** 
+  - `Beverages` (list)
 
 - **Responsibility:**  
   - Validates a single `Beverage`

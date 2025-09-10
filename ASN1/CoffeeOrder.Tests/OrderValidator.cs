@@ -3,44 +3,45 @@ namespace CoffeeOrder.Tests;
 [TestClass]
 public sealed class OrderValidator
 {
+    // Typical Cases
+
     [TestMethod]
-    public void baseDrinkNotPresent()
+    public void validate_milkNotPresent_returnsTrue()
+    {
+    }
+    // Edge Cases
+    [TestMethod]
+    public void validate_dairyAndPlantMilk_returnsFalse()
+    {
+    }
+    // Negative Cases
+    [TestMethod]
+    public void errorCheck_baseDrinkNotPresent_returnsFalse()
     {
     }
 
     [TestMethod]
-    public void sizeNotPresent()
+    public void errorCheck_sizeNotPresent_returnsFalse()
     {
     }
 
     [TestMethod]
-    public void tempNotPresent()
-    {
-    }
-
-    // must have either milk or plantMilk
-    [TestMethod]
-    public void MilkNotPresent()
+    public void errorCheck_tempNotPresent_returnsFalse()
     {
     }
 
     [TestMethod]
-    public void dairyAndPlantMilk()
+    public void errorCheck_minimumShotCountInvalid_returnsFalse()
     {
     }
 
     [TestMethod]
-    public void minimumShotCountInvalid()
+    public void errorCheck_maximumShotCountInvalid_returnsFalse()
     {
     }
 
     [TestMethod]
-    public void maximumShotCountInvalid()
-    {
-    }
-
-    [TestMethod]
-    public void maximumSyrupCountInvalid()
+    public void errorCheck_maximumSyrupCountInvalid_returnsFalse()
     {
     }
 

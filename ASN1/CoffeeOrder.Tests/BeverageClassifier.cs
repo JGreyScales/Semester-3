@@ -3,33 +3,35 @@ namespace CoffeeOrder.Tests;
 [TestClass]
 public sealed class BeverageClassifier
 {
+
+    // Typical cases
     [TestMethod]
-    public void decafLabel()
+    public void check_plantMilk_returnsAllegenFlag()
     {
     }
 
     [TestMethod]
-    public void caffeinatedLabel()
+    public void check_lessThanVeryHot_returnsKidFriendly()
     {
     }
 
     [TestMethod]
-    public void dairyFreeLabel()
+    public void check_noEspresso_returnsKidFriendly()
     {
     }
 
     [TestMethod]
-    public void veganFriendlyLabel()
+    public void check_decaf_returnsDecaf()
     {
     }
 
     [TestMethod]
-    public void kidSafeEspresso()
+    public void check_caffeine_returnsFalseDecaf()
     {
     }
 
     [TestMethod]
-    public void kidSafeVeryHot()
+    public void check_Vegan_returnsIsVegan()
     {
     }
 }

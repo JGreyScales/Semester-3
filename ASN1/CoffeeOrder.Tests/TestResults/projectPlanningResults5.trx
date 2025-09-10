@@ -1,0 +1,336 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="94260b32-4afd-4ab0-b963-0d07cd10fd27" name="JG@DESKTOP-1304CKW 2025-09-10 12:00:21" runUser="DESKTOP-1304CKW\JG" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-09-10T12:00:21.4694448-04:00" queuing="2025-09-10T12:00:21.4694450-04:00" start="2025-09-10T12:00:21.1397361-04:00" finish="2025-09-10T12:00:21.4936972-04:00" />
+  <TestSettings name="default" id="e441b76b-e877-4b84-a601-96381346f8b6">
+    <Deployment runDeploymentRoot="JG_DESKTOP-1304CKW_2025-09-10_12_00_21" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="41844772-7c0e-4fa4-b2f8-c7bbdfde73c9" testId="9db3cae5-2f45-347e-d9c3-a49344d7bdb1" testName="validate_happyHourOnVeryHotDrink_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000912" startTime="2025-09-10T12:00:21.4550314-04:00" endTime="2025-09-10T12:00:21.4552132-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41844772-7c0e-4fa4-b2f8-c7bbdfde73c9" />
+    <UnitTestResult executionId="0053ef6f-6d81-4397-9852-08a0f4797fb5" testId="1d4f3407-ecb2-657b-3f77-01b6ab88cf79" testName="invalid_toppingsOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000342" startTime="2025-09-10T12:00:21.4473975-04:00" endTime="2025-09-10T12:00:21.4474866-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0053ef6f-6d81-4397-9852-08a0f4797fb5" />
+    <UnitTestResult executionId="f651097c-0da0-4b1c-a46c-31bf08e7beae" testId="be2d777c-64b8-1ed3-35c7-def8e604541b" testName="errorCheck_maximumShotCountInvalid_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000327" startTime="2025-09-10T12:00:21.4544199-04:00" endTime="2025-09-10T12:00:21.4545069-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f651097c-0da0-4b1c-a46c-31bf08e7beae" />
+    <UnitTestResult executionId="c682fb07-34c9-4efc-b16e-f9e44595d564" testId="12c738c4-dfc9-039c-8270-e5a0c8076b9f" testName="valid_extraLarge_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0021505" startTime="2025-09-10T12:00:21.4283484-04:00" endTime="2025-09-10T12:00:21.4444043-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c682fb07-34c9-4efc-b16e-f9e44595d564" />
+    <UnitTestResult executionId="ca3eb87c-6497-4368-8e24-ea61f17071dd" testId="0c3a32eb-8d14-0032-1a5a-db34a0cdf0a1" testName="check_hasPrice_returnsPrice" computerName="DESKTOP-1304CKW" duration="00:00:00.0021684" startTime="2025-09-10T12:00:21.4283888-04:00" endTime="2025-09-10T12:00:21.4443685-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ca3eb87c-6497-4368-8e24-ea61f17071dd" />
+    <UnitTestResult executionId="eef884f0-7d61-475a-bc21-13a89b44b5b1" testId="d49cca73-29d8-f91b-4efd-c546c8baa99a" testName="validate_totalsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000494" startTime="2025-09-10T12:00:21.4560586-04:00" endTime="2025-09-10T12:00:21.4561755-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="eef884f0-7d61-475a-bc21-13a89b44b5b1" />
+    <UnitTestResult executionId="d3a4fd74-426c-49ca-8f23-4991bb93c34a" testId="47e3f9a9-9013-c508-6b34-be25ecb95f21" testName="invalid_maxSyrups_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000672" startTime="2025-09-10T12:00:21.4428107-04:00" endTime="2025-09-10T12:00:21.4443440-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3a4fd74-426c-49ca-8f23-4991bb93c34a" />
+    <UnitTestResult executionId="95e1bccd-1819-4cd3-a53d-5f63cc9edb73" testId="8376fce2-85e8-4279-9a28-7ed5c2502e48" testName="invalid_plantMilkOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000246" startTime="2025-09-10T12:00:21.4544498-04:00" endTime="2025-09-10T12:00:21.4545249-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="95e1bccd-1819-4cd3-a53d-5f63cc9edb73" />
+    <UnitTestResult executionId="a1913903-700b-4a8b-a15c-199b5ecaea3b" testId="aaf7b05b-8c07-cdc7-ee1a-373d25a45833" testName="invalid_maximumShots_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000728" startTime="2025-09-10T12:00:21.4427848-04:00" endTime="2025-09-10T12:00:21.4443894-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a1913903-700b-4a8b-a15c-199b5ecaea3b" />
+    <UnitTestResult executionId="d19a881c-cf42-4fb1-a0db-fb16723a7d0b" testId="c92dfbf2-f410-360f-fd92-edebb6f3342b" testName="valid_latte_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0000446" startTime="2025-09-10T12:00:21.4427420-04:00" endTime="2025-09-10T12:00:21.4443294-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d19a881c-cf42-4fb1-a0db-fb16723a7d0b" />
+    <UnitTestResult executionId="8d30908b-1a82-4a91-be6e-bf7005f451db" testId="1c37522c-0ab7-6867-d447-d705b7c07689" testName="check_caffeine_returnsFalseDecaf" computerName="DESKTOP-1304CKW" duration="00:00:00.0000721" startTime="2025-09-10T12:00:21.4522724-04:00" endTime="2025-09-10T12:00:21.4523967-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8d30908b-1a82-4a91-be6e-bf7005f451db" />
+    <UnitTestResult executionId="570334d0-2c1b-40ac-b1ec-21f576237409" testId="a2573dfa-977a-a093-5ddc-db419d51df79" testName="valid_small_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0022058" startTime="2025-09-10T12:00:21.4283703-04:00" endTime="2025-09-10T12:00:21.4443833-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="570334d0-2c1b-40ac-b1ec-21f576237409" />
+    <UnitTestResult executionId="acc70f3d-7957-48de-b6c0-89673cf871ae" testId="1c1ba027-ccc6-3fa3-e129-4f1c46484ea6" testName="check_lessThanVeryHot_returnsKidFriendly" computerName="DESKTOP-1304CKW" duration="00:00:00.0000912" startTime="2025-09-10T12:00:21.4522290-04:00" endTime="2025-09-10T12:00:21.4523870-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="acc70f3d-7957-48de-b6c0-89673cf871ae" />
+    <UnitTestResult executionId="4310d0e1-67c9-48d0-9eab-f6c1f37bcaa8" testId="709e7236-94c4-109f-e035-e8f63056a390" testName="invalid_minimumShots_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0021561" startTime="2025-09-10T12:00:21.4283289-04:00" endTime="2025-09-10T12:00:21.4443732-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4310d0e1-67c9-48d0-9eab-f6c1f37bcaa8" />
+    <UnitTestResult executionId="53d7b5f0-a1bd-47a1-8064-42d911bea4b7" testId="2b477672-e9db-c97b-eaa7-08939cc0548e" testName="errorCheck_sizeNotPresent_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000930" startTime="2025-09-10T12:00:21.4539739-04:00" endTime="2025-09-10T12:00:21.4541197-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="53d7b5f0-a1bd-47a1-8064-42d911bea4b7" />
+    <UnitTestResult executionId="2346064c-0700-4313-95f1-38a246292c5a" testId="1b223161-74dc-99ce-9295-be39c6e28d9c" testName="errorCheck_minimumShotCountInvalid_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000790" startTime="2025-09-10T12:00:21.4539953-04:00" endTime="2025-09-10T12:00:21.4541287-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2346064c-0700-4313-95f1-38a246292c5a" />
+    <UnitTestResult executionId="e839cdf6-6f6f-4988-9315-3cf5caf9e832" testId="21957717-71ed-f2ff-26e7-58ce4c3b947e" testName="validate_bogoOnCheaperDrink_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000566" startTime="2025-09-10T12:00:21.4550457-04:00" endTime="2025-09-10T12:00:21.4551726-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e839cdf6-6f6f-4988-9315-3cf5caf9e832" />
+    <UnitTestResult executionId="6976279e-f50b-491b-90df-e257a1acb17e" testId="82e77e81-3aed-826e-d22d-89ae636ba919" testName="validate_DrinkPriceCalculation_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000772" startTime="2025-09-10T12:00:21.4544541-04:00" endTime="2025-09-10T12:00:21.4545969-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6976279e-f50b-491b-90df-e257a1acb17e" />
+    <UnitTestResult executionId="227a72ce-6660-4ea6-9424-b8aeb2124d27" testId="155fae20-80de-2610-2dd9-eec7e14465cd" testName="validate_bogoOnEqualDrink_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000878" startTime="2025-09-10T12:00:21.4550609-04:00" endTime="2025-09-10T12:00:21.4552095-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="227a72ce-6660-4ea6-9424-b8aeb2124d27" />
+    <UnitTestResult executionId="80784ccb-df0a-42d7-9791-6bb1905b8c4e" testId="467d5431-8b1b-f052-aec0-1ce9c8787304" testName="validate_lineItemsValid_returnTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000971" startTime="2025-09-10T12:00:21.4560443-04:00" endTime="2025-09-10T12:00:21.4562256-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="80784ccb-df0a-42d7-9791-6bb1905b8c4e" />
+    <UnitTestResult executionId="4e4e49f6-1421-4b50-a1cf-26d26bbe9ff1" testId="9a825c62-90e5-96d8-51d3-31d6545bde16" testName="invalid_baseDrink_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000699" startTime="2025-09-10T12:00:21.4428256-04:00" endTime="2025-09-10T12:00:21.4443602-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4e4e49f6-1421-4b50-a1cf-26d26bbe9ff1" />
+    <UnitTestResult executionId="506d9e88-a873-4102-9755-b804ccde4277" testId="c0c190b5-ce88-35e7-462e-093cc94152b9" testName="validate_happyHourOnColdDrink_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000581" startTime="2025-09-10T12:00:21.4550818-04:00" endTime="2025-09-10T12:00:21.4552257-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="506d9e88-a873-4102-9755-b804ccde4277" />
+    <UnitTestResult executionId="0aea7caa-f762-495b-bc55-921ef1211dbc" testId="7c81ae83-a7d9-3530-24a5-8f14d27d1dda" testName="errorCheck_baseDrinkNotPresent_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000797" startTime="2025-09-10T12:00:21.4539714-04:00" endTime="2025-09-10T12:00:21.4541306-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="0aea7caa-f762-495b-bc55-921ef1211dbc" />
+    <UnitTestResult executionId="87a44624-2cad-4fcc-8879-0c125d05deae" testId="720a5def-7cdc-0a9a-061d-e77365751f82" testName="valid_cappuccino_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0021927" startTime="2025-09-10T12:00:21.4283612-04:00" endTime="2025-09-10T12:00:21.4444074-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="87a44624-2cad-4fcc-8879-0c125d05deae" />
+    <UnitTestResult executionId="102d0648-761a-4f0f-9908-7020bf0a29ae" testId="6998bd33-765a-332c-1152-876a05f0e6ba" testName="check_plantMilk_returnsAllegenFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000506" startTime="2025-09-10T12:00:21.4473991-04:00" endTime="2025-09-10T12:00:21.4475317-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="102d0648-761a-4f0f-9908-7020bf0a29ae" />
+    <UnitTestResult executionId="a5760c58-f5fc-4c31-8037-1a060eaad409" testId="e7315fec-4322-75a0-53bf-7f33d9b68f46" testName="validate_validDOC_retunsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000528" startTime="2025-09-10T12:00:21.4570653-04:00" endTime="2025-09-10T12:00:21.4571903-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5760c58-f5fc-4c31-8037-1a060eaad409" />
+    <UnitTestResult executionId="780f6ebb-92d1-4317-96a5-1047e5dab521" testId="e7b35fc4-4c94-2918-8922-4c9ef750c56a" testName="validate_discountsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000925" startTime="2025-09-10T12:00:21.4560519-04:00" endTime="2025-09-10T12:00:21.4562236-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="780f6ebb-92d1-4317-96a5-1047e5dab521" />
+    <UnitTestResult executionId="c9c4bd2a-ec2a-4da8-a91a-e6ca5423ff2d" testId="c4ff0be2-66a8-f523-b2b1-f261644bb330" testName="valid_tea_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0000536" startTime="2025-09-10T12:00:21.4427741-04:00" endTime="2025-09-10T12:00:21.4443332-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c9c4bd2a-ec2a-4da8-a91a-e6ca5423ff2d" />
+    <UnitTestResult executionId="41a55b07-0b2f-4a8f-96df-d697fdc9936c" testId="38c50ee0-a666-7e93-77f4-5d0466da21f3" testName="validate_happyHourOnVeryColdDrink_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000500" startTime="2025-09-10T12:00:21.4560164-04:00" endTime="2025-09-10T12:00:21.4561532-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="41a55b07-0b2f-4a8f-96df-d697fdc9936c" />
+    <UnitTestResult executionId="5f38509a-7f35-49c7-9fd3-53f0517ca442" testId="5b5ed5ac-ac96-4d88-b5fb-ee5355ddb2d3" testName="invalid_milkOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000390" startTime="2025-09-10T12:00:21.4428387-04:00" endTime="2025-09-10T12:00:21.4443515-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5f38509a-7f35-49c7-9fd3-53f0517ca442" />
+    <UnitTestResult executionId="401b15f8-28c8-4590-9462-c7d912de68d1" testId="a195b026-01d0-2f78-ddac-d8d1fd9ca151" testName="valid_espresso_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0000361" startTime="2025-09-10T12:00:21.4427594-04:00" endTime="2025-09-10T12:00:21.4443940-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="401b15f8-28c8-4590-9462-c7d912de68d1" />
+    <UnitTestResult executionId="6c3012f8-def8-4309-a00b-37802de299aa" testId="ec0068f7-29b9-a374-fdfc-fa90d8190738" testName="invalid_syrupOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000278" startTime="2025-09-10T12:00:21.4473845-04:00" endTime="2025-09-10T12:00:21.4474673-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6c3012f8-def8-4309-a00b-37802de299aa" />
+    <UnitTestResult executionId="a5e2c2a2-7d72-4f4c-aaa0-8d6da7bcfdee" testId="e325ab63-a78a-dcf4-8294-2e052f0752a6" testName="validate_canNavigateToDrinkOrder_returnsDrinkOrderText" computerName="DESKTOP-1304CKW" duration="00:00:00.0021870" startTime="2025-09-10T12:00:21.4284034-04:00" endTime="2025-09-10T12:00:21.4443319-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a5e2c2a2-7d72-4f4c-aaa0-8d6da7bcfdee" />
+    <UnitTestResult executionId="8f245921-763f-43fb-ac99-26f353cc13d6" testId="d5b604cb-3b6a-b2b1-6822-123cc6622c76" testName="valid_medium_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0021593" startTime="2025-09-10T12:00:21.4283374-04:00" endTime="2025-09-10T12:00:21.4443339-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8f245921-763f-43fb-ac99-26f353cc13d6" />
+    <UnitTestResult executionId="6f534022-1b8b-4c33-999c-8900197170d2" testId="fc156a3e-ef8f-174e-128a-bc14a26bc2a6" testName="check_decaf_returnsDecaf" computerName="DESKTOP-1304CKW" duration="00:00:00.0000711" startTime="2025-09-10T12:00:21.4522711-04:00" endTime="2025-09-10T12:00:21.4523945-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f534022-1b8b-4c33-999c-8900197170d2" />
+    <UnitTestResult executionId="bb5354a8-6bfe-409a-abf5-83270c2accb2" testId="e269ef5e-fe75-b5d0-3272-6b0e2077900f" testName="validate_warningsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000905" startTime="2025-09-10T12:00:21.4560685-04:00" endTime="2025-09-10T12:00:21.4562275-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bb5354a8-6bfe-409a-abf5-83270c2accb2" />
+    <UnitTestResult executionId="f56177cf-68d3-415c-9a43-7c701217d74d" testId="49d799b4-972e-de2e-f0c3-4aea4458e532" testName="errorCheck_maximumSyrupCountInvalid_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000333" startTime="2025-09-10T12:00:21.4575391-04:00" endTime="2025-09-10T12:00:21.4580298-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f56177cf-68d3-415c-9a43-7c701217d74d" />
+    <UnitTestResult executionId="d4d8ce54-0726-4956-8614-a5d2ead15ce0" testId="016a6397-c35c-1176-e4fb-9819d3e4a5e4" testName="check_noEspresso_returnsKidFriendly" computerName="DESKTOP-1304CKW" duration="00:00:00.0000311" startTime="2025-09-10T12:00:21.4544593-04:00" endTime="2025-09-10T12:00:21.4545400-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d4d8ce54-0726-4956-8614-a5d2ead15ce0" />
+    <UnitTestResult executionId="cb3e38fa-7a5f-4838-bb9c-954e9ec99f71" testId="30b4804b-9414-6c53-2506-fb487f347913" testName="validate_milkNotPresent_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000568" startTime="2025-09-10T12:00:21.4523016-04:00" endTime="2025-09-10T12:00:21.4524412-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cb3e38fa-7a5f-4838-bb9c-954e9ec99f71" />
+    <UnitTestResult executionId="b1397a41-56f5-4da8-92d8-ab80183dbe3b" testId="6eb546bd-5746-1e08-fca3-e6a9bcbb9460" testName="validate_happyHourOnHotDrink_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000450" startTime="2025-09-10T12:00:21.4560655-04:00" endTime="2025-09-10T12:00:21.4561848-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1397a41-56f5-4da8-92d8-ab80183dbe3b" />
+    <UnitTestResult executionId="ff3e7167-83b7-497e-994c-1cf19de5afaf" testId="e9678b55-1af0-c9ae-87b3-6a45c642aae7" testName="validate_dairyAndPlantMilk_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000478" startTime="2025-09-10T12:00:21.4570534-04:00" endTime="2025-09-10T12:00:21.4571581-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff3e7167-83b7-497e-994c-1cf19de5afaf" />
+    <UnitTestResult executionId="2096b02d-1115-4b0a-af70-9a9f61e5ef24" testId="a7744b09-ecb5-43f9-76e9-4cff2f0c7c60" testName="valid_coffee_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0000402" startTime="2025-09-10T12:00:21.4427261-04:00" endTime="2025-09-10T12:00:21.4443992-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2096b02d-1115-4b0a-af70-9a9f61e5ef24" />
+    <UnitTestResult executionId="dae52437-e6ec-4794-b2fa-73d4291cc085" testId="49e12e42-f647-ba9a-f1b5-2868f4b1b3f7" testName="valid_large_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0021773" startTime="2025-09-10T12:00:21.4283229-04:00" endTime="2025-09-10T12:00:21.4443309-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dae52437-e6ec-4794-b2fa-73d4291cc085" />
+    <UnitTestResult executionId="9b92bb41-0ea8-4512-9658-123e0602d5f1" testId="3432b2bc-e584-ae5c-ec5f-d4aa79a0f715" testName="validate_canFinishOrder_returnsReceipt" computerName="DESKTOP-1304CKW" duration="00:00:00.0001181" startTime="2025-09-10T12:00:21.4427512-04:00" endTime="2025-09-10T12:00:21.4443786-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9b92bb41-0ea8-4512-9658-123e0602d5f1" />
+    <UnitTestResult executionId="6d1aa09a-9908-4724-8df0-a539f178e015" testId="403bad5e-0312-607a-fd1f-861f59ac2470" testName="check_Vegan_returnsIsVegan" computerName="DESKTOP-1304CKW" duration="00:00:00.0000450" startTime="2025-09-10T12:00:21.4522868-04:00" endTime="2025-09-10T12:00:21.4523843-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6d1aa09a-9908-4724-8df0-a539f178e015" />
+    <UnitTestResult executionId="91cab5fb-658b-467c-a57b-436e46f31573" testId="3e5c614b-c0f7-a38d-52b3-544c8f36083f" testName="invalid_size_returnsFailureflag" computerName="DESKTOP-1304CKW" duration="00:00:00.0000562" startTime="2025-09-10T12:00:21.4428346-04:00" endTime="2025-09-10T12:00:21.4443549-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="91cab5fb-658b-467c-a57b-436e46f31573" />
+    <UnitTestResult executionId="a06363b4-4c3e-4366-8251-733bf3d5639e" testId="73a773f3-2470-a519-3cf8-51c8ac3a10e9" testName="validate_nameIncluded_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000490" startTime="2025-09-10T12:00:21.4570863-04:00" endTime="2025-09-10T12:00:21.4571863-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a06363b4-4c3e-4366-8251-733bf3d5639e" />
+    <UnitTestResult executionId="f8d4d1c6-3e47-4668-8ef4-130d094780f4" testId="e2d2bd20-b60f-47d0-5105-3875189e36cd" testName="validate_canOrderMultipleDrinks_returnsDrinkOrderTextTwice" computerName="DESKTOP-1304CKW" duration="00:00:00.0021714" startTime="2025-09-10T12:00:21.4283956-04:00" endTime="2025-09-10T12:00:21.4443299-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f8d4d1c6-3e47-4668-8ef4-130d094780f4" />
+    <UnitTestResult executionId="ebb7b19e-c453-4983-a91c-1f2bd50be007" testId="8996aaf1-693c-4532-8f31-96a3fd67e61c" testName="validate_bogoOnMoreExpensiveDrink_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000366" startTime="2025-09-10T12:00:21.4571227-04:00" endTime="2025-09-10T12:00:21.4572369-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ebb7b19e-c453-4983-a91c-1f2bd50be007" />
+    <UnitTestResult executionId="b1234bef-0de8-4357-96a9-f541f94f0ae4" testId="a680e60c-3b02-5db8-1bba-c166690233e3" testName="validate_priceAccuracyCheck_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000469" startTime="2025-09-10T12:00:21.4544429-04:00" endTime="2025-09-10T12:00:21.4545624-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b1234bef-0de8-4357-96a9-f541f94f0ae4" />
+    <UnitTestResult executionId="9c28d70a-65e3-450b-94e6-c0e2d7b37a37" testId="4eb9d8f0-47d7-acde-00ac-51639701104e" testName="validate_OrderPriceCalculation_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000801" startTime="2025-09-10T12:00:21.4544861-04:00" endTime="2025-09-10T12:00:21.4546081-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="9c28d70a-65e3-450b-94e6-c0e2d7b37a37" />
+    <UnitTestResult executionId="07b01105-a5f0-44ed-92ce-776761980c85" testId="177cfba0-1e90-34fc-68ef-cce07cdca0e6" testName="errorCheck_tempNotPresent_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000887" startTime="2025-09-10T12:00:21.4539877-04:00" endTime="2025-09-10T12:00:21.4541262-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="07b01105-a5f0-44ed-92ce-776761980c85" />
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="validate_bogoOnCheaperDrink_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="21957717-71ed-f2ff-26e7-58ce4c3b947e">
+      <Execution id="e839cdf6-6f6f-4988-9315-3cf5caf9e832" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_bogoOnCheaperDrink_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnColdDrink_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="c0c190b5-ce88-35e7-462e-093cc94152b9">
+      <Execution id="506d9e88-a873-4102-9755-b804ccde4277" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_happyHourOnColdDrink_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_canNavigateToDrinkOrder_returnsDrinkOrderText" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="e325ab63-a78a-dcf4-8294-2e052f0752a6">
+      <Execution id="a5e2c2a2-7d72-4f4c-aaa0-8d6da7bcfdee" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.AppDriver" name="validate_canNavigateToDrinkOrder_returnsDrinkOrderText" />
+    </UnitTest>
+    <UnitTest name="invalid_baseDrink_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="9a825c62-90e5-96d8-51d3-31d6545bde16">
+      <Execution id="4e4e49f6-1421-4b50-a1cf-26d26bbe9ff1" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_baseDrink_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="check_Vegan_returnsIsVegan" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="403bad5e-0312-607a-fd1f-861f59ac2470">
+      <Execution id="6d1aa09a-9908-4724-8df0-a539f178e015" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifier" name="check_Vegan_returnsIsVegan" />
+    </UnitTest>
+    <UnitTest name="errorCheck_tempNotPresent_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="177cfba0-1e90-34fc-68ef-cce07cdca0e6">
+      <Execution id="07b01105-a5f0-44ed-92ce-776761980c85" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="errorCheck_tempNotPresent_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="valid_coffee_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="a7744b09-ecb5-43f9-76e9-4cff2f0c7c60">
+      <Execution id="2096b02d-1115-4b0a-af70-9a9f61e5ef24" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_coffee_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="validate_canOrderMultipleDrinks_returnsDrinkOrderTextTwice" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="e2d2bd20-b60f-47d0-5105-3875189e36cd">
+      <Execution id="f8d4d1c6-3e47-4668-8ef4-130d094780f4" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.AppDriver" name="validate_canOrderMultipleDrinks_returnsDrinkOrderTextTwice" />
+    </UnitTest>
+    <UnitTest name="check_decaf_returnsDecaf" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="fc156a3e-ef8f-174e-128a-bc14a26bc2a6">
+      <Execution id="6f534022-1b8b-4c33-999c-8900197170d2" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifier" name="check_decaf_returnsDecaf" />
+    </UnitTest>
+    <UnitTest name="validate_dairyAndPlantMilk_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="e9678b55-1af0-c9ae-87b3-6a45c642aae7">
+      <Execution id="ff3e7167-83b7-497e-994c-1cf19de5afaf" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="validate_dairyAndPlantMilk_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_nameIncluded_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="73a773f3-2470-a519-3cf8-51c8ac3a10e9">
+      <Execution id="a06363b4-4c3e-4366-8251-733bf3d5639e" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatter" name="validate_nameIncluded_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_totalsValid_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="d49cca73-29d8-f91b-4efd-c546c8baa99a">
+      <Execution id="eef884f0-7d61-475a-bc21-13a89b44b5b1" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatter" name="validate_totalsValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="valid_medium_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="d5b604cb-3b6a-b2b1-6822-123cc6622c76">
+      <Execution id="8f245921-763f-43fb-ac99-26f353cc13d6" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_medium_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="invalid_maximumShots_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="aaf7b05b-8c07-cdc7-ee1a-373d25a45833">
+      <Execution id="a1913903-700b-4a8b-a15c-199b5ecaea3b" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_maximumShots_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="check_hasPrice_returnsPrice" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="0c3a32eb-8d14-0032-1a5a-db34a0cdf0a1">
+      <Execution id="ca3eb87c-6497-4368-8e24-ea61f17071dd" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="check_hasPrice_returnsPrice" />
+    </UnitTest>
+    <UnitTest name="validate_warningsValid_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="e269ef5e-fe75-b5d0-3272-6b0e2077900f">
+      <Execution id="bb5354a8-6bfe-409a-abf5-83270c2accb2" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatter" name="validate_warningsValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="valid_espresso_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="a195b026-01d0-2f78-ddac-d8d1fd9ca151">
+      <Execution id="401b15f8-28c8-4590-9462-c7d912de68d1" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_espresso_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="check_plantMilk_returnsAllegenFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="6998bd33-765a-332c-1152-876a05f0e6ba">
+      <Execution id="102d0648-761a-4f0f-9908-7020bf0a29ae" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifier" name="check_plantMilk_returnsAllegenFlag" />
+    </UnitTest>
+    <UnitTest name="errorCheck_minimumShotCountInvalid_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="1b223161-74dc-99ce-9295-be39c6e28d9c">
+      <Execution id="2346064c-0700-4313-95f1-38a246292c5a" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="errorCheck_minimumShotCountInvalid_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnVeryColdDrink_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="38c50ee0-a666-7e93-77f4-5d0466da21f3">
+      <Execution id="41a55b07-0b2f-4a8f-96df-d697fdc9936c" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_happyHourOnVeryColdDrink_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="valid_tea_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="c4ff0be2-66a8-f523-b2b1-f261644bb330">
+      <Execution id="c9c4bd2a-ec2a-4da8-a91a-e6ca5423ff2d" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_tea_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="validate_priceAccuracyCheck_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="a680e60c-3b02-5db8-1bba-c166690233e3">
+      <Execution id="b1234bef-0de8-4357-96a9-f541f94f0ae4" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculator" name="validate_priceAccuracyCheck_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="invalid_plantMilkOption_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="8376fce2-85e8-4279-9a28-7ed5c2502e48">
+      <Execution id="95e1bccd-1819-4cd3-a53d-5f63cc9edb73" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_plantMilkOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_DrinkPriceCalculation_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="82e77e81-3aed-826e-d22d-89ae636ba919">
+      <Execution id="6976279e-f50b-491b-90df-e257a1acb17e" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculator" name="validate_DrinkPriceCalculation_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_canFinishOrder_returnsReceipt" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="3432b2bc-e584-ae5c-ec5f-d4aa79a0f715">
+      <Execution id="9b92bb41-0ea8-4512-9658-123e0602d5f1" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.AppDriver" name="validate_canFinishOrder_returnsReceipt" />
+    </UnitTest>
+    <UnitTest name="valid_large_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="49e12e42-f647-ba9a-f1b5-2868f4b1b3f7">
+      <Execution id="dae52437-e6ec-4794-b2fa-73d4291cc085" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_large_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="valid_latte_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="c92dfbf2-f410-360f-fd92-edebb6f3342b">
+      <Execution id="d19a881c-cf42-4fb1-a0db-fb16723a7d0b" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_latte_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="valid_small_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="a2573dfa-977a-a093-5ddc-db419d51df79">
+      <Execution id="570334d0-2c1b-40ac-b1ec-21f576237409" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_small_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="validate_bogoOnEqualDrink_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="155fae20-80de-2610-2dd9-eec7e14465cd">
+      <Execution id="227a72ce-6660-4ea6-9424-b8aeb2124d27" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_bogoOnEqualDrink_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="invalid_syrupOption_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="ec0068f7-29b9-a374-fdfc-fa90d8190738">
+      <Execution id="6c3012f8-def8-4309-a00b-37802de299aa" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_syrupOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="errorCheck_maximumSyrupCountInvalid_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="49d799b4-972e-de2e-f0c3-4aea4458e532">
+      <Execution id="f56177cf-68d3-415c-9a43-7c701217d74d" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="errorCheck_maximumSyrupCountInvalid_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="invalid_size_returnsFailureflag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="3e5c614b-c0f7-a38d-52b3-544c8f36083f">
+      <Execution id="91cab5fb-658b-467c-a57b-436e46f31573" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_size_returnsFailureflag" />
+    </UnitTest>
+    <UnitTest name="validate_lineItemsValid_returnTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="467d5431-8b1b-f052-aec0-1ce9c8787304">
+      <Execution id="80784ccb-df0a-42d7-9791-6bb1905b8c4e" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatter" name="validate_lineItemsValid_returnTrue" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnVeryHotDrink_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="9db3cae5-2f45-347e-d9c3-a49344d7bdb1">
+      <Execution id="41844772-7c0e-4fa4-b2f8-c7bbdfde73c9" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_happyHourOnVeryHotDrink_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="errorCheck_sizeNotPresent_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="2b477672-e9db-c97b-eaa7-08939cc0548e">
+      <Execution id="53d7b5f0-a1bd-47a1-8064-42d911bea4b7" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="errorCheck_sizeNotPresent_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_OrderPriceCalculation_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="4eb9d8f0-47d7-acde-00ac-51639701104e">
+      <Execution id="9c28d70a-65e3-450b-94e6-c0e2d7b37a37" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculator" name="validate_OrderPriceCalculation_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="check_caffeine_returnsFalseDecaf" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="1c37522c-0ab7-6867-d447-d705b7c07689">
+      <Execution id="8d30908b-1a82-4a91-be6e-bf7005f451db" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifier" name="check_caffeine_returnsFalseDecaf" />
+    </UnitTest>
+    <UnitTest name="invalid_maxSyrups_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="47e3f9a9-9013-c508-6b34-be25ecb95f21">
+      <Execution id="d3a4fd74-426c-49ca-8f23-4991bb93c34a" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_maxSyrups_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="valid_extraLarge_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="12c738c4-dfc9-039c-8270-e5a0c8076b9f">
+      <Execution id="c682fb07-34c9-4efc-b16e-f9e44595d564" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_extraLarge_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="validate_validDOC_retunsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="e7315fec-4322-75a0-53bf-7f33d9b68f46">
+      <Execution id="a5760c58-f5fc-4c31-8037-1a060eaad409" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatter" name="validate_validDOC_retunsTrue" />
+    </UnitTest>
+    <UnitTest name="check_lessThanVeryHot_returnsKidFriendly" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="1c1ba027-ccc6-3fa3-e129-4f1c46484ea6">
+      <Execution id="acc70f3d-7957-48de-b6c0-89673cf871ae" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifier" name="check_lessThanVeryHot_returnsKidFriendly" />
+    </UnitTest>
+    <UnitTest name="invalid_minimumShots_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="709e7236-94c4-109f-e035-e8f63056a390">
+      <Execution id="4310d0e1-67c9-48d0-9eab-f6c1f37bcaa8" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_minimumShots_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_milkNotPresent_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="30b4804b-9414-6c53-2506-fb487f347913">
+      <Execution id="cb3e38fa-7a5f-4838-bb9c-954e9ec99f71" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="validate_milkNotPresent_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="errorCheck_maximumShotCountInvalid_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="be2d777c-64b8-1ed3-35c7-def8e604541b">
+      <Execution id="f651097c-0da0-4b1c-a46c-31bf08e7beae" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="errorCheck_maximumShotCountInvalid_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="errorCheck_baseDrinkNotPresent_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="7c81ae83-a7d9-3530-24a5-8f14d27d1dda">
+      <Execution id="0aea7caa-f762-495b-bc55-921ef1211dbc" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidator" name="errorCheck_baseDrinkNotPresent_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="invalid_toppingsOption_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="1d4f3407-ecb2-657b-3f77-01b6ab88cf79">
+      <Execution id="0053ef6f-6d81-4397-9852-08a0f4797fb5" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_toppingsOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="check_noEspresso_returnsKidFriendly" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="016a6397-c35c-1176-e4fb-9819d3e4a5e4">
+      <Execution id="d4d8ce54-0726-4956-8614-a5d2ead15ce0" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifier" name="check_noEspresso_returnsKidFriendly" />
+    </UnitTest>
+    <UnitTest name="validate_bogoOnMoreExpensiveDrink_returnsFalse" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="8996aaf1-693c-4532-8f31-96a3fd67e61c">
+      <Execution id="ebb7b19e-c453-4983-a91c-1f2bd50be007" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_bogoOnMoreExpensiveDrink_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnHotDrink_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="6eb546bd-5746-1e08-fca3-e6a9bcbb9460">
+      <Execution id="b1397a41-56f5-4da8-92d8-ab80183dbe3b" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelper" name="validate_happyHourOnHotDrink_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="valid_cappuccino_returnsDrink" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="720a5def-7cdc-0a9a-061d-e77365751f82">
+      <Execution id="87a44624-2cad-4fcc-8879-0c125d05deae" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="valid_cappuccino_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="invalid_milkOption_returnsFailureFlag" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="5b5ed5ac-ac96-4d88-b5fb-ee5355ddb2d3">
+      <Execution id="5f38509a-7f35-49c7-9fd3-53f0517ca442" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.Beverage" name="invalid_milkOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_discountsValid_returnsTrue" storage="d:\programming\school\03\asn1\asn1\coffeeorder.tests\bin\debug\net9.0\coffeeorder.tests.dll" id="e7b35fc4-4c94-2918-8922-4c9ef750c56a">
+      <Execution id="780f6ebb-92d1-4317-96a5-1047e5dab521" />
+      <TestMethod codeBase="D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatter" name="validate_discountsValid_returnsTrue" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="9db3cae5-2f45-347e-d9c3-a49344d7bdb1" executionId="41844772-7c0e-4fa4-b2f8-c7bbdfde73c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1d4f3407-ecb2-657b-3f77-01b6ab88cf79" executionId="0053ef6f-6d81-4397-9852-08a0f4797fb5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="be2d777c-64b8-1ed3-35c7-def8e604541b" executionId="f651097c-0da0-4b1c-a46c-31bf08e7beae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="12c738c4-dfc9-039c-8270-e5a0c8076b9f" executionId="c682fb07-34c9-4efc-b16e-f9e44595d564" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0c3a32eb-8d14-0032-1a5a-db34a0cdf0a1" executionId="ca3eb87c-6497-4368-8e24-ea61f17071dd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d49cca73-29d8-f91b-4efd-c546c8baa99a" executionId="eef884f0-7d61-475a-bc21-13a89b44b5b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="47e3f9a9-9013-c508-6b34-be25ecb95f21" executionId="d3a4fd74-426c-49ca-8f23-4991bb93c34a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8376fce2-85e8-4279-9a28-7ed5c2502e48" executionId="95e1bccd-1819-4cd3-a53d-5f63cc9edb73" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aaf7b05b-8c07-cdc7-ee1a-373d25a45833" executionId="a1913903-700b-4a8b-a15c-199b5ecaea3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c92dfbf2-f410-360f-fd92-edebb6f3342b" executionId="d19a881c-cf42-4fb1-a0db-fb16723a7d0b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c37522c-0ab7-6867-d447-d705b7c07689" executionId="8d30908b-1a82-4a91-be6e-bf7005f451db" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2573dfa-977a-a093-5ddc-db419d51df79" executionId="570334d0-2c1b-40ac-b1ec-21f576237409" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c1ba027-ccc6-3fa3-e129-4f1c46484ea6" executionId="acc70f3d-7957-48de-b6c0-89673cf871ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="709e7236-94c4-109f-e035-e8f63056a390" executionId="4310d0e1-67c9-48d0-9eab-f6c1f37bcaa8" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2b477672-e9db-c97b-eaa7-08939cc0548e" executionId="53d7b5f0-a1bd-47a1-8064-42d911bea4b7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1b223161-74dc-99ce-9295-be39c6e28d9c" executionId="2346064c-0700-4313-95f1-38a246292c5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="21957717-71ed-f2ff-26e7-58ce4c3b947e" executionId="e839cdf6-6f6f-4988-9315-3cf5caf9e832" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="82e77e81-3aed-826e-d22d-89ae636ba919" executionId="6976279e-f50b-491b-90df-e257a1acb17e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="155fae20-80de-2610-2dd9-eec7e14465cd" executionId="227a72ce-6660-4ea6-9424-b8aeb2124d27" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="467d5431-8b1b-f052-aec0-1ce9c8787304" executionId="80784ccb-df0a-42d7-9791-6bb1905b8c4e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="9a825c62-90e5-96d8-51d3-31d6545bde16" executionId="4e4e49f6-1421-4b50-a1cf-26d26bbe9ff1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c0c190b5-ce88-35e7-462e-093cc94152b9" executionId="506d9e88-a873-4102-9755-b804ccde4277" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7c81ae83-a7d9-3530-24a5-8f14d27d1dda" executionId="0aea7caa-f762-495b-bc55-921ef1211dbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="720a5def-7cdc-0a9a-061d-e77365751f82" executionId="87a44624-2cad-4fcc-8879-0c125d05deae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6998bd33-765a-332c-1152-876a05f0e6ba" executionId="102d0648-761a-4f0f-9908-7020bf0a29ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7315fec-4322-75a0-53bf-7f33d9b68f46" executionId="a5760c58-f5fc-4c31-8037-1a060eaad409" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e7b35fc4-4c94-2918-8922-4c9ef750c56a" executionId="780f6ebb-92d1-4317-96a5-1047e5dab521" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c4ff0be2-66a8-f523-b2b1-f261644bb330" executionId="c9c4bd2a-ec2a-4da8-a91a-e6ca5423ff2d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="38c50ee0-a666-7e93-77f4-5d0466da21f3" executionId="41a55b07-0b2f-4a8f-96df-d697fdc9936c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="5b5ed5ac-ac96-4d88-b5fb-ee5355ddb2d3" executionId="5f38509a-7f35-49c7-9fd3-53f0517ca442" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a195b026-01d0-2f78-ddac-d8d1fd9ca151" executionId="401b15f8-28c8-4590-9462-c7d912de68d1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec0068f7-29b9-a374-fdfc-fa90d8190738" executionId="6c3012f8-def8-4309-a00b-37802de299aa" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e325ab63-a78a-dcf4-8294-2e052f0752a6" executionId="a5e2c2a2-7d72-4f4c-aaa0-8d6da7bcfdee" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d5b604cb-3b6a-b2b1-6822-123cc6622c76" executionId="8f245921-763f-43fb-ac99-26f353cc13d6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="fc156a3e-ef8f-174e-128a-bc14a26bc2a6" executionId="6f534022-1b8b-4c33-999c-8900197170d2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e269ef5e-fe75-b5d0-3272-6b0e2077900f" executionId="bb5354a8-6bfe-409a-abf5-83270c2accb2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49d799b4-972e-de2e-f0c3-4aea4458e532" executionId="f56177cf-68d3-415c-9a43-7c701217d74d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="016a6397-c35c-1176-e4fb-9819d3e4a5e4" executionId="d4d8ce54-0726-4956-8614-a5d2ead15ce0" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="30b4804b-9414-6c53-2506-fb487f347913" executionId="cb3e38fa-7a5f-4838-bb9c-954e9ec99f71" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6eb546bd-5746-1e08-fca3-e6a9bcbb9460" executionId="b1397a41-56f5-4da8-92d8-ab80183dbe3b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e9678b55-1af0-c9ae-87b3-6a45c642aae7" executionId="ff3e7167-83b7-497e-994c-1cf19de5afaf" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a7744b09-ecb5-43f9-76e9-4cff2f0c7c60" executionId="2096b02d-1115-4b0a-af70-9a9f61e5ef24" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="49e12e42-f647-ba9a-f1b5-2868f4b1b3f7" executionId="dae52437-e6ec-4794-b2fa-73d4291cc085" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3432b2bc-e584-ae5c-ec5f-d4aa79a0f715" executionId="9b92bb41-0ea8-4512-9658-123e0602d5f1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="403bad5e-0312-607a-fd1f-861f59ac2470" executionId="6d1aa09a-9908-4724-8df0-a539f178e015" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e5c614b-c0f7-a38d-52b3-544c8f36083f" executionId="91cab5fb-658b-467c-a57b-436e46f31573" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73a773f3-2470-a519-3cf8-51c8ac3a10e9" executionId="a06363b4-4c3e-4366-8251-733bf3d5639e" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e2d2bd20-b60f-47d0-5105-3875189e36cd" executionId="f8d4d1c6-3e47-4668-8ef4-130d094780f4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8996aaf1-693c-4532-8f31-96a3fd67e61c" executionId="ebb7b19e-c453-4983-a91c-1f2bd50be007" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a680e60c-3b02-5db8-1bba-c166690233e3" executionId="b1234bef-0de8-4357-96a9-f541f94f0ae4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4eb9d8f0-47d7-acde-00ac-51639701104e" executionId="9c28d70a-65e3-450b-94e6-c0e2d7b37a37" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="177cfba0-1e90-34fc-68ef-cce07cdca0e6" executionId="07b01105-a5f0-44ed-92ce-776761980c85" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Completed">
+    <Counters total="52" executed="52" passed="52" failed="0" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test Parallelization enabled for D:\Programming\School\03\Asn1\ASN1\CoffeeOrder.Tests\bin\Debug\net9.0\CoffeeOrder.Tests.dll (Workers: 20, Scope: MethodLevel)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

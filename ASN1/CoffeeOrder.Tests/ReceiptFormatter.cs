@@ -3,36 +3,39 @@ namespace CoffeeOrder.Tests;
 [TestClass]
 public sealed class ReceiptFormatter
 {
+
+    // Typical cases
     [TestMethod]
-    public void lineItemsValid()
+    public void validate_lineItemsValid_returnTrue()
     {
     }
 
     [TestMethod]
-    public void discountsValid()
+    public void validate_discountsValid_returnsTrue()
     {
     }
 
     [TestMethod]
-    public void totalsValid()
+    public void validate_totalsValid_returnsTrue()
     {
     }
 
     [TestMethod]
-    public void warningsValid()
+    public void validate_warningsValid_returnsTrue()
     {
     }
-
 
     // 5 minute grace period
     [TestMethod]
-    public void validDOC()
+    public void validate_validDOC_retunsTrue()
     {
     }
-    
 
     [TestMethod]
-    public void nameIncluded()
+    public void validate_nameIncluded_returnsTrue()
     {
     }
+    // Edge cases
+
+    // Negative cases
 }

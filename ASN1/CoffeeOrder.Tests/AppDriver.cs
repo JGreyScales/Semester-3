@@ -4,17 +4,17 @@ namespace CoffeeOrder.Tests;
 public sealed class AppDriver
 {
     [TestMethod]
-    public void navigateToDrinkOrder()
+    public void validate_canNavigateToDrinkOrder_returnsDrinkOrderText()
     {
     }
 
     [TestMethod]
-    public void orderMultipleDrinks()
+    public void validate_canOrderMultipleDrinks_returnsDrinkOrderTextTwice()
     {
     }
 
     [TestMethod]
-    public void finishOrder()
+    public void validate_canFinishOrder_returnsReceipt()
     {
     }
 }
