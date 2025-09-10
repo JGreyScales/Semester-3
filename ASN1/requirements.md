@@ -47,9 +47,6 @@ These are required to guide architecture and enable modular, testable design. Im
 
 ## 2. OrderValidator
 
-- **Properties:** 
-  - `Beverages` (list)
-
 - **Responsibility:**  
   - Validates a single `Beverage`
   - Validates a list of `Beverage`s
@@ -63,6 +60,12 @@ These are required to guide architecture and enable modular, testable design. Im
 
 - **Output:**  
   - Return a structured result (e.g., `ValidationResult` with `IsValid` + `Errors`).
+
+# Order
+- **Properties:** 
+  - `Beverages` (list)
+  - `Promotional Discount` (decimal)
+  - `Promotional Discount Reason` (string)
 
 ---
 
