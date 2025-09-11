@@ -3,7 +3,7 @@
 namespace CoffeeOrder.Tests;
 
 [TestClass]
-public sealed class BeverageTEST
+public sealed class BeverageTests
 {
 
     // Typical cases
@@ -11,8 +11,8 @@ public sealed class BeverageTEST
     public void valid_drink_returnsDrink()
     {
 
-        // arrange
-        List<string> toppings = new List<string>(["Milk Foam", "Macha"]);
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
         string milk = "Milk";
@@ -21,7 +21,7 @@ public sealed class BeverageTEST
         string drink = "Latte";
 
         int expectedFailureCount = 0;
-        List<string> Expectedtoppings = new List<string>(["Milk Foam", "Macha"]);
+        List<string> Expectedtoppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> Exceptedsyrups = new List<string>(["Vanilla"]);
         byte Exceptedshots = 2;
         string Exceptedmilk = "Milk";
@@ -34,7 +34,7 @@ public sealed class BeverageTEST
         decimal ExpectedPrice = 3.80M; // 3.7855M unrounded
         int ExpectedAllergensCount = 0;
 
-        // act
+        // Act
         var bev = new Beverage(
             toppings: toppings,
             syrups: syrups,
@@ -45,10 +45,10 @@ public sealed class BeverageTEST
             drink: drink
         );
 
-        // assert
+        // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        Assert.AreEqual(Excepteddrink, bev.getBaseDrink());
-        Assert.AreEqual(Exceptedmilk, bev.getMilk());
+        StringAssert.Equals(Excepteddrink, bev.getBaseDrink());
+        StringAssert.Equals(Exceptedmilk, bev.getMilk());
         Assert.AreEqual(Exceptedtemp, bev.getTemp());
         Assert.AreEqual(Exceptedsize, bev.getSize());
         Assert.AreEqual(ExpectedIsDecaf, bev.getIsDecaf());
@@ -57,53 +57,290 @@ public sealed class BeverageTEST
         Assert.AreEqual(Exceptedshots, bev.getShots());
         Assert.AreEqual(ExpectedPrice, bev.getPrice());
         Assert.AreEqual(ExpectedAllergensCount, bev.getAllergens().Count);
+        Assert.AreEqual(Expectedtoppings, bev.getToppings());
+        Assert.AreEqual(Exceptedsyrups, bev.getSyrups());
+
     }
 
     // Edge cases
     [TestMethod]
     public void invalid_minimumShots_returnsFailureFlag()
     {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        int value = -1;
+        byte shots = (byte)value; // truncates & wraps to 255
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Shots Amount";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
     public void invalid_maximumShots_returnsFailureFlag()
     {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 5;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Shots Amount";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
     public void invalid_maxSyrups_returnsFailureFlag()
     {
+         // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla", "Strawberry", "Chocolate", "Chocolate", "Vanilla", "Vanilla"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Syrups Amount";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     // Negative cases
     [TestMethod]
     public void invalid_baseDrink_returnsFailureFlag()
     {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Orange Juice";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid BaseDrink Option";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
     public void invalid_size_returnsFailureflag()
     {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 125;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Size Option";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+    }
+
+    [TestMethod]
+    public void invalid_temp_returnsFailureflag()
+    {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 125;
+        byte size = 75;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid temp Option";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
     public void invalid_milkOption_returnsFailureFlag()
     {
-    }
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 2;
+        string milk = "Rocks";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
 
-    [TestMethod]
-    public void invalid_plantMilkOption_returnsFailureFlag()
-    {
-    }
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Milk Option";
 
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+    }
 
     [TestMethod]
     public void invalid_syrupOption_returnsFailureFlag()
     {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla", "Poprocks"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Syrup Option";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
     public void invalid_toppingsOption_returnsFailureFlag()
     {
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha", "Pebbles"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        int expectedFailureCount = 1;
+        string expectedFailureMessage = "Invalid Toppings Option";
+
+        // Act
+        var bev = new Beverage(
+            toppings: toppings,
+            syrups: syrups,
+            shots: shots,
+            milk: milk,
+            temp: temp,
+            size: size,
+            drink: drink
+        );
+
+        // Assert
+        Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
+        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
     }
 }

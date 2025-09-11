@@ -1,0 +1,7 @@
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\.msCoverageSourceRootsMapping_CoffeeOrder.Tests
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\obj\Debug\net8.0\CoffeeOrder.Tests.csproj.AssemblyReference.cache
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\obj\Debug\net8.0\CoffeeOrder.Tests.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\obj\Debug\net8.0\CoffeeOrder.Tests.AssemblyInfoInputs.cache
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\obj\Debug\net8.0\CoffeeOrder.Tests.AssemblyInfo.cs
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\obj\Debug\net8.0\CoffeeOrder.Tests.csproj.CoreCompileInputs.cache
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\obj\Debug\net8.0\CoffeeOrder.Tests.sourcelink.json

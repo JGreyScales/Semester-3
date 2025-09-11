@@ -26,15 +26,38 @@ These are required to guide architecture and enable modular, testable design. Im
 *starts from lowest scope & expands out, bringing the scope value with it*
 (((
 size: small: $1, medium: $1.25, large: $1.50, extraLarge: $2.00
-milk: milk: 1.0, cream: 1.0, oat milk: 1.3, soy milk: 1.2, almond milk: 1.5
-shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
+milk: None: 0.7, milk: 1.0, cream: 1.0, oat milk: 1.3, soy milk: 1.2, almond milk: 1.5
+shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 )
   drink: Coffee: 1.0, Chai-Tea: 1.1, Latte: 1.3, Espresso: 0.8, Cappuccino: 1.2, Decaf: 0.9
   )
     syrups: chocolate: $1.0, strawberry: $1.0, vanilla: $0.5
-    toppings: cinnamon: $0.3, milk foam: $0.2, espresso foam: $0.5, macha: $0.7
+    toppings: cinnamon: $0.3, milk foam: $0.2, espresso foam: $0.5, matcha: $0.7
     )
       TAX: 1.13
+
+---
+**Allergen Causers**
+- Milk (dairy)
+- Cream (dairy)
+- Oat Milk (gluten)
+- Soy milk (soy)
+- Almond milk (nuts)
+- Chocolate (nuts & dairy)
+- Milk Foam (dairy)
+- Esoresso Foam (dairy)
+
+**Vegan Options**
+- *milk*
+  - None
+  - Oat Milk
+  - Soy Milk
+  - Almond Milk
+- *toppings*
+  - Cinnomon
+  - Matcha
+- *syrups*
+  - Vanilla
 
 ---
 ## 1. Beverage (model)
@@ -43,10 +66,10 @@ shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - `BaseDrink` (string) (Coffee, Chai-Tea, Latte, Espresso, Cappuccino, Decaf)  
   - `Size` (byte) (0-100) (small: 25, medium: 50, large: 75, extra large: 100)
   - `Temp` (byte) (0-100) (veryCold: 0, cold: 25, roomtemp: 50, hot: 75 , veryHot: 100)
-  - `Milk` (string) (milk, cream, oat milk, soy milk, almond milk)  
+  - `Milk` (string) (None, milk, cream, oat milk, soy milk, almond milk)  
   - `Shots` (byte) (0–4)  
-  - `Syrups` (List<string>) (0–5, list)  (chocolate, strawberry, vanilla)
-  - `Toppings` (List<string>) (cinnamon, milk foam, espresso foam, macha)
+  - `Syrups` (List<string>) (0–5, list)  (Chocolate, Strawberry, Vanilla)
+  - `Toppings` (List<string>) (Cinnamon, Milk Foam, Espresso Foam, Matcha)
   - `IsDecaf` (bool)
   - `IsKidFriendly` (bool)
   - `isVegan` (bool)
@@ -80,8 +103,14 @@ shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - Validates a single `Beverage`
 
 - **methods**
-  listErrors(Beverage: Beverage) -> list(string)
-
+  - `listErrors`(Beverage: Beverage) -> list(string)
+  - static `checkSyrups`(List<string>) -> bool
+  - static `checkToppings`(List<string>) -> bool
+  - static `checkBaseDrink`(string) -> bool
+  - static `checkMilk`(string) -> bool
+  - static `checkSize`(byte) -> bool
+  - static `checkTemp`(byte) -> bool
+  - static `checkShots`(byte, string) -> bool
 
 - **Example Rules:**  
   - Required fields present  
@@ -103,8 +132,12 @@ shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 - **methods**
   - `Constructor`(void)
   - `addBeverage`(Beverage: Beverage) -> void
-  - `addName`(name: str) -> void
-  - `addDate`(void) -> void
+  - `getBeverages`() -> List<Beverage>
+  - `addName`(name: string) -> void
+  - `getName`() -> string
+  - static `addDate`(void) -> void
+  - `getDate`(void) -> string
+  - `getDiscount`(void) -> PromotionalDiscountObject
   - `addDiscounts`(void) -> void
 
 
@@ -114,10 +147,10 @@ shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 ## 3. BeverageClassifier
 
 - **Methods**
-  - `isDecaf`(Beverage: Beverage) -> bool
-  - `isVegan`(Beverage: Beverage) -> bool
-  - `isKidSafe`(Beverage: Beverage) -> bool
-  - `Allergens`(Beverage: Beverage) -> List
+  - static `isDecaf`(Beverage: Beverage) -> bool
+  - static `isVegan`(Beverage: Beverage) -> bool
+  - static `isKidSafe`(Beverage: Beverage) -> bool
+  - static `getAllergens`(Beverage: Beverage) -> List<string>
 
 - **Responsibility:**  
   - Categories/labels: `Caffeinated/Decaf`, `DairyFree`, `VeganFriendly`, `KidSafe` (e.g., no espresso).  
@@ -130,7 +163,8 @@ shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 ## 4. PriceCalculator
 
 - **Methods**
-  - `CalculatePrice`(Beverage: Beverage) -> decimal
+  - static `calculatePrice`(Beverage: Beverage) -> decimal
+  - static `calculateOrderPriceWithDiscount`(Order) -> decimal
 
 - **Responsibility:**  
   - Calculate base price by size + add-on pricing  
@@ -181,17 +215,17 @@ shots: 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 
 ## 7. AppDriver (thin UI/CLI)
 - **Methods**
-  -`Main`(void)
-  -`printWelcomeScreen`(void) -> void
-  -`GetInt`(void) -> int
-  -`getDrink`(void) -> string
-  -`getBeverageSize`(void) -> int
-  -`getBeverageTemp`(void) -> int
-  -`getMilkType`(void) -> string
-  -`getShotCount`(void) -> int
-  -`getSyrups`(void) -> list(string)
-  -`getToppings`(void) -> list(string)
-  -`getName`(void) -> string
+  - `Main`(void)
+  - static `printWelcomeScreen`(void) -> void
+  - `GetInt`(void) -> int
+  - `getDrink`(void) -> string
+  - `getBeverageSize`(void) -> int
+  - `getBeverageTemp`(void) -> int
+  - `getMilkType`(void) -> string
+  - `getShotCount`(void) -> int
+  - `getSyrups`(void) -> list(string)
+  - `getToppings`(void) -> list(string)
+  - `getName`(void) -> string
 
 - **Responsibility:**  
   - Minimal glue to demonstrate building an order and printing a receipt.  

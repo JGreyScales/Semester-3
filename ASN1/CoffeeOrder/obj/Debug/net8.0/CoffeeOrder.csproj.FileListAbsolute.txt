@@ -1,0 +1,15 @@
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\bin\Debug\net8.0\CoffeeOrder.exe
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\bin\Debug\net8.0\CoffeeOrder.deps.json
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\bin\Debug\net8.0\CoffeeOrder.runtimeconfig.json
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\bin\Debug\net8.0\CoffeeOrder.dll
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\bin\Debug\net8.0\CoffeeOrder.pdb
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.AssemblyInfoInputs.cache
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.AssemblyInfo.cs
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.csproj.CoreCompileInputs.cache
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.sourcelink.json
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.dll
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\refint\CoffeeOrder.dll
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.pdb
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\CoffeeOrder.genruntimeconfig.cache
+D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\obj\Debug\net8.0\ref\CoffeeOrder.dll
