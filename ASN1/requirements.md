@@ -202,7 +202,7 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 
 ## 6. ReceiptFormatter
 - **Methods**
-  - `PrintReceipt`(Order: OrderOBJ) -> void
+  - `printReceipt`(Order: OrderOBJ) -> void
 
 - **Responsibility:**  
   - Produce receipt text with line items, discounts, totals, and warnings (e.g., allergens).  
