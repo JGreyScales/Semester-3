@@ -1,5 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace CoffeeOrder.Tests;
 [TestClass]
 public sealed class OrderTests {
@@ -8,14 +6,15 @@ public sealed class OrderTests {
     public void validate_addDate_returnString()
     {
         // Arrange
-        var orderOBJ = new Order();
         string expectedResult = DateTime.Now.ToString("yyyy-MM-dd HHmm");
         
         // Act
-        orderOBJ.addDate();
+        // Inside the construction of Order, the date is populated.
+        // So this is either classified as the act, or there is no act for this method
+        var orderOBJ = new Order();
 
         // Assert
-        StringAssert.Equals(expectedResult, orderOBJ.getDate());
+        Assert.AreEqual(expectedResult, orderOBJ.getDate());
     }
 
     [TestMethod]
@@ -34,23 +33,23 @@ public sealed class OrderTests {
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         var bev2 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         orderOBJ.addBeverage(bev1);
@@ -94,13 +93,13 @@ public sealed class OrderTests {
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         orderOBJ.addBeverage(bev1);
@@ -109,10 +108,49 @@ public sealed class OrderTests {
 
         // Assert
         Assert.AreEqual(expectedDiscount, discountOBJ.getDiscount());
-        StringAssert.Equals(expectedReason, discountOBJ.getDiscountReason());
+        Assert.AreEqual(expectedReason, discountOBJ.getDiscountReason());
     }
 
     // Edge cases
+
+
+    [TestMethod]
+    public void checkError_MaximumDrinkCountReached_returnError(){
+        // Arrange
+        var orderOBJ = new Order();
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 2;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        // Act
+        var bev1 = new Beverage(
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
+        );
+
+        // add 19 drinks
+        for (byte i = 0; i < 19; i++){
+            orderOBJ.addBeverage(bev1);
+        }
+
+        bool oneBeforeResult = orderOBJ.addBeverage(bev1);
+        bool result = orderOBJ.addBeverage(bev1);
+
+
+        // Assert
+        Assert.IsTrue(oneBeforeResult);
+        Assert.IsFalse(result);
+    }
+
 
     [TestMethod]
     public void validate_addDiscountEmptyBeverages_returnDiscountOBJ(){
@@ -128,7 +166,7 @@ public sealed class OrderTests {
 
         // Assert
         Assert.AreEqual(expectedDiscount, discountOBJ.getDiscount());
-        StringAssert.Equals(expectedReason, discountOBJ.getDiscountReason());
+        Assert.AreEqual(expectedReason, discountOBJ.getDiscountReason());
     }
 
     // Negative cases

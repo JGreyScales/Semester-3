@@ -1,0 +1,876 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<TestRun id="b30a894e-d432-46e4-995b-e25863a5aec7" name="JG@DESKTOP-1304CKW 2025-09-11 23:36:56" runUser="DESKTOP-1304CKW\JG" xmlns="http://microsoft.com/schemas/VisualStudio/TeamTest/2010">
+  <Times creation="2025-09-11T23:36:56.1647073-04:00" queuing="2025-09-11T23:36:56.1647074-04:00" start="2025-09-11T23:36:55.8090266-04:00" finish="2025-09-11T23:36:56.1911923-04:00" />
+  <TestSettings name="default" id="dd455a53-6932-4152-ac87-cc856c25557d">
+    <Deployment runDeploymentRoot="JG_DESKTOP-1304CKW_2025-09-11_23_36_56" />
+  </TestSettings>
+  <Results>
+    <UnitTestResult executionId="2f0bb4f2-8248-4c67-a31f-e3dd2eb95357" testId="3aba5a6b-2278-fa39-6c62-a9c5c4fd7c2c" testName="check_vegan_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0488457" startTime="2025-09-11T23:36:56.0835177-04:00" endTime="2025-09-11T23:36:56.1460692-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="2f0bb4f2-8248-4c67-a31f-e3dd2eb95357" />
+    <UnitTestResult executionId="83a574ef-b7e6-4b97-ad48-8db728097cc2" testId="b4511c17-f324-9c7b-e4b9-62dc7ac749cc" testName="errorCheck_shotsBelowMinimum_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000494" startTime="2025-09-11T23:36:56.1570307-04:00" endTime="2025-09-11T23:36:56.1571293-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="83a574ef-b7e6-4b97-ad48-8db728097cc2" />
+    <UnitTestResult executionId="08a6f3e6-2ea4-4028-bed2-61b8c096d410" testId="65fec8e7-95d7-1798-3572-31a04b19530c" testName="validate_selectsBOGOWhenBetterDeal_returnsBOGODiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0003999" startTime="2025-09-11T23:36:56.1583078-04:00" endTime="2025-09-11T23:36:56.1587819-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="08a6f3e6-2ea4-4028-bed2-61b8c096d410">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2.45&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PromotionHelperTests.validate_selectsBOGOWhenBetterDeal_returnsBOGODiscount() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PromotionHelperTEST.cs:line 163&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="870ca7db-e159-45b5-8731-a69e9cbd7808" testId="ec476349-50aa-b34b-91c9-d9dae68ad857" testName="validate_addBeverage_returnList" computerName="DESKTOP-1304CKW" duration="00:00:00.0003128" startTime="2025-09-11T23:36:56.1568083-04:00" endTime="2025-09-11T23:36:56.1571788-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="870ca7db-e159-45b5-8731-a69e9cbd7808">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.OrderTests.validate_addBeverage_returnList() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\OrderTEST.cs:line 60&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c2b412c5-bef5-4579-b17c-eb03ab8e4283" testId="3313cf34-71ee-c09c-02d6-9c1d00a654d2" testName="validate_subTotalsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0026537" startTime="2025-09-11T23:36:56.1595760-04:00" endTime="2025-09-11T23:36:56.1622703-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c2b412c5-bef5-4579-b17c-eb03ab8e4283">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string '7.60'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_subTotalsValid_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 101&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="795cdd47-963d-464a-bed7-dfa8c0d88131" testId="0755c290-2d7a-da8f-474d-5a7613517775" testName="check_lessThanVeryHotOrEspressoKidFriendly_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0488288" startTime="2025-09-11T23:36:56.0835010-04:00" endTime="2025-09-11T23:36:56.1460572-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="795cdd47-963d-464a-bed7-dfa8c0d88131" />
+    <UnitTestResult executionId="8549c0d2-494e-4e7f-934a-dd140136350d" testId="a9a099fe-cea2-d000-34e0-09339dfe85db" testName="validate_milkNotValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0001533" startTime="2025-09-11T23:36:56.1560301-04:00" endTime="2025-09-11T23:36:56.1562277-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8549c0d2-494e-4e7f-934a-dd140136350d" />
+    <UnitTestResult executionId="dc1dee3a-014e-4007-8e2a-90ca7114a301" testId="0ce33c1c-508e-938f-348f-d3424a2d1dff" testName="validate_priceAccuracyCheck_returnsDecimal" computerName="DESKTOP-1304CKW" duration="00:00:00.0003006" startTime="2025-09-11T23:36:56.1572024-04:00" endTime="2025-09-11T23:36:56.1575773-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dc1dee3a-014e-4007-8e2a-90ca7114a301">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;3.20&gt;. Actual:&lt;0.0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PriceCalculatorTests.validate_priceAccuracyCheck_returnsDecimal() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PriceCalculatorTests.cs:line 34&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="996d515d-3965-4681-bb67-f64f407b3193" testId="606ef3a1-3997-4db2-0085-4bcb828b7299" testName="validate_happyHourOnColdDrink_returnsNoDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0001413" startTime="2025-09-11T23:36:56.1593647-04:00" endTime="2025-09-11T23:36:56.1595545-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="996d515d-3965-4681-bb67-f64f407b3193" />
+    <UnitTestResult executionId="7fa5756c-144f-4c4e-8cab-b7d08a42c835" testId="1c6110d1-3e41-4d5c-377b-c77d31945bb1" testName="validate_roundValueToNickle_returnsDecimal" computerName="DESKTOP-1304CKW" duration="00:00:00.0001164" startTime="2025-09-11T23:36:56.1577189-04:00" endTime="2025-09-11T23:36:56.1578841-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7fa5756c-144f-4c4e-8cab-b7d08a42c835" />
+    <UnitTestResult executionId="33b177f1-5f4d-41ff-ae87-a7222c194cbc" testId="bcf43e7e-deda-420e-d5c5-4930529f323a" testName="validate_getTempString_returnString" computerName="DESKTOP-1304CKW" duration="00:00:00.0457161" startTime="2025-09-11T23:36:56.0984055-04:00" endTime="2025-09-11T23:36:56.1460224-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="33b177f1-5f4d-41ff-ae87-a7222c194cbc" />
+    <UnitTestResult executionId="ff5d6f67-ab49-4624-8aa9-2d9cd434617c" testId="d7f2bd3b-8ae5-052d-9eed-b32d1161442f" testName="invalid_beverageList_returnsDecimal" computerName="DESKTOP-1304CKW" duration="00:00:00.0001976" startTime="2025-09-11T23:36:56.1577315-04:00" endTime="2025-09-11T23:36:56.1579792-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ff5d6f67-ab49-4624-8aa9-2d9cd434617c" />
+    <UnitTestResult executionId="4cb2cb47-4d06-4004-a5ec-aff2acb1113d" testId="f6996d56-dee7-1208-1ebb-d1b04eab1776" testName="invalid_syrupOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0002468" startTime="2025-09-11T23:36:56.1561709-04:00" endTime="2025-09-11T23:36:56.1564600-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4cb2cb47-4d06-4004-a5ec-aff2acb1113d">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;Invalid Syrup Option&gt;. Actual:&lt;Invalid Syrups Option&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.BeverageTests.invalid_syrupOption_returnsFailureFlag() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\BeverageTEST.cs:line 373&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e66ba60b-7e15-4e48-b29d-7e04704bcc62" testId="e739f344-c1cc-8572-8980-befca5b7bdcc" testName="validate_happyHourOnVeryHotDrink_returnsDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0003167" startTime="2025-09-11T23:36:56.1582903-04:00" endTime="2025-09-11T23:36:56.1586785-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e66ba60b-7e15-4e48-b29d-7e04704bcc62">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0.75&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PromotionHelperTests.validate_happyHourOnVeryHotDrink_returnsDiscount() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PromotionHelperTEST.cs:line 72&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="cbe9a660-c127-46dd-908c-d84236545edb" testId="96b958e7-8f0d-ca71-c658-be341d7792c1" testName="invalid_milkOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0455066" startTime="2025-09-11T23:36:56.0985182-04:00" endTime="2025-09-11T23:36:56.1460566-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cbe9a660-c127-46dd-908c-d84236545edb" />
+    <UnitTestResult executionId="383a3696-36df-46c1-8f17-868f512fd8e4" testId="adc9a5d9-e39c-d2b1-eb70-979d26d63e37" testName="validate_selectsHappyHourWhenBetterDeal_returnsHappyHourDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0002580" startTime="2025-09-11T23:36:56.1587073-04:00" endTime="2025-09-11T23:36:56.1590089-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="383a3696-36df-46c1-8f17-868f512fd8e4">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;1.70&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PromotionHelperTests.validate_selectsHappyHourWhenBetterDeal_returnsHappyHourDiscount() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PromotionHelperTEST.cs:line 212&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8c0afa6c-fd23-46a1-bf2b-34d0070e4e99" testId="de00b13d-e1f4-2480-99c4-21dc76d2a8b6" testName="validate_milkNotPresent_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0065394" startTime="2025-09-11T23:36:56.1550958-04:00" endTime="2025-09-11T23:36:56.1616941-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8c0afa6c-fd23-46a1-bf2b-34d0070e4e99">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CoffeeOrder.Tests.OrderValidatorTests.validate_milkNotPresent_returnsFalse threw exception: &#xD;
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')</Message>
+          <StackTrace>    at System.String.Contains(String value)&#xD;
+   at OrderValidator.&lt;&gt;c__DisplayClass5_0.&lt;checkMilk&gt;b__0(String str) in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\OrderValidator.cs:line 89&#xD;
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)&#xD;
+   at OrderValidator.checkMilk(String milk) in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\OrderValidator.cs:line 89&#xD;
+   at CoffeeOrder.Tests.OrderValidatorTests.validate_milkNotPresent_returnsFalse() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\OrderValidatorTEST.cs:line 42&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="427d520e-1051-4cdf-b0e2-7015689ae4a3" testId="349befe2-6334-bdb7-8beb-47af4b2fc182" testName="validate_isDecafIncluded_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0020623" startTime="2025-09-11T23:36:56.1601203-04:00" endTime="2025-09-11T23:36:56.1622378-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="427d520e-1051-4cdf-b0e2-7015689ae4a3">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'Is Decaf'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_isDecafIncluded_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 193&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="c1d75a6f-7330-462d-9403-6fa21987a59b" testId="88b2a1ce-4620-8046-545c-a65300dfd894" testName="validate_getSizeString_returnsString" computerName="DESKTOP-1304CKW" duration="00:00:00.0487236" startTime="2025-09-11T23:36:56.0835563-04:00" endTime="2025-09-11T23:36:56.1460677-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="c1d75a6f-7330-462d-9403-6fa21987a59b" />
+    <UnitTestResult executionId="ad89db93-4f43-4bbe-acea-aa43be28821a" testId="a2fdabb8-6c71-faeb-d05b-e20b9f69e43c" testName="check_decaf_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0488188" startTime="2025-09-11T23:36:56.0835389-04:00" endTime="2025-09-11T23:36:56.1460234-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ad89db93-4f43-4bbe-acea-aa43be28821a" />
+    <UnitTestResult executionId="e5eb968c-706b-454b-80f5-d7dc6af016d3" testId="e56a46cd-6e7b-7362-63ca-10db6895a1ef" testName="invalid_size_returnsFailureflag" computerName="DESKTOP-1304CKW" duration="00:00:00.0455212" startTime="2025-09-11T23:36:56.0985015-04:00" endTime="2025-09-11T23:36:56.1460646-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e5eb968c-706b-454b-80f5-d7dc6af016d3" />
+    <UnitTestResult executionId="d5008919-d549-4bf3-9542-c1bdc63e3f84" testId="36010a2c-850b-174f-54b5-80641612d7ab" testName="invalid_minimumShots_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0457225" startTime="2025-09-11T23:36:56.0984199-04:00" endTime="2025-09-11T23:36:56.1460537-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d5008919-d549-4bf3-9542-c1bdc63e3f84" />
+    <UnitTestResult executionId="6ffc8ccc-728c-4e5e-bb15-64e1f642c732" testId="76518acd-d921-4ac8-099b-3cd2b190ab20" testName="valid_twoStringLists_returnsStringList" computerName="DESKTOP-1304CKW" duration="00:00:00.0001345" startTime="2025-09-11T23:36:56.1606979-04:00" endTime="2025-09-11T23:36:56.1608725-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6ffc8ccc-728c-4e5e-bb15-64e1f642c732" />
+    <UnitTestResult executionId="cc0a361c-bb06-48b5-a13e-ab3e9e69cabe" testId="a53b57bb-21f7-01e1-c028-aea17045935c" testName="validate_discountsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0027719" startTime="2025-09-11T23:36:56.1595650-04:00" endTime="2025-09-11T23:36:56.1632022-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="cc0a361c-bb06-48b5-a13e-ab3e9e69cabe">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'BUY ONE GET ONE FREE SAME PRICE OR CHEAPER'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_discountsValid_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 81&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="5eec2016-f32d-4775-b6cf-066c332f2f60" testId="ad68016f-2397-a5b2-ddb5-873ba2e96ea0" testName="valid_enums_returnsCloset" computerName="DESKTOP-1304CKW" duration="00:00:00.0000524" startTime="2025-09-11T23:36:56.1605845-04:00" endTime="2025-09-11T23:36:56.1607149-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5eec2016-f32d-4775-b6cf-066c332f2f60" />
+    <UnitTestResult executionId="7a8adb7f-828f-425e-bc7c-5c43938de8b3" testId="81c3a416-88ce-0ce5-401b-48796f1bcebb" testName="validate_toppingsNotPresent_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0001564" startTime="2025-09-11T23:36:56.1550436-04:00" endTime="2025-09-11T23:36:56.1552345-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7a8adb7f-828f-425e-bc7c-5c43938de8b3" />
+    <UnitTestResult executionId="8ab8a9e1-fd3b-4390-82bf-c939d2f98061" testId="7b48ba01-5945-d7ac-ebab-80cc260f0d4a" testName="check_VeryHotKidFriendly_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0486491" startTime="2025-09-11T23:36:56.0835766-04:00" endTime="2025-09-11T23:36:56.1460222-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8ab8a9e1-fd3b-4390-82bf-c939d2f98061" />
+    <UnitTestResult executionId="f15410b9-d6b4-4af2-8532-d495cd19c2c9" testId="6dd57b3a-8c69-15a5-c750-a55449d280f1" testName="errorCheck_oneStringListNull_returnsStringList" computerName="DESKTOP-1304CKW" duration="00:00:00.0000351" startTime="2025-09-11T23:36:56.1611716-04:00" endTime="2025-09-11T23:36:56.1612628-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f15410b9-d6b4-4af2-8532-d495cd19c2c9" />
+    <UnitTestResult executionId="29774b7c-a659-4abe-8b27-7f141c8dc89b" testId="4e7e537f-273c-0576-b102-48f72bf5e3fc" testName="vlaidate_happyHourOnRoomTempDrink_returnsNoDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0001503" startTime="2025-09-11T23:36:56.1593282-04:00" endTime="2025-09-11T23:36:56.1595365-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="29774b7c-a659-4abe-8b27-7f141c8dc89b" />
+    <UnitTestResult executionId="4d33853f-e3d7-4607-8450-637467414aa3" testId="1ffcd684-6212-bd4c-0e17-9ea4fac907d1" testName="errorCheck_shotsAboveMaximum_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000326" startTime="2025-09-11T23:36:56.1571428-04:00" endTime="2025-09-11T23:36:56.1572034-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="4d33853f-e3d7-4607-8450-637467414aa3" />
+    <UnitTestResult executionId="47f75f04-57bc-438f-838a-737c79d2e29b" testId="8cde6510-60ec-3359-52b7-be0d7e4fe308" testName="check_plantMilkAllegenFlag_returnsList" computerName="DESKTOP-1304CKW" duration="00:00:00.0557593" startTime="2025-09-11T23:36:56.0834949-04:00" endTime="2025-09-11T23:36:56.1514162-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="47f75f04-57bc-438f-838a-737c79d2e29b">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CoffeeOrder.Tests.BeverageClassifierTests.check_plantMilkAllegenFlag_returnsList threw exception: &#xD;
+System.ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection. (Parameter 'index')</Message>
+          <StackTrace>    at System.Collections.Generic.List`1.get_Item(Int32 index)&#xD;
+   at CoffeeOrder.Tests.BeverageClassifierTests.check_plantMilkAllegenFlag_returnsList() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\BeverageClassifierTEST.cs:line 37&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="81930815-f315-4700-ac08-22e36fdf66cc" testId="3636ac50-4684-ff80-ffbd-a0f946c7bf9f" testName="checkError_MaximumDrinkCountReached_returnError" computerName="DESKTOP-1304CKW" duration="00:00:00.0002774" startTime="2025-09-11T23:36:56.1568240-04:00" endTime="2025-09-11T23:36:56.1571583-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="81930815-f315-4700-ac08-22e36fdf66cc">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsFalse failed. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.OrderTests.checkError_MaximumDrinkCountReached_returnError() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\OrderTEST.cs:line 151&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="e3a1341c-c5ee-42c8-8e90-240c5c237e6d" testId="b6208d68-0f12-103a-f1ed-6bd8e0d86462" testName="validate_addDate_returnString" computerName="DESKTOP-1304CKW" duration="00:00:00.0024680" startTime="2025-09-11T23:36:56.1495891-04:00" endTime="2025-09-11T23:36:56.1522139-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e3a1341c-c5ee-42c8-8e90-240c5c237e6d" />
+    <UnitTestResult executionId="12022aa4-3157-4d10-80e8-198de68abdef" testId="ab321578-5fae-6152-9e60-b19e9102f5a7" testName="validate_milkValid_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000600" startTime="2025-09-11T23:36:56.1560437-04:00" endTime="2025-09-11T23:36:56.1561548-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12022aa4-3157-4d10-80e8-198de68abdef" />
+    <UnitTestResult executionId="72d8ecde-7241-4456-9788-b44f333c3f2a" testId="7b5f8fd9-7465-02da-6f82-9286c6f835af" testName="validate_happyHourOnHotDrink_returnsDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0003289" startTime="2025-09-11T23:36:56.1582755-04:00" endTime="2025-09-11T23:36:56.1586852-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="72d8ecde-7241-4456-9788-b44f333c3f2a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0.75&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PromotionHelperTests.validate_happyHourOnHotDrink_returnsDiscount() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PromotionHelperTEST.cs:line 38&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="6a04d869-c379-4760-bcad-c3c158d2eb99" testId="a43d519d-2109-109a-b451-69921fbbcf5f" testName="validate_syrupsNotValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000595" startTime="2025-09-11T23:36:56.1578143-04:00" endTime="2025-09-11T23:36:56.1579121-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6a04d869-c379-4760-bcad-c3c158d2eb99" />
+    <UnitTestResult executionId="d3d67fea-6820-4188-b960-a79d40d19854" testId="c2b880c4-6aa3-a22e-c26b-92d66c839b56" testName="validate_addDiscountEmptyBeverages_returnDiscountOBJ" computerName="DESKTOP-1304CKW" duration="00:00:00.0002979" startTime="2025-09-11T23:36:56.1549787-04:00" endTime="2025-09-11T23:36:56.1553330-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="d3d67fea-6820-4188-b960-a79d40d19854" />
+    <UnitTestResult executionId="1f619b0f-f62d-4348-ab08-e047a771f2d7" testId="1f1c733d-46a1-51a1-40bc-fc63e95fbd4a" testName="check_plantMilkAllegenFlag_returnsEmptyList" computerName="DESKTOP-1304CKW" duration="00:00:00.0456532" startTime="2025-09-11T23:36:56.0983943-04:00" endTime="2025-09-11T23:36:56.1460646-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="1f619b0f-f62d-4348-ab08-e047a771f2d7" />
+    <UnitTestResult executionId="734526ed-8ec1-4585-8872-1827b09151ab" testId="6aa4eab6-3d85-abf2-6b59-2abc3ef9b765" testName="validate_syrupsNotPresent_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0001585" startTime="2025-09-11T23:36:56.1549877-04:00" endTime="2025-09-11T23:36:56.1552395-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="734526ed-8ec1-4585-8872-1827b09151ab" />
+    <UnitTestResult executionId="a3ae287e-459b-4a8c-aebe-568b2e0d2ede" testId="73cf283a-78ec-961f-48df-fbc7e3516eb5" testName="invalid_toppingsOption_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0001444" startTime="2025-09-11T23:36:56.1567987-04:00" endTime="2025-09-11T23:36:56.1570021-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a3ae287e-459b-4a8c-aebe-568b2e0d2ede" />
+    <UnitTestResult executionId="3ab7c4a0-8337-4f6d-a79e-06b709ecde5a" testId="18813b9d-33a0-a669-175f-b209bfe13a67" testName="validate_bogoOnEqualDrink_returnsDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0003103" startTime="2025-09-11T23:36:56.1605786-04:00" endTime="2025-09-11T23:36:56.1609486-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="3ab7c4a0-8337-4f6d-a79e-06b709ecde5a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;3.80&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PromotionHelperTests.validate_bogoOnEqualDrink_returnsDiscount() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PromotionHelperTEST.cs:line 257&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="288ae67d-8288-46d1-a11f-017d45e3a3ab" testId="2fb89158-ea33-9e6d-d44e-b51cc81d8f42" testName="validate_warningsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0022545" startTime="2025-09-11T23:36:56.1600608-04:00" endTime="2025-09-11T23:36:56.1623682-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="288ae67d-8288-46d1-a11f-017d45e3a3ab">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'Dairy'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_warningsValid_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 137&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="82da15e8-f8e8-4d21-81bc-ac8cc1855111" testId="01744df6-beda-edad-8b22-dde861449816" testName="check_EspressoKidFriendly_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0487592" startTime="2025-09-11T23:36:56.0835838-04:00" endTime="2025-09-11T23:36:56.1460629-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="82da15e8-f8e8-4d21-81bc-ac8cc1855111" />
+    <UnitTestResult executionId="5785d910-9326-4909-aa43-d0ea002e8a8b" testId="86c9001e-ba01-1836-ae0f-c054a0d569cd" testName="check_vegan_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0557547" startTime="2025-09-11T23:36:56.0835088-04:00" endTime="2025-09-11T23:36:56.1513474-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5785d910-9326-4909-aa43-d0ea002e8a8b">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;True&gt;. Actual:&lt;False&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.BeverageClassifierTests.check_vegan_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\BeverageClassifierTEST.cs:line 132&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a911cbb9-547a-471b-ab1f-9527e27d5760" testId="f0339a23-4439-35e7-eed6-e862427f24bc" testName="validate_OrderPriceCalculationWithDiscount_returnsDecimal" computerName="DESKTOP-1304CKW" duration="00:00:00.0001179" startTime="2025-09-11T23:36:56.1576929-04:00" endTime="2025-09-11T23:36:56.1578789-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a911cbb9-547a-471b-ab1f-9527e27d5760" />
+    <UnitTestResult executionId="e60cea77-6c5e-4502-900f-10295bec9a46" testId="390679b4-c47c-97a6-8411-4aecfef0859d" testName="errorCheck_baseDrinkNotPresent_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0046455" startTime="2025-09-11T23:36:56.1568931-04:00" endTime="2025-09-11T23:36:56.1615876-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="e60cea77-6c5e-4502-900f-10295bec9a46">
+      <Output>
+        <ErrorInfo>
+          <Message>Test method CoffeeOrder.Tests.OrderValidatorTests.errorCheck_baseDrinkNotPresent_returnsTrue threw exception: &#xD;
+System.ArgumentNullException: Value cannot be null. (Parameter 'value')</Message>
+          <StackTrace>    at System.String.Contains(String value)&#xD;
+   at OrderValidator.&lt;&gt;c__DisplayClass4_0.&lt;checkBaseDrink&gt;b__0(String str) in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\OrderValidator.cs:line 79&#xD;
+   at System.Linq.Enumerable.Any[TSource](IEnumerable`1 source, Func`2 predicate)&#xD;
+   at OrderValidator.checkBaseDrink(String baseDrink) in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder\OrderValidator.cs:line 79&#xD;
+   at CoffeeOrder.Tests.OrderValidatorTests.errorCheck_baseDrinkNotPresent_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\OrderValidatorTEST.cs:line 148&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ed1c45cf-ea04-4fd9-8c36-ce60538c61ad" testId="aa1edbe8-fa66-6029-34fb-eb6f51f0b00c" testName="validate_isKidFriendlyIncluded_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0017478" startTime="2025-09-11T23:36:56.1605400-04:00" endTime="2025-09-11T23:36:56.1623437-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ed1c45cf-ea04-4fd9-8c36-ce60538c61ad">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'Is Kid Friendly'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_isKidFriendlyIncluded_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 211&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="ae7789c2-89ec-47b5-a532-f8e93036c117" testId="3e9d5650-9907-ea94-dd28-1d726631d370" testName="validate_lineItemsValid_returnTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0027379" startTime="2025-09-11T23:36:56.1593783-04:00" endTime="2025-09-11T23:36:56.1622827-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="ae7789c2-89ec-47b5-a532-f8e93036c117">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'Latte'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_lineItemsValid_returnTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 61&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="22852464-1038-434a-9528-904aba315b13" testId="76f28a51-6c6e-f112-dcba-bb316d5f2b0d" testName="validate_bogoOnCheaperDrink_returnsDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0005250" startTime="2025-09-11T23:36:56.1582981-04:00" endTime="2025-09-11T23:36:56.1588912-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="22852464-1038-434a-9528-904aba315b13">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;2.45&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.PromotionHelperTests.validate_bogoOnCheaperDrink_returnsDiscount() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\PromotionHelperTEST.cs:line 117&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="93107cf8-567a-4df0-8194-c7a96001c6be" testId="6981742b-2dcf-eef9-06b5-35e81e577ce0" testName="invalid_maximumShots_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0456878" startTime="2025-09-11T23:36:56.0984312-04:00" endTime="2025-09-11T23:36:56.1460673-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="93107cf8-567a-4df0-8194-c7a96001c6be" />
+    <UnitTestResult executionId="b99b331f-e766-4afc-acbf-890ab7bd6279" testId="de98bbb0-3935-ebb3-d450-d98360f18e06" testName="validate_validDOC_retunsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0021926" startTime="2025-09-11T23:36:56.1600686-04:00" endTime="2025-09-11T23:36:56.1623140-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="b99b331f-e766-4afc-acbf-890ab7bd6279">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string '2025-09-11 233'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_validDOC_retunsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 157&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="a0aff5b8-985f-4872-bcfe-e0f0205aee52" testId="c9b7a728-1074-59ef-5688-9829b30b5869" testName="errorCheck_twoStringListsNull_returnsStringList" computerName="DESKTOP-1304CKW" duration="00:00:00.0000390" startTime="2025-09-11T23:36:56.1612048-04:00" endTime="2025-09-11T23:36:56.1613040-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a0aff5b8-985f-4872-bcfe-e0f0205aee52" />
+    <UnitTestResult executionId="a2b08d07-5a1b-47dc-a168-23615ed19618" testId="29a04268-c10a-2726-9088-840fd26aaeb7" testName="validate_roundValueToNickleRoundDown_returnsDecimal" computerName="DESKTOP-1304CKW" duration="00:00:00.0001086" startTime="2025-09-11T23:36:56.1577503-04:00" endTime="2025-09-11T23:36:56.1579169-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a2b08d07-5a1b-47dc-a168-23615ed19618" />
+    <UnitTestResult executionId="6de45a0d-6c1c-4411-96e0-203b68941fdd" testId="8fa8cb8a-b2fb-0012-f716-122e7992943f" testName="validate_toppingsNotValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000969" startTime="2025-09-11T23:36:56.1560542-04:00" endTime="2025-09-11T23:36:56.1562041-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6de45a0d-6c1c-4411-96e0-203b68941fdd" />
+    <UnitTestResult executionId="32e58e1b-ec60-4c65-8dbc-8a4934985535" testId="15ac5632-9dc1-3615-440a-47451ec30d55" testName="validate_totalsValid_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0022277" startTime="2025-09-11T23:36:56.1600285-04:00" endTime="2025-09-11T23:36:56.1623028-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="32e58e1b-ec60-4c65-8dbc-8a4934985535">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string '3.80'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_totalsValid_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 119&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="8979f454-5e61-4f43-96e7-1edd2a68fc1d" testId="b126bb39-a729-03b9-3fe9-cbb1f98763e7" testName="validate_isVeganIncluded_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0016277" startTime="2025-09-11T23:36:56.1605699-04:00" endTime="2025-09-11T23:36:56.1622517-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="8979f454-5e61-4f43-96e7-1edd2a68fc1d">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'Is Vegan'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_isVeganIncluded_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 229&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="dbfbeb2e-dcf8-4e9e-9c98-101b5e15b1b1" testId="1f512e9b-311f-fc1b-3818-46cc7b30a98e" testName="check_decaf_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0457489" startTime="2025-09-11T23:36:56.0983794-04:00" endTime="2025-09-11T23:36:56.1460463-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="dbfbeb2e-dcf8-4e9e-9c98-101b5e15b1b1" />
+    <UnitTestResult executionId="12546d83-744c-41ee-b5ca-c28faf5b38e2" testId="c80102e6-670b-1527-6f18-0068aba9f673" testName="errorCheck_milkNoneShotsMoreThan0_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0000467" startTime="2025-09-11T23:36:56.1571855-04:00" endTime="2025-09-11T23:36:56.1572709-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="12546d83-744c-41ee-b5ca-c28faf5b38e2" />
+    <UnitTestResult executionId="f3e877e2-dac6-4938-adae-22a5a12fe6cb" testId="1a882987-184d-9b4b-13c4-9582d56028c1" testName="validate_addDiscount_returnDiscountOBJ" computerName="DESKTOP-1304CKW" duration="00:00:00.0028831" startTime="2025-09-11T23:36:56.1496265-04:00" endTime="2025-09-11T23:36:56.1526308-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="f3e877e2-dac6-4938-adae-22a5a12fe6cb">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;0.75&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.OrderTests.validate_addDiscount_returnDiscountOBJ() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\OrderTEST.cs:line 110&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="7c6e6323-63bd-446c-b97c-1bf379b376f5" testId="d4e3120b-08d4-c80d-778e-bdae34940869" testName="invalid_temp_returnsFailureflag" computerName="DESKTOP-1304CKW" duration="00:00:00.0455526" startTime="2025-09-11T23:36:56.0985106-04:00" endTime="2025-09-11T23:36:56.1460713-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="7c6e6323-63bd-446c-b97c-1bf379b376f5" />
+    <UnitTestResult executionId="60c5998d-c00b-4e27-acb6-e59e3bd82ab6" testId="a1294d06-7eb4-9936-43a9-e6dc65d4cf9c" testName="validate_toppingsValid_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0000513" startTime="2025-09-11T23:36:56.1561749-04:00" endTime="2025-09-11T23:36:56.1562559-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="60c5998d-c00b-4e27-acb6-e59e3bd82ab6" />
+    <UnitTestResult executionId="6f5d48cd-6af0-4023-ab4c-5c294503f92a" testId="91166a69-5c0c-0669-c2f4-fb5ab83f0226" testName="valid_drink_returnsDrink" computerName="DESKTOP-1304CKW" duration="00:00:00.0557872" startTime="2025-09-11T23:36:56.0835433-04:00" endTime="2025-09-11T23:36:56.1513374-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="6f5d48cd-6af0-4023-ab4c-5c294503f92a">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.AreEqual failed. Expected:&lt;3.80&gt;. Actual:&lt;0&gt;. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.BeverageTests.valid_drink_returnsDrink() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\BeverageTEST.cs:line 56&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="86fde432-19fd-4b2c-984b-f7b16222b416" testId="b2e73580-fd80-1e2e-5c34-05f7ff670fb0" testName="invalid_maxSyrups_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0455787" startTime="2025-09-11T23:36:56.0984424-04:00" endTime="2025-09-11T23:36:56.1460537-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="86fde432-19fd-4b2c-984b-f7b16222b416" />
+    <UnitTestResult executionId="daaa7ead-bb81-4d2d-b297-4a74884b78ae" testId="cfa437dc-fb89-9caa-bc15-10ed2aac71f3" testName="validate_addName_returnString" computerName="DESKTOP-1304CKW" duration="00:00:00.0001773" startTime="2025-09-11T23:36:56.1549444-04:00" endTime="2025-09-11T23:36:56.1551908-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="daaa7ead-bb81-4d2d-b297-4a74884b78ae" />
+    <UnitTestResult executionId="a41df52d-5b3f-448b-8799-3d8ea9ee5630" testId="26e6f5f7-81e9-6de1-6e9b-b7c4c8544665" testName="invalid_baseDrink_returnsFailureFlag" computerName="DESKTOP-1304CKW" duration="00:00:00.0455487" startTime="2025-09-11T23:36:56.0984921-04:00" endTime="2025-09-11T23:36:56.1460443-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="a41df52d-5b3f-448b-8799-3d8ea9ee5630" />
+    <UnitTestResult executionId="531fbbce-0bfb-4353-9dd5-4ec31c4c2679" testId="d97dafe4-57d6-bac9-6b7b-2615f318c993" testName="validate_roundValueToNickleRoundUp_returnsDecimal" computerName="DESKTOP-1304CKW" duration="00:00:00.0001174" startTime="2025-09-11T23:36:56.1577866-04:00" endTime="2025-09-11T23:36:56.1579413-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="531fbbce-0bfb-4353-9dd5-4ec31c4c2679" />
+    <UnitTestResult executionId="42cb4d23-79b5-4ffa-a7de-4d9d4bd3d073" testId="0ebb6e1f-31d3-354b-a0aa-51ab6c0d5337" testName="errorCheck_emptyEnum_returnsString" computerName="DESKTOP-1304CKW" duration="00:00:00.0000925" startTime="2025-09-11T23:36:56.1607191-04:00" endTime="2025-09-11T23:36:56.1608485-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="42cb4d23-79b5-4ffa-a7de-4d9d4bd3d073" />
+    <UnitTestResult executionId="5c0cd99e-4263-4f7d-b0d2-8c452c44993a" testId="39048f2d-7369-2ba0-4d0f-0a33eae532cc" testName="validate_happyHourOnVeryColdDrink_returnsNoDiscount" computerName="DESKTOP-1304CKW" duration="00:00:00.0001398" startTime="2025-09-11T23:36:56.1593706-04:00" endTime="2025-09-11T23:36:56.1595629-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Passed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="5c0cd99e-4263-4f7d-b0d2-8c452c44993a" />
+    <UnitTestResult executionId="bea98413-4828-4826-b2db-e3aebd7b6fdc" testId="a22668dd-3ae2-d772-9f10-70f4339f5d81" testName="validate_nameIncluded_returnsTrue" computerName="DESKTOP-1304CKW" duration="00:00:00.0022095" startTime="2025-09-11T23:36:56.1601068-04:00" endTime="2025-09-11T23:36:56.1623609-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="bea98413-4828-4826-b2db-e3aebd7b6fdc">
+      <Output>
+        <StdOut>ORDER FOR: Test Name&#xD;
+DOC: 2025-09-11 2336
+&#xD;
+
+ SUBTOTAL: 0.0&#xD;
+ DISCOUNT: 0&#xD;
+ TAX: 0.0&#xD;
+TOTAL: 0.0&#xD;
+
+ALLERGEN NOTICES:&#xD;
+
+OTHER NOTICES:&#xD;
+ Is Decaf: True&#xD;
+ Is Kid Friendly: True&#xD;
+ Is Vegan: True</StdOut>
+        <ErrorInfo>
+          <Message>StringAssert.Contains failed. String '' does not contain string 'Test Name'. .</Message>
+          <StackTrace>   at CoffeeOrder.Tests.ReceiptFormatterTests.validate_nameIncluded_returnsTrue() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\ReceiptFormatterTEST.cs:line 175&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+    <UnitTestResult executionId="94b8e185-bfa9-4098-8272-3f1712647b21" testId="6290c944-d86a-fa9e-aff6-fb0747057ff5" testName="validate_syrupsValid_returnsFalse" computerName="DESKTOP-1304CKW" duration="00:00:00.0002098" startTime="2025-09-11T23:36:56.1560114-04:00" endTime="2025-09-11T23:36:56.1562867-04:00" testType="13cdc9d9-ddb5-4fa4-a97d-d965ccfc6d4b" outcome="Failed" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" relativeResultsDirectory="94b8e185-bfa9-4098-8272-3f1712647b21">
+      <Output>
+        <ErrorInfo>
+          <Message>Assert.IsFalse failed. </Message>
+          <StackTrace>   at CoffeeOrder.Tests.OrderValidatorTests.validate_syrupsValid_returnsFalse() in D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\OrderValidatorTEST.cs:line 83&#xD;
+   at System.RuntimeMethodHandle.InvokeMethod(Object target, Void** arguments, Signature sig, Boolean isConstructor)&#xD;
+   at System.Reflection.MethodBaseInvoker.InvokeWithNoArgs(Object obj, BindingFlags invokeAttr)&#xD;
+</StackTrace>
+        </ErrorInfo>
+      </Output>
+    </UnitTestResult>
+  </Results>
+  <TestDefinitions>
+    <UnitTest name="validate_happyHourOnColdDrink_returnsNoDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="606ef3a1-3997-4db2-0085-4bcb828b7299">
+      <Execution id="996d515d-3965-4681-bb67-f64f407b3193" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_happyHourOnColdDrink_returnsNoDiscount" />
+    </UnitTest>
+    <UnitTest name="validate_getTempString_returnString" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="bcf43e7e-deda-420e-d5c5-4930529f323a">
+      <Execution id="33b177f1-5f4d-41ff-ae87-a7222c194cbc" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="validate_getTempString_returnString" />
+    </UnitTest>
+    <UnitTest name="validate_roundValueToNickle_returnsDecimal" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="1c6110d1-3e41-4d5c-377b-c77d31945bb1">
+      <Execution id="7fa5756c-144f-4c4e-8cab-b7d08a42c835" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculatorTests" name="validate_roundValueToNickle_returnsDecimal" />
+    </UnitTest>
+    <UnitTest name="check_decaf_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="a2fdabb8-6c71-faeb-d05b-e20b9f69e43c">
+      <Execution id="ad89db93-4f43-4bbe-acea-aa43be28821a" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_decaf_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="check_VeryHotKidFriendly_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="7b48ba01-5945-d7ac-ebab-80cc260f0d4a">
+      <Execution id="8ab8a9e1-fd3b-4390-82bf-c939d2f98061" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_VeryHotKidFriendly_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_addDiscount_returnDiscountOBJ" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="1a882987-184d-9b4b-13c4-9582d56028c1">
+      <Execution id="f3e877e2-dac6-4938-adae-22a5a12fe6cb" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderTests" name="validate_addDiscount_returnDiscountOBJ" />
+    </UnitTest>
+    <UnitTest name="validate_bogoOnCheaperDrink_returnsDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="76f28a51-6c6e-f112-dcba-bb316d5f2b0d">
+      <Execution id="22852464-1038-434a-9528-904aba315b13" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_bogoOnCheaperDrink_returnsDiscount" />
+    </UnitTest>
+    <UnitTest name="validate_subTotalsValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="3313cf34-71ee-c09c-02d6-9c1d00a654d2">
+      <Execution id="c2b412c5-bef5-4579-b17c-eb03ab8e4283" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_subTotalsValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_totalsValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="15ac5632-9dc1-3615-440a-47451ec30d55">
+      <Execution id="32e58e1b-ec60-4c65-8dbc-8a4934985535" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_totalsValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="invalid_minimumShots_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="36010a2c-850b-174f-54b5-80641612d7ab">
+      <Execution id="d5008919-d549-4bf3-9542-c1bdc63e3f84" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_minimumShots_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="errorCheck_milkNoneShotsMoreThan0_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="c80102e6-670b-1527-6f18-0068aba9f673">
+      <Execution id="12546d83-744c-41ee-b5ca-c28faf5b38e2" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="errorCheck_milkNoneShotsMoreThan0_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_selectsBOGOWhenBetterDeal_returnsBOGODiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="65fec8e7-95d7-1798-3572-31a04b19530c">
+      <Execution id="08a6f3e6-2ea4-4028-bed2-61b8c096d410" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_selectsBOGOWhenBetterDeal_returnsBOGODiscount" />
+    </UnitTest>
+    <UnitTest name="validate_isDecafIncluded_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="349befe2-6334-bdb7-8beb-47af4b2fc182">
+      <Execution id="427d520e-1051-4cdf-b0e2-7015689ae4a3" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_isDecafIncluded_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="errorCheck_oneStringListNull_returnsStringList" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="6dd57b3a-8c69-15a5-c750-a55449d280f1">
+      <Execution id="f15410b9-d6b4-4af2-8532-d495cd19c2c9" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.utilTESTS" name="errorCheck_oneStringListNull_returnsStringList" />
+    </UnitTest>
+    <UnitTest name="errorCheck_baseDrinkNotPresent_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="390679b4-c47c-97a6-8411-4aecfef0859d">
+      <Execution id="e60cea77-6c5e-4502-900f-10295bec9a46" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="errorCheck_baseDrinkNotPresent_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_addBeverage_returnList" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="ec476349-50aa-b34b-91c9-d9dae68ad857">
+      <Execution id="870ca7db-e159-45b5-8731-a69e9cbd7808" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderTests" name="validate_addBeverage_returnList" />
+    </UnitTest>
+    <UnitTest name="check_lessThanVeryHotOrEspressoKidFriendly_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="0755c290-2d7a-da8f-474d-5a7613517775">
+      <Execution id="795cdd47-963d-464a-bed7-dfa8c0d88131" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_lessThanVeryHotOrEspressoKidFriendly_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_discountsValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="a53b57bb-21f7-01e1-c028-aea17045935c">
+      <Execution id="cc0a361c-bb06-48b5-a13e-ab3e9e69cabe" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_discountsValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="check_EspressoKidFriendly_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="01744df6-beda-edad-8b22-dde861449816">
+      <Execution id="82da15e8-f8e8-4d21-81bc-ac8cc1855111" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_EspressoKidFriendly_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="invalid_milkOption_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="96b958e7-8f0d-ca71-c658-be341d7792c1">
+      <Execution id="cbe9a660-c127-46dd-908c-d84236545edb" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_milkOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_addDate_returnString" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="b6208d68-0f12-103a-f1ed-6bd8e0d86462">
+      <Execution id="e3a1341c-c5ee-42c8-8e90-240c5c237e6d" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderTests" name="validate_addDate_returnString" />
+    </UnitTest>
+    <UnitTest name="invalid_maxSyrups_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="b2e73580-fd80-1e2e-5c34-05f7ff670fb0">
+      <Execution id="86fde432-19fd-4b2c-984b-f7b16222b416" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_maxSyrups_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_milkValid_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="ab321578-5fae-6152-9e60-b19e9102f5a7">
+      <Execution id="12022aa4-3157-4d10-80e8-198de68abdef" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_milkValid_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnVeryHotDrink_returnsDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="e739f344-c1cc-8572-8980-befca5b7bdcc">
+      <Execution id="e66ba60b-7e15-4e48-b29d-7e04704bcc62" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_happyHourOnVeryHotDrink_returnsDiscount" />
+    </UnitTest>
+    <UnitTest name="validate_toppingsValid_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="a1294d06-7eb4-9936-43a9-e6dc65d4cf9c">
+      <Execution id="60c5998d-c00b-4e27-acb6-e59e3bd82ab6" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_toppingsValid_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="invalid_temp_returnsFailureflag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="d4e3120b-08d4-c80d-778e-bdae34940869">
+      <Execution id="7c6e6323-63bd-446c-b97c-1bf379b376f5" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_temp_returnsFailureflag" />
+    </UnitTest>
+    <UnitTest name="validate_OrderPriceCalculationWithDiscount_returnsDecimal" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="f0339a23-4439-35e7-eed6-e862427f24bc">
+      <Execution id="a911cbb9-547a-471b-ab1f-9527e27d5760" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculatorTests" name="validate_OrderPriceCalculationWithDiscount_returnsDecimal" />
+    </UnitTest>
+    <UnitTest name="validate_warningsValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="2fb89158-ea33-9e6d-d44e-b51cc81d8f42">
+      <Execution id="288ae67d-8288-46d1-a11f-017d45e3a3ab" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_warningsValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_getSizeString_returnsString" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="88b2a1ce-4620-8046-545c-a65300dfd894">
+      <Execution id="c1d75a6f-7330-462d-9403-6fa21987a59b" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="validate_getSizeString_returnsString" />
+    </UnitTest>
+    <UnitTest name="errorCheck_shotsAboveMaximum_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="1ffcd684-6212-bd4c-0e17-9ea4fac907d1">
+      <Execution id="4d33853f-e3d7-4607-8450-637467414aa3" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="errorCheck_shotsAboveMaximum_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_nameIncluded_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="a22668dd-3ae2-d772-9f10-70f4339f5d81">
+      <Execution id="bea98413-4828-4826-b2db-e3aebd7b6fdc" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_nameIncluded_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_syrupsNotPresent_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="6aa4eab6-3d85-abf2-6b59-2abc3ef9b765">
+      <Execution id="734526ed-8ec1-4585-8872-1827b09151ab" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_syrupsNotPresent_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_lineItemsValid_returnTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="3e9d5650-9907-ea94-dd28-1d726631d370">
+      <Execution id="ae7789c2-89ec-47b5-a532-f8e93036c117" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_lineItemsValid_returnTrue" />
+    </UnitTest>
+    <UnitTest name="validate_selectsHappyHourWhenBetterDeal_returnsHappyHourDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="adc9a5d9-e39c-d2b1-eb70-979d26d63e37">
+      <Execution id="383a3696-36df-46c1-8f17-868f512fd8e4" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_selectsHappyHourWhenBetterDeal_returnsHappyHourDiscount" />
+    </UnitTest>
+    <UnitTest name="check_plantMilkAllegenFlag_returnsList" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="8cde6510-60ec-3359-52b7-be0d7e4fe308">
+      <Execution id="47f75f04-57bc-438f-838a-737c79d2e29b" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_plantMilkAllegenFlag_returnsList" />
+    </UnitTest>
+    <UnitTest name="validate_milkNotValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="a9a099fe-cea2-d000-34e0-09339dfe85db">
+      <Execution id="8549c0d2-494e-4e7f-934a-dd140136350d" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_milkNotValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="errorCheck_emptyEnum_returnsString" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="0ebb6e1f-31d3-354b-a0aa-51ab6c0d5337">
+      <Execution id="42cb4d23-79b5-4ffa-a7de-4d9d4bd3d073" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.utilTESTS" name="errorCheck_emptyEnum_returnsString" />
+    </UnitTest>
+    <UnitTest name="check_decaf_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="1f512e9b-311f-fc1b-3818-46cc7b30a98e">
+      <Execution id="dbfbeb2e-dcf8-4e9e-9c98-101b5e15b1b1" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_decaf_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_syrupsValid_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="6290c944-d86a-fa9e-aff6-fb0747057ff5">
+      <Execution id="94b8e185-bfa9-4098-8272-3f1712647b21" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_syrupsValid_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_isVeganIncluded_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="b126bb39-a729-03b9-3fe9-cbb1f98763e7">
+      <Execution id="8979f454-5e61-4f43-96e7-1edd2a68fc1d" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_isVeganIncluded_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="valid_enums_returnsCloset" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="ad68016f-2397-a5b2-ddb5-873ba2e96ea0">
+      <Execution id="5eec2016-f32d-4775-b6cf-066c332f2f60" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.utilTESTS" name="valid_enums_returnsCloset" />
+    </UnitTest>
+    <UnitTest name="invalid_toppingsOption_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="73cf283a-78ec-961f-48df-fbc7e3516eb5">
+      <Execution id="a3ae287e-459b-4a8c-aebe-568b2e0d2ede" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_toppingsOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_toppingsNotValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="8fa8cb8a-b2fb-0012-f716-122e7992943f">
+      <Execution id="6de45a0d-6c1c-4411-96e0-203b68941fdd" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_toppingsNotValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="check_plantMilkAllegenFlag_returnsEmptyList" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="1f1c733d-46a1-51a1-40bc-fc63e95fbd4a">
+      <Execution id="1f619b0f-f62d-4348-ab08-e047a771f2d7" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_plantMilkAllegenFlag_returnsEmptyList" />
+    </UnitTest>
+    <UnitTest name="validate_syrupsNotValid_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="a43d519d-2109-109a-b451-69921fbbcf5f">
+      <Execution id="6a04d869-c379-4760-bcad-c3c158d2eb99" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_syrupsNotValid_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="invalid_beverageList_returnsDecimal" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="d7f2bd3b-8ae5-052d-9eed-b32d1161442f">
+      <Execution id="ff5d6f67-ab49-4624-8aa9-2d9cd434617c" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculatorTests" name="invalid_beverageList_returnsDecimal" />
+    </UnitTest>
+    <UnitTest name="validate_priceAccuracyCheck_returnsDecimal" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="0ce33c1c-508e-938f-348f-d3424a2d1dff">
+      <Execution id="dc1dee3a-014e-4007-8e2a-90ca7114a301" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculatorTests" name="validate_priceAccuracyCheck_returnsDecimal" />
+    </UnitTest>
+    <UnitTest name="check_vegan_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="86c9001e-ba01-1836-ae0f-c054a0d569cd">
+      <Execution id="5785d910-9326-4909-aa43-d0ea002e8a8b" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_vegan_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_isKidFriendlyIncluded_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="aa1edbe8-fa66-6029-34fb-eb6f51f0b00c">
+      <Execution id="ed1c45cf-ea04-4fd9-8c36-ce60538c61ad" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_isKidFriendlyIncluded_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_addDiscountEmptyBeverages_returnDiscountOBJ" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="c2b880c4-6aa3-a22e-c26b-92d66c839b56">
+      <Execution id="d3d67fea-6820-4188-b960-a79d40d19854" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderTests" name="validate_addDiscountEmptyBeverages_returnDiscountOBJ" />
+    </UnitTest>
+    <UnitTest name="validate_roundValueToNickleRoundDown_returnsDecimal" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="29a04268-c10a-2726-9088-840fd26aaeb7">
+      <Execution id="a2b08d07-5a1b-47dc-a168-23615ed19618" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculatorTests" name="validate_roundValueToNickleRoundDown_returnsDecimal" />
+    </UnitTest>
+    <UnitTest name="vlaidate_happyHourOnRoomTempDrink_returnsNoDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="4e7e537f-273c-0576-b102-48f72bf5e3fc">
+      <Execution id="29774b7c-a659-4abe-8b27-7f141c8dc89b" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="vlaidate_happyHourOnRoomTempDrink_returnsNoDiscount" />
+    </UnitTest>
+    <UnitTest name="validate_validDOC_retunsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="de98bbb0-3935-ebb3-d450-d98360f18e06">
+      <Execution id="b99b331f-e766-4afc-acbf-890ab7bd6279" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.ReceiptFormatterTests" name="validate_validDOC_retunsTrue" />
+    </UnitTest>
+    <UnitTest name="invalid_size_returnsFailureflag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="e56a46cd-6e7b-7362-63ca-10db6895a1ef">
+      <Execution id="e5eb968c-706b-454b-80f5-d7dc6af016d3" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_size_returnsFailureflag" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnVeryColdDrink_returnsNoDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="39048f2d-7369-2ba0-4d0f-0a33eae532cc">
+      <Execution id="5c0cd99e-4263-4f7d-b0d2-8c452c44993a" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_happyHourOnVeryColdDrink_returnsNoDiscount" />
+    </UnitTest>
+    <UnitTest name="validate_toppingsNotPresent_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="81c3a416-88ce-0ce5-401b-48796f1bcebb">
+      <Execution id="7a8adb7f-828f-425e-bc7c-5c43938de8b3" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_toppingsNotPresent_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_addName_returnString" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="cfa437dc-fb89-9caa-bc15-10ed2aac71f3">
+      <Execution id="daaa7ead-bb81-4d2d-b297-4a74884b78ae" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderTests" name="validate_addName_returnString" />
+    </UnitTest>
+    <UnitTest name="valid_drink_returnsDrink" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="91166a69-5c0c-0669-c2f4-fb5ab83f0226">
+      <Execution id="6f5d48cd-6af0-4023-ab4c-5c294503f92a" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="valid_drink_returnsDrink" />
+    </UnitTest>
+    <UnitTest name="valid_twoStringLists_returnsStringList" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="76518acd-d921-4ac8-099b-3cd2b190ab20">
+      <Execution id="6ffc8ccc-728c-4e5e-bb15-64e1f642c732" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.utilTESTS" name="valid_twoStringLists_returnsStringList" />
+    </UnitTest>
+    <UnitTest name="checkError_MaximumDrinkCountReached_returnError" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="3636ac50-4684-ff80-ffbd-a0f946c7bf9f">
+      <Execution id="81930815-f315-4700-ac08-22e36fdf66cc" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderTests" name="checkError_MaximumDrinkCountReached_returnError" />
+    </UnitTest>
+    <UnitTest name="invalid_syrupOption_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="f6996d56-dee7-1208-1ebb-d1b04eab1776">
+      <Execution id="4cb2cb47-4d06-4004-a5ec-aff2acb1113d" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_syrupOption_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="errorCheck_twoStringListsNull_returnsStringList" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="c9b7a728-1074-59ef-5688-9829b30b5869">
+      <Execution id="a0aff5b8-985f-4872-bcfe-e0f0205aee52" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.utilTESTS" name="errorCheck_twoStringListsNull_returnsStringList" />
+    </UnitTest>
+    <UnitTest name="errorCheck_shotsBelowMinimum_returnsTrue" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="b4511c17-f324-9c7b-e4b9-62dc7ac749cc">
+      <Execution id="83a574ef-b7e6-4b97-ad48-8db728097cc2" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="errorCheck_shotsBelowMinimum_returnsTrue" />
+    </UnitTest>
+    <UnitTest name="validate_bogoOnEqualDrink_returnsDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="18813b9d-33a0-a669-175f-b209bfe13a67">
+      <Execution id="3ab7c4a0-8337-4f6d-a79e-06b709ecde5a" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_bogoOnEqualDrink_returnsDiscount" />
+    </UnitTest>
+    <UnitTest name="invalid_maximumShots_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="6981742b-2dcf-eef9-06b5-35e81e577ce0">
+      <Execution id="93107cf8-567a-4df0-8194-c7a96001c6be" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_maximumShots_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="check_vegan_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="3aba5a6b-2278-fa39-6c62-a9c5c4fd7c2c">
+      <Execution id="2f0bb4f2-8248-4c67-a31f-e3dd2eb95357" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageClassifierTests" name="check_vegan_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="validate_milkNotPresent_returnsFalse" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="de00b13d-e1f4-2480-99c4-21dc76d2a8b6">
+      <Execution id="8c0afa6c-fd23-46a1-bf2b-34d0070e4e99" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.OrderValidatorTests" name="validate_milkNotPresent_returnsFalse" />
+    </UnitTest>
+    <UnitTest name="invalid_baseDrink_returnsFailureFlag" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="26e6f5f7-81e9-6de1-6e9b-b7c4c8544665">
+      <Execution id="a41df52d-5b3f-448b-8799-3d8ea9ee5630" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.BeverageTests" name="invalid_baseDrink_returnsFailureFlag" />
+    </UnitTest>
+    <UnitTest name="validate_roundValueToNickleRoundUp_returnsDecimal" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="d97dafe4-57d6-bac9-6b7b-2615f318c993">
+      <Execution id="531fbbce-0bfb-4353-9dd5-4ec31c4c2679" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PriceCalculatorTests" name="validate_roundValueToNickleRoundUp_returnsDecimal" />
+    </UnitTest>
+    <UnitTest name="validate_happyHourOnHotDrink_returnsDiscount" storage="d:\programming\school\03\software-quality-i-testing-tools-and-methodologies\asn1\coffeeorder.tests\bin\debug\net8.0\coffeeorder.tests.dll" id="7b5f8fd9-7465-02da-6f82-9286c6f835af">
+      <Execution id="72d8ecde-7241-4456-9788-b44f333c3f2a" />
+      <TestMethod codeBase="D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll" adapterTypeName="executor://mstestadapter/v2" className="CoffeeOrder.Tests.PromotionHelperTests" name="validate_happyHourOnHotDrink_returnsDiscount" />
+    </UnitTest>
+  </TestDefinitions>
+  <TestEntries>
+    <TestEntry testId="3aba5a6b-2278-fa39-6c62-a9c5c4fd7c2c" executionId="2f0bb4f2-8248-4c67-a31f-e3dd2eb95357" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b4511c17-f324-9c7b-e4b9-62dc7ac749cc" executionId="83a574ef-b7e6-4b97-ad48-8db728097cc2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="65fec8e7-95d7-1798-3572-31a04b19530c" executionId="08a6f3e6-2ea4-4028-bed2-61b8c096d410" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ec476349-50aa-b34b-91c9-d9dae68ad857" executionId="870ca7db-e159-45b5-8731-a69e9cbd7808" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3313cf34-71ee-c09c-02d6-9c1d00a654d2" executionId="c2b412c5-bef5-4579-b17c-eb03ab8e4283" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0755c290-2d7a-da8f-474d-5a7613517775" executionId="795cdd47-963d-464a-bed7-dfa8c0d88131" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a9a099fe-cea2-d000-34e0-09339dfe85db" executionId="8549c0d2-494e-4e7f-934a-dd140136350d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ce33c1c-508e-938f-348f-d3424a2d1dff" executionId="dc1dee3a-014e-4007-8e2a-90ca7114a301" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="606ef3a1-3997-4db2-0085-4bcb828b7299" executionId="996d515d-3965-4681-bb67-f64f407b3193" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1c6110d1-3e41-4d5c-377b-c77d31945bb1" executionId="7fa5756c-144f-4c4e-8cab-b7d08a42c835" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="bcf43e7e-deda-420e-d5c5-4930529f323a" executionId="33b177f1-5f4d-41ff-ae87-a7222c194cbc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d7f2bd3b-8ae5-052d-9eed-b32d1161442f" executionId="ff5d6f67-ab49-4624-8aa9-2d9cd434617c" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f6996d56-dee7-1208-1ebb-d1b04eab1776" executionId="4cb2cb47-4d06-4004-a5ec-aff2acb1113d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e739f344-c1cc-8572-8980-befca5b7bdcc" executionId="e66ba60b-7e15-4e48-b29d-7e04704bcc62" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="96b958e7-8f0d-ca71-c658-be341d7792c1" executionId="cbe9a660-c127-46dd-908c-d84236545edb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="adc9a5d9-e39c-d2b1-eb70-979d26d63e37" executionId="383a3696-36df-46c1-8f17-868f512fd8e4" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de00b13d-e1f4-2480-99c4-21dc76d2a8b6" executionId="8c0afa6c-fd23-46a1-bf2b-34d0070e4e99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="349befe2-6334-bdb7-8beb-47af4b2fc182" executionId="427d520e-1051-4cdf-b0e2-7015689ae4a3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="88b2a1ce-4620-8046-545c-a65300dfd894" executionId="c1d75a6f-7330-462d-9403-6fa21987a59b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a2fdabb8-6c71-faeb-d05b-e20b9f69e43c" executionId="ad89db93-4f43-4bbe-acea-aa43be28821a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="e56a46cd-6e7b-7362-63ca-10db6895a1ef" executionId="e5eb968c-706b-454b-80f5-d7dc6af016d3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="36010a2c-850b-174f-54b5-80641612d7ab" executionId="d5008919-d549-4bf3-9542-c1bdc63e3f84" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76518acd-d921-4ac8-099b-3cd2b190ab20" executionId="6ffc8ccc-728c-4e5e-bb15-64e1f642c732" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a53b57bb-21f7-01e1-c028-aea17045935c" executionId="cc0a361c-bb06-48b5-a13e-ab3e9e69cabe" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ad68016f-2397-a5b2-ddb5-873ba2e96ea0" executionId="5eec2016-f32d-4775-b6cf-066c332f2f60" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="81c3a416-88ce-0ce5-401b-48796f1bcebb" executionId="7a8adb7f-828f-425e-bc7c-5c43938de8b3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b48ba01-5945-d7ac-ebab-80cc260f0d4a" executionId="8ab8a9e1-fd3b-4390-82bf-c939d2f98061" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6dd57b3a-8c69-15a5-c750-a55449d280f1" executionId="f15410b9-d6b4-4af2-8532-d495cd19c2c9" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="4e7e537f-273c-0576-b102-48f72bf5e3fc" executionId="29774b7c-a659-4abe-8b27-7f141c8dc89b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1ffcd684-6212-bd4c-0e17-9ea4fac907d1" executionId="4d33853f-e3d7-4607-8450-637467414aa3" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8cde6510-60ec-3359-52b7-be0d7e4fe308" executionId="47f75f04-57bc-438f-838a-737c79d2e29b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3636ac50-4684-ff80-ffbd-a0f946c7bf9f" executionId="81930815-f315-4700-ac08-22e36fdf66cc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b6208d68-0f12-103a-f1ed-6bd8e0d86462" executionId="e3a1341c-c5ee-42c8-8e90-240c5c237e6d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="ab321578-5fae-6152-9e60-b19e9102f5a7" executionId="12022aa4-3157-4d10-80e8-198de68abdef" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="7b5f8fd9-7465-02da-6f82-9286c6f835af" executionId="72d8ecde-7241-4456-9788-b44f333c3f2a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a43d519d-2109-109a-b451-69921fbbcf5f" executionId="6a04d869-c379-4760-bcad-c3c158d2eb99" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c2b880c4-6aa3-a22e-c26b-92d66c839b56" executionId="d3d67fea-6820-4188-b960-a79d40d19854" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f1c733d-46a1-51a1-40bc-fc63e95fbd4a" executionId="1f619b0f-f62d-4348-ab08-e047a771f2d7" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6aa4eab6-3d85-abf2-6b59-2abc3ef9b765" executionId="734526ed-8ec1-4585-8872-1827b09151ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="73cf283a-78ec-961f-48df-fbc7e3516eb5" executionId="a3ae287e-459b-4a8c-aebe-568b2e0d2ede" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="18813b9d-33a0-a669-175f-b209bfe13a67" executionId="3ab7c4a0-8337-4f6d-a79e-06b709ecde5a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="2fb89158-ea33-9e6d-d44e-b51cc81d8f42" executionId="288ae67d-8288-46d1-a11f-017d45e3a3ab" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="01744df6-beda-edad-8b22-dde861449816" executionId="82da15e8-f8e8-4d21-81bc-ac8cc1855111" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="86c9001e-ba01-1836-ae0f-c054a0d569cd" executionId="5785d910-9326-4909-aa43-d0ea002e8a8b" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="f0339a23-4439-35e7-eed6-e862427f24bc" executionId="a911cbb9-547a-471b-ab1f-9527e27d5760" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="390679b4-c47c-97a6-8411-4aecfef0859d" executionId="e60cea77-6c5e-4502-900f-10295bec9a46" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="aa1edbe8-fa66-6029-34fb-eb6f51f0b00c" executionId="ed1c45cf-ea04-4fd9-8c36-ce60538c61ad" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="3e9d5650-9907-ea94-dd28-1d726631d370" executionId="ae7789c2-89ec-47b5-a532-f8e93036c117" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="76f28a51-6c6e-f112-dcba-bb316d5f2b0d" executionId="22852464-1038-434a-9528-904aba315b13" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6981742b-2dcf-eef9-06b5-35e81e577ce0" executionId="93107cf8-567a-4df0-8194-c7a96001c6be" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="de98bbb0-3935-ebb3-d450-d98360f18e06" executionId="b99b331f-e766-4afc-acbf-890ab7bd6279" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c9b7a728-1074-59ef-5688-9829b30b5869" executionId="a0aff5b8-985f-4872-bcfe-e0f0205aee52" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="29a04268-c10a-2726-9088-840fd26aaeb7" executionId="a2b08d07-5a1b-47dc-a168-23615ed19618" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="8fa8cb8a-b2fb-0012-f716-122e7992943f" executionId="6de45a0d-6c1c-4411-96e0-203b68941fdd" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="15ac5632-9dc1-3615-440a-47451ec30d55" executionId="32e58e1b-ec60-4c65-8dbc-8a4934985535" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b126bb39-a729-03b9-3fe9-cbb1f98763e7" executionId="8979f454-5e61-4f43-96e7-1edd2a68fc1d" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1f512e9b-311f-fc1b-3818-46cc7b30a98e" executionId="dbfbeb2e-dcf8-4e9e-9c98-101b5e15b1b1" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="c80102e6-670b-1527-6f18-0068aba9f673" executionId="12546d83-744c-41ee-b5ca-c28faf5b38e2" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="1a882987-184d-9b4b-13c4-9582d56028c1" executionId="f3e877e2-dac6-4938-adae-22a5a12fe6cb" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d4e3120b-08d4-c80d-778e-bdae34940869" executionId="7c6e6323-63bd-446c-b97c-1bf379b376f5" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a1294d06-7eb4-9936-43a9-e6dc65d4cf9c" executionId="60c5998d-c00b-4e27-acb6-e59e3bd82ab6" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="91166a69-5c0c-0669-c2f4-fb5ab83f0226" executionId="6f5d48cd-6af0-4023-ab4c-5c294503f92a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="b2e73580-fd80-1e2e-5c34-05f7ff670fb0" executionId="86fde432-19fd-4b2c-984b-f7b16222b416" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="cfa437dc-fb89-9caa-bc15-10ed2aac71f3" executionId="daaa7ead-bb81-4d2d-b297-4a74884b78ae" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="26e6f5f7-81e9-6de1-6e9b-b7c4c8544665" executionId="a41df52d-5b3f-448b-8799-3d8ea9ee5630" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="d97dafe4-57d6-bac9-6b7b-2615f318c993" executionId="531fbbce-0bfb-4353-9dd5-4ec31c4c2679" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="0ebb6e1f-31d3-354b-a0aa-51ab6c0d5337" executionId="42cb4d23-79b5-4ffa-a7de-4d9d4bd3d073" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="39048f2d-7369-2ba0-4d0f-0a33eae532cc" executionId="5c0cd99e-4263-4f7d-b0d2-8c452c44993a" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="a22668dd-3ae2-d772-9f10-70f4339f5d81" executionId="bea98413-4828-4826-b2db-e3aebd7b6fdc" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestEntry testId="6290c944-d86a-fa9e-aff6-fb0747057ff5" executionId="94b8e185-bfa9-4098-8272-3f1712647b21" testListId="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+  </TestEntries>
+  <TestLists>
+    <TestList name="Results Not in a List" id="8c84fa94-04c1-424b-9868-57a2d4851a1d" />
+    <TestList name="All Loaded Results" id="19431567-8539-422a-85d7-44ee4e166bda" />
+  </TestLists>
+  <ResultSummary outcome="Failed">
+    <Counters total="70" executed="70" passed="43" failed="27" error="0" timeout="0" aborted="0" inconclusive="0" passedButRunAborted="0" notRunnable="0" notExecuted="0" disconnected="0" warning="0" completed="0" inProgress="0" pending="0" />
+    <Output>
+      <StdOut>Test Parallelization enabled for D:\Programming\School\03\Software-Quality-I-Testing-Tools-and-Methodologies\ASN1\CoffeeOrder.Tests\bin\Debug\net8.0\CoffeeOrder.Tests.dll (Workers: 20, Scope: MethodLevel)&#xD;
+</StdOut>
+    </Output>
+  </ResultSummary>
+</TestRun>

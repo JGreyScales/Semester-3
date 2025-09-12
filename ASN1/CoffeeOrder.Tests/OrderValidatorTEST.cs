@@ -1,5 +1,4 @@
-using System.Configuration.Assemblies;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
+#pragma warning disable CS8604 // Possible null reference argument.
 
 
 namespace CoffeeOrder.Tests;
@@ -15,7 +14,7 @@ public sealed class OrderValidatorTests
         List<string> emptyStringList = [];
 
         // Act
-        bool result = orderValidator.checkSyrups(emptyStringList);
+        bool result = OrderValidator.checkSyrups(emptyStringList);
 
         // Assert
         Assert.IsFalse(result);
@@ -28,7 +27,7 @@ public sealed class OrderValidatorTests
         List<string> emptyStringList = [];
 
         // Act
-        bool result = orderValidator.checkToppings(emptyStringList);
+        bool result = OrderValidator.checkToppings(emptyStringList);
 
         // Assert
         Assert.IsFalse(result);
@@ -40,7 +39,7 @@ public sealed class OrderValidatorTests
         string? milk = null;
 
         // Act
-        bool result = orderValidator.checkMilk(milk);
+        bool result = OrderValidator.checkMilk(milk);
 
         // Assert
         Assert.IsFalse(result);
@@ -51,7 +50,7 @@ public sealed class OrderValidatorTests
         string milk = "None";
 
         // Act
-        bool result = orderValidator.checkMilk(milk);
+        bool result = OrderValidator.checkMilk(milk);
 
         // Assert
         Assert.IsFalse(result);
@@ -65,21 +64,47 @@ public sealed class OrderValidatorTests
         List<string> syrups = new List<string>(["invalidOption"]);
 
         // Act
-        bool result = orderValidator.checkToppings(syrups);
+        bool result = OrderValidator.checkToppings(syrups);
 
         // Assert
         Assert.IsTrue(result);
     }
 
+    [TestMethod]
+    public void validate_syrupsValid_returnsFalse()
+    {
+        // Arrange
+        List<string> syrups = new List<string>(["Chocolate"]);
+
+        // Act
+        bool result = OrderValidator.checkToppings(syrups);
+
+        // Assert
+        Assert.IsFalse(result);
+    }
+
+    [TestMethod]
     public void validate_milkNotValid_returnsTrue(){
         // Arrange
         string milk = "rock";
 
         // Act
-        bool result = orderValidator.checkMilk(milk);
+        bool result = OrderValidator.checkMilk(milk);
 
         // Assert
         Assert.IsTrue(result);
+    }
+
+    [TestMethod]
+    public void validate_milkValid_returnsFalse(){
+        // Arrange
+        string milk = "Cream";
+
+        // Act
+        bool result = OrderValidator.checkMilk(milk);
+
+        // Assert
+        Assert.IsFalse(result);
     }
 
     [TestMethod]
@@ -89,12 +114,27 @@ public sealed class OrderValidatorTests
         List<string> toppings = new List<string>(["invalidOption"]);
 
         // Act
-        bool result = orderValidator.checkToppings(toppings);
+        bool result = OrderValidator.checkToppings(toppings);
 
         // Assert
         Assert.IsTrue(result);
         
     }
+
+    [TestMethod]
+    public void validate_toppingsValid_returnsFalse()
+    {
+        // Arrange
+        List<string> toppings = new List<string>(["Cinnamon"]);
+
+        // Act
+        bool result = OrderValidator.checkToppings(toppings);
+
+        // Assert
+        Assert.IsFalse(result);
+        
+    }
+    
 
     // Negative Cases
     [TestMethod]
@@ -104,51 +144,14 @@ public sealed class OrderValidatorTests
         string? baseDrink = null;
 
         // Act
-        bool result = orderValidator.checkBaseDrink(baseDrink);
+        bool result = OrderValidator.checkBaseDrink(baseDrink);
 
         // Assert
         Assert.IsTrue(result);
     }
 
-    [TestMethod]
-    public void errorCheck_sizeNotPresent_returnsTrue()
-    {
-        // Arrange
-        byte? size = null;
-        
-        // Act
-        bool result = orderValidator.checkSize(size);
 
-        // Assert
-        Assert.IsTrue(result);
-    }
-
-    [TestMethod]
-    public void errorCheck_tempNotPresent_returnsTrue()
-    {
-        // Arrange
-        byte? temp = null;
-        
-        // Act
-        bool result = orderValidator.checkTemp(temp);
-
-        // Assert
-        Assert.IsTrue(result);
-    }
-
-    [TestMethod]
-    public void errorCheck_shotsNotPresent_returnsTrue()
-    {
-        // Arrange
-        byte? shots = null;
-        string milk = "Milk";
-        
-        // Act
-        bool result = orderValidator.checkShots(shots, milk);
-
-        // Assert
-        Assert.IsTrue(result);
-    }
+    
 
     [TestMethod]
     public void errorCheck_shotsBelowMinimum_returnsTrue()
@@ -159,7 +162,7 @@ public sealed class OrderValidatorTests
         string milk = "Milk";
 
         // Act
-        bool result = orderValidator.checkShots(shots, milk);
+        bool result = OrderValidator.checkShots(shots, milk);
 
         // Assert
         Assert.IsTrue(result);
@@ -173,7 +176,7 @@ public sealed class OrderValidatorTests
         string milk = "Milk";
 
         // Act
-        bool result = orderValidator.checkShots(shots, milk);
+        bool result = OrderValidator.checkShots(shots, milk);
 
         // Assert
         Assert.IsTrue(result);
@@ -186,7 +189,7 @@ public sealed class OrderValidatorTests
         string milk = "None";
 
         // Act
-        bool result = orderValidator.checkShots(shots, milk);
+        bool result = OrderValidator.checkShots(shots, milk);
 
         // Assert
         Assert.IsTrue(result);

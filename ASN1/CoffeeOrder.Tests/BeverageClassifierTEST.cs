@@ -1,5 +1,3 @@
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
 namespace CoffeeOrder.Tests;
 
 [TestClass]
@@ -24,13 +22,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<string> returnValue = BeverageClassifier.getAllergens(bev);
@@ -57,13 +55,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isKidSafe(bev);
@@ -88,13 +86,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isDecaf(bev);
@@ -119,13 +117,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isVegan(bev);
@@ -154,13 +152,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isDecaf(bev);
@@ -184,13 +182,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isVegan(bev);
@@ -214,13 +212,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isKidSafe(bev);
@@ -244,13 +242,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         bool actualValue = BeverageClassifier.isKidSafe(bev);
@@ -274,13 +272,13 @@ public sealed class BeverageClassifierTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<string> returnValue = BeverageClassifier.getAllergens(bev);

@@ -1,6 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace CoffeeOrder.Tests;
+﻿namespace CoffeeOrder.Tests;
 
 [TestClass]
 public sealed class BeverageTests
@@ -12,8 +10,8 @@ public sealed class BeverageTests
     {
 
         // Arrange
-        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
-        List<string> syrups = new List<string>(["Vanilla"]);
+        List<string> toppings = new List<string>{"Milk Foam", "Matcha"};
+        List<string> syrups = new List<string>{"Vanilla"};
         byte shots = 2;
         string milk = "Milk";
         byte temp = 75;
@@ -21,8 +19,8 @@ public sealed class BeverageTests
         string drink = "Latte";
 
         int expectedFailureCount = 0;
-        List<string> Expectedtoppings = new List<string>(["Milk Foam", "Matcha"]);
-        List<string> Exceptedsyrups = new List<string>(["Vanilla"]);
+        List<string> Expectedtoppings = new List<string> {"Milk Foam", "Matcha"};
+        List<string> Exceptedsyrups = new List<string> {"Vanilla"};
         byte Exceptedshots = 2;
         string Exceptedmilk = "Milk";
         byte Exceptedtemp = 75;
@@ -36,19 +34,19 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(Excepteddrink, bev.getBaseDrink());
-        StringAssert.Equals(Exceptedmilk, bev.getMilk());
+        Assert.AreEqual(Excepteddrink, bev.getBaseDrink());
+        Assert.AreEqual(Exceptedmilk, bev.getMilk());
         Assert.AreEqual(Exceptedtemp, bev.getTemp());
         Assert.AreEqual(Exceptedsize, bev.getSize());
         Assert.AreEqual(ExpectedIsDecaf, bev.getIsDecaf());
@@ -61,6 +59,68 @@ public sealed class BeverageTests
         Assert.AreEqual(Exceptedsyrups, bev.getSyrups());
 
     }
+
+
+    [TestMethod]
+    public void validate_getSizeString_returnsString(){
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 3;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        string expectedResult = "Large";
+
+        // Act
+        var bev = new Beverage(
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
+        );
+
+        string result = bev.getSizeString();
+
+        // Assert
+        Assert.AreEqual(expectedResult, result);
+    }
+
+    [TestMethod]
+    public void validate_getTempString_returnString(){
+        // Arrange
+        List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
+        List<string> syrups = new List<string>(["Vanilla"]);
+        byte shots = 3;
+        string milk = "Milk";
+        byte temp = 75;
+        byte size = 75;
+        string drink = "Latte";
+
+        string expectedResult = "Hot";
+
+        // Act
+        var bev = new Beverage(
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
+        );
+
+        string result = bev.getTempString();
+
+        // Assert
+        Assert.AreEqual(expectedResult, result);
+    }
+
 
     // Edge cases
     [TestMethod]
@@ -81,18 +141,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -112,18 +172,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -139,22 +199,22 @@ public sealed class BeverageTests
         string drink = "Latte";
 
         int expectedFailureCount = 1;
-        string expectedFailureMessage = "Invalid Syrups Amount";
+        string expectedFailureMessage = "Invalid Syrups Option";
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     // Negative cases
@@ -175,18 +235,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -206,18 +266,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -237,18 +297,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -268,18 +328,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -299,18 +359,18 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 
     [TestMethod]
@@ -330,17 +390,17 @@ public sealed class BeverageTests
 
         // Act
         var bev = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         // Assert
         Assert.AreEqual(expectedFailureCount, bev.getFailures().Count);
-        StringAssert.Equals(expectedFailureMessage, bev.getFailures()[0]);
+        Assert.AreEqual(expectedFailureMessage, bev.getFailures()[0]);
     }
 }

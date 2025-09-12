@@ -1,11 +1,9 @@
-using Microsoft.VisualBasic;
-
 namespace CoffeeOrder.Tests;
 
 [TestClass]
 public sealed class ReceiptFormatterTests
 {
-    private Order orderOBJ;
+    private Order orderOBJ = new Order();
     [TestInitialize]
     public void Init(){
         // Arrange
@@ -19,30 +17,28 @@ public sealed class ReceiptFormatterTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         var bev2 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
-        orderOBJ = new Order();
         orderOBJ.addBeverage(bev1);
         orderOBJ.addBeverage(bev2);
         orderOBJ.addName("Test Name");
-        orderOBJ.addDate();
         orderOBJ.addDiscounts();
 
     }
@@ -167,6 +163,60 @@ public sealed class ReceiptFormatterTests
     {
         // Arrange
         string expectedContain = "Test Name";
+        using (StringWriter sw = new StringWriter()){
+            Console.SetOut(sw);
+
+        // Act
+            ReceiptFormatter.printReceipt(orderOBJ);
+            string output = sw.ToString();
+
+
+        // Assert
+        StringAssert.Contains(output, expectedContain);
+        }
+    }
+
+    [TestMethod]
+    public void validate_isDecafIncluded_returnsTrue()
+    {
+        // Arrange
+        string expectedContain = "Is Decaf";
+        using (StringWriter sw = new StringWriter()){
+            Console.SetOut(sw);
+
+        // Act
+            ReceiptFormatter.printReceipt(orderOBJ);
+            string output = sw.ToString();
+
+
+        // Assert
+        StringAssert.Contains(output, expectedContain);
+        }
+    }
+
+    [TestMethod]
+    public void validate_isKidFriendlyIncluded_returnsTrue()
+    {
+        // Arrange
+        string expectedContain = "Is Kid Friendly";
+        using (StringWriter sw = new StringWriter()){
+            Console.SetOut(sw);
+
+        // Act
+            ReceiptFormatter.printReceipt(orderOBJ);
+            string output = sw.ToString();
+
+
+        // Assert
+        StringAssert.Contains(output, expectedContain);
+        }
+    }
+
+    [TestMethod]
+    public void validate_isVeganIncluded_returnsTrue()
+    {
+        // Arrange
+        string expectedContain = "Is Vegan";
         using (StringWriter sw = new StringWriter()){
             Console.SetOut(sw);
 

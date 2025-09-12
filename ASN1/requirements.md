@@ -45,7 +45,7 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 - Almond milk (nuts)
 - Chocolate (nuts & dairy)
 - Milk Foam (dairy)
-- Esoresso Foam (dairy)
+- Espresso Foam (dairy)
 
 **Vegan Options**
 - *milk*
@@ -54,7 +54,7 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - Soy Milk
   - Almond Milk
 - *toppings*
-  - Cinnomon
+  - Cinnamon
   - Matcha
 - *syrups*
   - Vanilla
@@ -64,12 +64,12 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 
 - **Properties:**  
   - `BaseDrink` (string) (Coffee, Chai-Tea, Latte, Espresso, Cappuccino, Decaf)  
-  - `Size` (byte) (0-100) (small: 25, medium: 50, large: 75, extra large: 100)
-  - `Temp` (byte) (0-100) (veryCold: 0, cold: 25, roomtemp: 50, hot: 75 , veryHot: 100)
-  - `Milk` (string) (None, milk, cream, oat milk, soy milk, almond milk)  
+  - `Size` (byte) (0-100) (Small: 25, Medium: 50, Large: 75, Extra Large: 100)
+  - `Temp` (byte) (0-100) (VeryCold: 0, Cold: 25, RoomTemp: 50, Hot: 75 , VeryHot: 100)
+  - `Milk` (string) (None, Milk, Cream, Oat Milk, Soy Milk, Almond Milk)  
   - `Shots` (byte) (0–4)  
   - `Syrups` (List<string>) (0–5, list)  (Chocolate, Strawberry, Vanilla)
-  - `Toppings` (List<string>) (Cinnamon, Milk Foam, Espresso Foam, Matcha)
+  - `Toppings` (List<string>) (0-5 list) (Cinnamon, Milk Foam, Espresso Foam, Matcha)
   - `IsDecaf` (bool)
   - `IsKidFriendly` (bool)
   - `isVegan` (bool)
@@ -84,13 +84,16 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - `getAllergens` -> List<string>
   - `getIsVegan` -> bool
   - `getIsKidFriendly` -> bool
+  - `getIsDecaf` -> bool
   - `getToppings` -> List<string>
   - `getSyrups` -> List<string>
   - `getShots` -> byte
-  - `getMilk` -> str
+  - `getMilk` -> string
   - `getTemp` -> byte
+  - `getSizeString` -> string
   - `getSize` -> byte
-  - `getBaseDrink` -> str
+  - `getSizeString` -> string
+  - `getBaseDrink` -> string
 
 - **Requirements:**  
   - Keep it simple and immutable where possible (or avoid mutating after construction).
@@ -103,7 +106,7 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - Validates a single `Beverage`
 
 - **methods**
-  - `listErrors`(Beverage: Beverage) -> list(string)
+  - `listErrors`(Beverage: Beverage) -> List<string>
   - static `checkSyrups`(List<string>) -> bool
   - static `checkToppings`(List<string>) -> bool
   - static `checkBaseDrink`(string) -> bool
@@ -120,22 +123,22 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - Allergen flags (nut milks)  
 
 - **Output:**  
-  - Return a structured result (e.g., `ValidationResult` with `IsValid` + `Errors`).
+  - Return a structured result (List<string> with each error).
 
-# Order
+## Order
 - **Properties:** 
-  - `Beverages` (list<BeverageObjects>)
+  - `Beverages` (List<Beverage>) (0-20)
   - `Discount` (PromotionalDiscountObject)
   - `Name` (string)
   - `Date` (string)
 
 - **methods**
   - `Constructor`(void)
-  - `addBeverage`(Beverage: Beverage) -> void
+  - `addBeverage`(Beverage: Beverage) -> bool
   - `getBeverages`() -> List<Beverage>
   - `addName`(name: string) -> void
   - `getName`() -> string
-  - static `addDate`(void) -> void
+  - `addDate`(void) -> void
   - `getDate`(void) -> string
   - `getDiscount`(void) -> PromotionalDiscountObject
   - `addDiscounts`(void) -> void
@@ -181,7 +184,7 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
   - `discountReason` (string)
 
 - **Methods**
-  - `constructor`(Beverages: list(Beverage)) -> object
+  - `constructor`(Beverages: List<Beverages>) -> object
   - `getDiscount`() -> decimal
   - `getDiscountReason`() -> String
 
@@ -217,14 +220,14 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 - **Methods**
   - `Main`(void)
   - static `printWelcomeScreen`(void) -> void
-  - `GetInt`(void) -> int
+  - `getInt`(void) -> Byte
   - `getDrink`(void) -> string
-  - `getBeverageSize`(void) -> int
-  - `getBeverageTemp`(void) -> int
+  - `getBeverageSize`(void) -> byte
+  - `getBeverageTemp`(void) -> byte
   - `getMilkType`(void) -> string
-  - `getShotCount`(void) -> int
-  - `getSyrups`(void) -> list(string)
-  - `getToppings`(void) -> list(string)
+  - `getShotCount`(void) -> byte
+  - `getSyrups`(void) -> List<string>
+  - `getToppings`(void) -> List<string>
   - `getName`(void) -> string
 
 - **Responsibility:**  
@@ -266,6 +269,10 @@ shots: 0: 1.0, 1: 0.7, 2: 1.0, 3: 1.3, 4: 1.6
 - **Receipt:**  
   - Shows line items, discounts, totals; includes allergen notices when applicable.
 
+
+## utils
+- **Methods**:
+  - static `getClosetEnum`(Enum, byte) -> string
 > You do not need to implement every rule above to 100% breadth. Aim for a coherent feature set that supports thorough testing across the classes, with at least 25 unit tests overall.
 
 ---

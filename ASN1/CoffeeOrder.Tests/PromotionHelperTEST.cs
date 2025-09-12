@@ -22,13 +22,13 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1]);
@@ -56,13 +56,13 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1]);
@@ -91,23 +91,23 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         var bev2 = new Beverage(
-            toppings: toppings2,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1, bev2]);
@@ -137,23 +137,23 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         var bev2 = new Beverage(
-            toppings: toppings2,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp2,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp2,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1, bev2]);
@@ -186,23 +186,23 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         var bev2 = new Beverage(
-            toppings: toppings2,
-            syrups: syrups,
-            shots: shots2,
-            milk: milk2,
-            temp: temp2,
-            size: size2,
-            drink: drink2
+            Toppings: toppings2,
+            Syrups: syrups,
+            Shots: shots2,
+            Milk: milk2,
+            Temp: temp2,
+            Size: size2,
+            BaseDrink: drink2
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1, bev2]);
@@ -231,23 +231,23 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         var bev2 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1, bev2]);
@@ -278,13 +278,13 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1]);
@@ -312,13 +312,13 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1]);
@@ -347,13 +347,13 @@ public sealed class PromotionHelperTests
 
         // Act
         var bev1 = new Beverage(
-            toppings: toppings,
-            syrups: syrups,
-            shots: shots,
-            milk: milk,
-            temp: temp,
-            size: size,
-            drink: drink
+            Toppings: toppings,
+            Syrups: syrups,
+            Shots: shots,
+            Milk: milk,
+            Temp: temp,
+            Size: size,
+            BaseDrink: drink
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1]);
