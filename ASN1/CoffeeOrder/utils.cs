@@ -32,19 +32,26 @@ public class Utils {
 
     public static List<string> mergeStringLists(List<string> l1, List<string> l2){
         List<string> mergedList = new List<string>();
-        foreach(string item in l1){mergedList.Add(item);}
-        foreach(string item in l2){mergedList.Add(item);}
+        if (l1 != null){
+            foreach(string item in l1){mergedList.Add(item);}
+        }
+        if (l2 != null){
+            foreach(string item in l2){mergedList.Add(item);}
+        }
         return mergedList;
     }
 
     public static List<string> dedupeStringList(List<string> slist){
         List<string> deDupedStringList = new List<string>();
-
-        foreach(string item in slist){
-            if (!deDupedStringList.Any(str => str.Contains(item))){
-                deDupedStringList.Add(item);
+        
+        if (slist != null){
+            foreach(string item in slist){
+                if (!deDupedStringList.Any(str => str.Contains(item))){
+                    deDupedStringList.Add(item);
+                }
             }
         }
+
         
         return deDupedStringList;
     }
