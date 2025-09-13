@@ -12,7 +12,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Latte";
@@ -34,7 +34,7 @@ public sealed class BeverageClassifierTests
         List<string> returnValue = BeverageClassifier.getAllergens(bev);
 
         // Assert
-        StringAssert.Equals(expectedValue, returnValue[0]);
+        Assert.AreEqual(expectedValue, returnValue[0]);
         Assert.AreEqual(expectedCount, returnValue.Count);
         
     }
@@ -46,7 +46,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Coffee";
@@ -77,7 +77,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Decaf";
@@ -108,7 +108,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Coffee";
@@ -143,7 +143,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Coffee";
@@ -173,7 +173,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "milk";
+        string milk = "Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Coffee";
@@ -203,7 +203,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha", "Espresso Foam"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 75;
         byte size = 75;
         string drink = "Coffee";
@@ -233,7 +233,7 @@ public sealed class BeverageClassifierTests
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
-        string milk = "almond milk";
+        string milk = "Almond Milk";
         byte temp = 100;
         byte size = 75;
         string drink = "Coffee";

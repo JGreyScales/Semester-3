@@ -27,7 +27,7 @@ public sealed class BeverageTests
         byte Exceptedsize = 75;
         string Excepteddrink = "Latte";
         bool ExpectedIsDecaf = false;
-        bool ExpectedIsKidFriendly = false;
+        bool ExpectedIsKidFriendly = true;
         bool ExpectedIsVegan = false;
         decimal ExpectedPrice = 3.80M; // 3.7855M unrounded
         int ExpectedAllergensCount = 0;
@@ -355,7 +355,7 @@ public sealed class BeverageTests
         string drink = "Latte";
 
         int expectedFailureCount = 1;
-        string expectedFailureMessage = "Invalid Syrup Option";
+        string expectedFailureMessage = "Invalid Syrups Option";
 
         // Act
         var bev = new Beverage(

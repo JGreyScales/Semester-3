@@ -43,14 +43,16 @@ public class Beverage
         this.Shots = Shots;
         this.Syrups = Syrups;
         this.Toppings = Toppings;
-
-        
+        this.IsDecaf = BeverageClassifier.isDecaf(this);
+        this.IsKidFriendly = BeverageClassifier.isKidSafe(this);
+        this.isVegan = BeverageClassifier.isVegan(this);
+        this.Allergens = BeverageClassifier.getAllergens(this);
+        this.Price = PriceCalculator.calculatePrice(this);
         this.Failures = OrderValidator.listErrors(this);
     }
 
 
     //Methods
-
     public List<string> getFailures(){
         return this.Failures;
     }

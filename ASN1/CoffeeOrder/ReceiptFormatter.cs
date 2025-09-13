@@ -65,9 +65,9 @@ public class ReceiptFormatter {
         }
         Console.WriteLine("");
         Console.WriteLine($"_SUBTOTAL: {PriceCalculator.roundValueToNickle(total / 1.13M)}");
-        Console.WriteLine($"_DISCOUNT: {orderOBJ.getDiscount().getDiscount()}");
+        Console.WriteLine($"_DISCOUNT: {orderOBJ.getDiscount().getDiscount()} | {orderOBJ.getDiscount().getDiscountReason()}");
         Console.WriteLine($"_TAX: {PriceCalculator.roundValueToNickle(total - (total / 1.13M))}");
-        Console.WriteLine($"TOTAL: {total - orderOBJ.getDiscount().getDiscount()}");
+        Console.WriteLine($"TOTAL: {PriceCalculator.roundValueToNickle(total - orderOBJ.getDiscount().getDiscount())}");
         Console.Write($"\n");
         Console.WriteLine($"ALLERGEN NOTICES:");
         foreach (string allergen in allergenList){

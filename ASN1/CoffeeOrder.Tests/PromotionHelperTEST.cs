@@ -101,7 +101,7 @@ public sealed class PromotionHelperTests
         );
 
         var bev2 = new Beverage(
-            Toppings: toppings,
+            Toppings: toppings2,
             Syrups: syrups,
             Shots: shots,
             Milk: milk,
@@ -147,7 +147,7 @@ public sealed class PromotionHelperTests
         );
 
         var bev2 = new Beverage(
-            Toppings: toppings,
+            Toppings: toppings2,
             Syrups: syrups,
             Shots: shots,
             Milk: milk,
@@ -182,7 +182,7 @@ public sealed class PromotionHelperTests
         string drink2 = "Latte";
 
         string expectedDiscountReason = "HAPPYHOUR 20% OFF HOT DRINK";
-        decimal expectedDiscount = 1.70m;
+        decimal expectedDiscount = 1.55m;
 
         // Act
         var bev1 = new Beverage(

@@ -41,31 +41,31 @@ public class OrderValidator{
         return Failures; 
     }
 
-    public static bool checkSyrups(List<string> syrups){
+    public static bool checkToppings(List<string> toppings){
 
-        if (syrups.Count > 5) {return true;}
+        if (toppings.Count > 5) {return true;}
 
 
-        List<string> validOptions = new List<string> {"Chocolate", "Strawberry", "Vanilla"};
+        List<string> validOptions = new List<string> {"Cinnamon", "Milk Foam", "Espresso Foam", "Matcha"};
 
-        foreach(string syrup in syrups){
+        foreach(string topping in toppings){
             // if any syrup is not in the list of valids
-            if (!validOptions.Any(str => str.Contains(syrup))){
+            if (!validOptions.Any(str => str.Contains(topping))){
                 return true;
             }
         }
         return false;
     }
 
-    public static bool checkToppings(List<string> toppings){
+    public static bool checkSyrups(List<string> syrups){
 
-        if (toppings.Count > 5) {return true;}
+        if (syrups.Count > 5) {return true;}
 
-        List<string> validOptions = new List<string> {"Cinnamon", "Milk Foam", "Espresso Foam", "Matcha"};
+        List<string> validOptions = new List<string> {"Chocolate", "Strawberry", "Vanilla"};
 
-        foreach(string topping in toppings){
+        foreach(string syrup in syrups){
             // if any topping is not in the list of valids
-            if (!validOptions.Any(str => str.Contains(topping))){
+            if (!validOptions.Any(str => str.Contains(syrup))){
                 return true;
             }
         }

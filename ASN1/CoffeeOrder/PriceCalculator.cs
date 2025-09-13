@@ -10,7 +10,7 @@ public class PriceCalculator {
 
         // we can type cast this since we know it will be a single digit value & not overflow
         if (hundredthsPlace < 3) {
-            valueToAdd = (decimal)hundredthsPlace * -1;
+            valueToAdd = ((decimal)hundredthsPlace * -1) -1;
         } else {
             valueToAdd = 5M - (decimal)hundredthsPlace;
         }

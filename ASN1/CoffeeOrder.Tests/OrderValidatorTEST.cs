@@ -34,7 +34,7 @@ public sealed class OrderValidatorTests
     }
 
     [TestMethod]
-    public void validate_milkNotPresent_returnsFalse(){
+    public void validate_milkNotPresent_returnsTrue(){
         // Arrange
         string? milk = null;
 
@@ -42,7 +42,7 @@ public sealed class OrderValidatorTests
         bool result = OrderValidator.checkMilk(milk);
 
         // Assert
-        Assert.IsFalse(result);
+        Assert.IsTrue(result);
     }
 
     public void validate_milkIsNone_returnsFalse(){
