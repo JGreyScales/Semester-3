@@ -31,17 +31,59 @@ public class PriceCalculator {
                 case "Oat Milk": price *= 1.3M; break;
                 case "Soy Milk": price *= 1.2M; break;
                 case "Almond Milk": price *= 1.5M; break;
-                default: price *= 0.0M; break;
+                default: break;
             }
 
         if (BeverageOBJ.getShots() != 0){
             price *= (0.3M * BeverageOBJ.getShots()) + 0.4M;
         }
 
+        switch (BeverageOBJ.getBaseDrink()) 
+            {
+                case "Coffee": break; // multiply by 1.0
+                case "Chai-Tea": price *= 1.1M; break;
+                case "Latte": price *= 1.3M; break;
+                case "Espresso": price *= 0.8M; break;
+                case "Cappuccino": price *= 1.2M; break;
+                case "Decaf": price *= 0.9M; break;
+                default: break;
+            }
+
+        foreach (string syrup in BeverageOBJ.getSyrups()){
+            switch (syrup) 
+                {
+                    case "Chocolate": // overflow into Strawberry case (aka, two valid cases for the same output)
+                    case "Strawberry": price += 1.0M; break;
+                    case "Vanilla": price += 0.5M; break;
+                    default: break;
+                }
+        }
+
+        foreach (string topping in BeverageOBJ.getToppings()){
+            switch (topping)
+                {
+                    case "Cinnamon": price += 0.3M; break;
+                    case "Milk Foam": price += 0.2M; break;
+                    case "Espresso Foam": price += 0.5M; break;
+                    case "Matcha": price += 0.7M; break;
+                    default: break;
+                }
+        }
+
         return price * 1.13M;
     }
 
     public static decimal calculateOrderPriceWithDiscount(Order orderOBJ){
-        return 0.0m;
+        decimal total = 0.0m;
+
+        foreach (Beverage bev in orderOBJ.getBeverages()){
+            total += bev.getPrice();
+        }
+        
+        total /= 1.13M; // remove tax from the calculation
+
+        orderOBJ.addDiscounts();
+        total -= orderOBJ.getDiscount().getDiscount();
+        return total * 1.13M; // add the tax back now that the discount is applied
     }
 }

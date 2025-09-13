@@ -3,7 +3,10 @@ public class PromotionHelper{
     private decimal discount {get; set;}
     private string discountReason {set; get;}
     // Constructor
-    public PromotionHelper(List<Beverage> Beverages){}
+    public PromotionHelper(List<Beverage> Beverages)
+    {
+        
+    }
 
     // Methods
     public decimal getDiscount(){
