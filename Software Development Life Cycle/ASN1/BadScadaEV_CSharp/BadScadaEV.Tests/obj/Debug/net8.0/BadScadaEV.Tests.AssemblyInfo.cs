@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("BadScadaEV.Tests")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+888723115148a5d84403cc160c663d8993fdc0a0")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+b682239d952d28d7ae8bee885c4be8a5c9c202b4")]
 [assembly: System.Reflection.AssemblyProductAttribute("BadScadaEV.Tests")]
 [assembly: System.Reflection.AssemblyTitleAttribute("BadScadaEV.Tests")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
