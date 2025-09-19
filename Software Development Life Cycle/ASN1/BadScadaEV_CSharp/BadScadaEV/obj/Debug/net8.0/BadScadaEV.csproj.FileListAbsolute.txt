@@ -1,0 +1,14 @@
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.exe
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.deps.json
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.runtimeconfig.json
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.dll
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.pdb
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.GeneratedMSBuildEditorConfig.editorconfig
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.AssemblyInfoInputs.cache
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.AssemblyInfo.cs
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.csproj.CoreCompileInputs.cache
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.dll
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\refint\BadScadaEV.dll
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.pdb
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.genruntimeconfig.cache
+C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\ref\BadScadaEV.dll
