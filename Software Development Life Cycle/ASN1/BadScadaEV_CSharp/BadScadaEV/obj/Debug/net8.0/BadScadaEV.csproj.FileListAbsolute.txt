@@ -12,3 +12,18 @@ C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\refint\BadScadaEV.dll
 C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.pdb
 C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.genruntimeconfig.cache
 C:\Project3\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\ref\BadScadaEV.dll
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.exe
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.deps.json
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.runtimeconfig.json
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.dll
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\bin\Debug\net8.0\BadScadaEV.pdb
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.AssemblyInfoInputs.cache
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.AssemblyInfo.cs
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.csproj.CoreCompileInputs.cache
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.sourcelink.json
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.dll
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\refint\BadScadaEV.dll
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.pdb
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\BadScadaEV.genruntimeconfig.cache
+D:\Programming\School\Semester-3\Software Development Life Cycle\ASN1\BadScadaEV_CSharp\BadScadaEV\obj\Debug\net8.0\ref\BadScadaEV.dll

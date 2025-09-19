@@ -1,13 +1,13 @@
 {
   "version": 2,
-  "dgSpecHash": "g9stTXRz//0=",
+  "dgSpecHash": "Yp6Qh6zrYVs=",
   "success": true,
-  "projectFilePath": "C:\\Project3\\BadScadaEV_CSharp\\BadScadaEV\\BadScadaEV.csproj",
+  "projectFilePath": "D:\\Programming\\School\\Semester-3\\Software Development Life Cycle\\ASN1\\BadScadaEV_CSharp\\BadScadaEV\\BadScadaEV.csproj",
   "expectedPackageFiles": [
-    "C:\\Users\\russe\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.19\\microsoft.netcore.app.ref.8.0.19.nupkg.sha512",
-    "C:\\Users\\russe\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.19\\microsoft.windowsdesktop.app.ref.8.0.19.nupkg.sha512",
-    "C:\\Users\\russe\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.19\\microsoft.aspnetcore.app.ref.8.0.19.nupkg.sha512",
-    "C:\\Users\\russe\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.19\\microsoft.netcore.app.host.win-x64.8.0.19.nupkg.sha512"
+    "C:\\Users\\JG\\.nuget\\packages\\microsoft.netcore.app.ref\\8.0.20\\microsoft.netcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\JG\\.nuget\\packages\\microsoft.windowsdesktop.app.ref\\8.0.20\\microsoft.windowsdesktop.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\JG\\.nuget\\packages\\microsoft.aspnetcore.app.ref\\8.0.20\\microsoft.aspnetcore.app.ref.8.0.20.nupkg.sha512",
+    "C:\\Users\\JG\\.nuget\\packages\\microsoft.netcore.app.host.win-x64\\8.0.20\\microsoft.netcore.app.host.win-x64.8.0.20.nupkg.sha512"
   ],
   "logs": []
 }

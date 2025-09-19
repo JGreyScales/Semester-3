@@ -8,24 +8,27 @@
     "net8.0": []
   },
   "packageFolders": {
-    "C:\\Users\\russe\\.nuget\\packages\\": {}
+    "C:\\Users\\JG\\.nuget\\packages\\": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Project3\\BadScadaEV_CSharp\\BadScadaEV\\BadScadaEV.csproj",
+      "projectUniqueName": "D:\\Programming\\School\\Semester-3\\Software Development Life Cycle\\ASN1\\BadScadaEV_CSharp\\BadScadaEV\\BadScadaEV.csproj",
       "projectName": "BadScadaEV",
-      "projectPath": "C:\\Project3\\BadScadaEV_CSharp\\BadScadaEV\\BadScadaEV.csproj",
-      "packagesPath": "C:\\Users\\russe\\.nuget\\packages\\",
-      "outputPath": "C:\\Project3\\BadScadaEV_CSharp\\BadScadaEV\\obj\\",
+      "projectPath": "D:\\Programming\\School\\Semester-3\\Software Development Life Cycle\\ASN1\\BadScadaEV_CSharp\\BadScadaEV\\BadScadaEV.csproj",
+      "packagesPath": "C:\\Users\\JG\\.nuget\\packages\\",
+      "outputPath": "D:\\Programming\\School\\Semester-3\\Software Development Life Cycle\\ASN1\\BadScadaEV_CSharp\\BadScadaEV\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
-        "C:\\Users\\russe\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\JG\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
         "net8.0"
       ],
       "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
@@ -63,19 +66,19 @@
         "downloadDependencies": [
           {
             "name": "Microsoft.AspNetCore.App.Ref",
-            "version": "[8.0.19, 8.0.19]"
+            "version": "[8.0.20, 8.0.20]"
           },
           {
             "name": "Microsoft.NETCore.App.Host.win-x64",
-            "version": "[8.0.19, 8.0.19]"
+            "version": "[8.0.20, 8.0.20]"
           },
           {
             "name": "Microsoft.NETCore.App.Ref",
-            "version": "[8.0.19, 8.0.19]"
+            "version": "[8.0.20, 8.0.20]"
           },
           {
             "name": "Microsoft.WindowsDesktop.App.Ref",
-            "version": "[8.0.19, 8.0.19]"
+            "version": "[8.0.20, 8.0.20]"
           }
         ],
         "frameworkReferences": {
@@ -83,7 +86,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.304/PortableRuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\9.0.305/PortableRuntimeIdentifierGraph.json"
       }
     }
   }

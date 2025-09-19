@@ -8,7 +8,7 @@ dotnet run --project BadScadaEV.Tests   # optional tiny AAA runner
 ```
 
 ## Student Tasks
-1) Identify smells (SRP, DIP, ISP, LoD, DRY) in `BadScadaEV/Program.cs`.
+1) Identify smells (Single Responsibility, Dependency Inversion, Interface Segregation, Law of Demeter, Dont Repeat Yourself) in `BadScadaEV/Program.cs`.
 2) Sketch a refactor plan (UML) with interfaces: ICharger, ISitePowerMeter, IPricingService, IProtocolAdapter, ILogger, IHmiPanel, IAlarmSink; Supervisor/Hub; DTOs for HMI.
 3) Implement one slice (e.g., extract IProtocolAdapter + inject fake; or extract PricingService).
 4) Write two AAA test cases in `BadScadaEV.Tests/TestRunner.cs` (1 unit — load shed policy, 1 integration — session start → HMI + log).
