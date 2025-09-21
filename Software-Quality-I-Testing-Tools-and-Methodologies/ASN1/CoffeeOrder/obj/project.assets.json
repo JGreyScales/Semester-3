@@ -13,11 +13,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj",
+      "projectUniqueName": "d:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj",
       "projectName": "CoffeeOrder",
-      "projectPath": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj",
+      "projectPath": "d:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj",
       "packagesPath": "C:\\Users\\JG\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\obj\\",
+      "outputPath": "d:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JG\\AppData\\Roaming\\NuGet\\NuGet.Config",

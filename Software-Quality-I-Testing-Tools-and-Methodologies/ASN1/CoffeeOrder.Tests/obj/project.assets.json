@@ -1673,11 +1673,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\CoffeeOrder.Tests.csproj",
+      "projectUniqueName": "D:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\CoffeeOrder.Tests.csproj",
       "projectName": "CoffeeOrder.Tests",
-      "projectPath": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\CoffeeOrder.Tests.csproj",
+      "projectPath": "D:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\CoffeeOrder.Tests.csproj",
       "packagesPath": "C:\\Users\\JG\\.nuget\\packages\\",
-      "outputPath": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\obj\\",
+      "outputPath": "D:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder.Tests\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\JG\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -1695,8 +1695,8 @@
         "net8.0": {
           "targetAlias": "net8.0",
           "projectReferences": {
-            "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj": {
-              "projectPath": "D:\\Programming\\School\\03\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj"
+            "D:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj": {
+              "projectPath": "D:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN1\\CoffeeOrder\\CoffeeOrder.csproj"
             }
           }
         }

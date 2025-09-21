@@ -10,7 +10,7 @@ public class PriceCalculator {
 
         // we can type cast this since we know it will be a single digit value & not overflow
         if (hundredthsPlace < 3) {
-            valueToAdd = ((decimal)hundredthsPlace * -1) -1;
+            valueToAdd = ((decimal)hundredthsPlace * -1);
         } else {
             valueToAdd = 5M - (decimal)hundredthsPlace;
         }
@@ -21,7 +21,15 @@ public class PriceCalculator {
 
     public static decimal calculatePrice(Beverage BeverageOBJ){
         decimal price = 0.0M;
-        price += ((1/75) * BeverageOBJ.getSize()) + (2/3);
+        // my brain wasnt braining, I kept tryina make a function to model this
+        // but its not linear, and I just opted to do this
+        decimal size = (decimal)BeverageOBJ.getSize();
+        if (size == 100M) {
+            price = 2.0M;
+        } else {
+            price = (0.01M*size)+0.75M;
+        }
+
         // milk price
         switch (BeverageOBJ.getMilk())
             {
@@ -70,7 +78,7 @@ public class PriceCalculator {
                 }
         }
 
-        return price * 1.13M;
+        return roundValueToNickle(price * 1.13M);
     }
 
     public static decimal calculateOrderPriceWithDiscount(Order orderOBJ){
