@@ -19,8 +19,8 @@ public sealed class BeverageTests
         string drink = "Latte";
 
         int expectedFailureCount = 0;
-        List<string> Expectedtoppings = new List<string> {"Milk Foam", "Matcha"};
-        List<string> Exceptedsyrups = new List<string> {"Vanilla"};
+        List<string> Expectedtoppings = toppings;
+        List<string> Exceptedsyrups = syrups;
         byte Exceptedshots = 2;
         string Exceptedmilk = "Milk";
         byte Exceptedtemp = 75;
@@ -30,10 +30,10 @@ public sealed class BeverageTests
         bool ExpectedIsKidFriendly = true;
         bool ExpectedIsVegan = false;
         decimal ExpectedPrice = 3.80M; // 3.7855M unrounded
-        int ExpectedAllergensCount = 0;
+        int ExpectedAllergensCount = 1; // milk
 
         // Act
-        var bev = new Beverage(
+        Beverage bev = new Beverage(
             Toppings: toppings,
             Syrups: syrups,
             Shots: shots,

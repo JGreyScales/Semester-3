@@ -48,7 +48,7 @@ public sealed class PriceCalculatorTests
         byte size = 75;
         string drink = "Latte";
 
-        decimal ExpectedPrice = 2.55M; // 3.2205M unrounded * 0.8 = 2.56
+        decimal ExpectedPrice = 2.45M; // (3.2205M / 1.13 * 0.8) = 2.45
 
         // Act
         var bev = new Beverage(

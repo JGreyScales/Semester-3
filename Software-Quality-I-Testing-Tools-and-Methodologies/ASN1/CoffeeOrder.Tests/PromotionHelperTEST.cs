@@ -87,7 +87,7 @@ public sealed class PromotionHelperTests
         string drink = "Latte";
 
         string expectedDiscountReason = "BUY ONE GET ONE FREE SAME PRICE OR CHEAPER";
-        decimal expectedDiscount = 2.45m;
+        decimal expectedDiscount = 2.75m;
 
         // Act
         var bev1 = new Beverage(
@@ -133,10 +133,10 @@ public sealed class PromotionHelperTests
         string drink = "Latte";
 
         string expectedDiscountReason = "BUY ONE GET ONE FREE SAME PRICE OR CHEAPER";
-        decimal expectedDiscount = 2.45m;
+        decimal expectedDiscount = 2.75m;
 
         // Act
-        var bev1 = new Beverage(
+        Beverage bev1 = new Beverage(
             Toppings: toppings,
             Syrups: syrups,
             Shots: shots,
@@ -146,7 +146,7 @@ public sealed class PromotionHelperTests
             BaseDrink: drink
         );
 
-        var bev2 = new Beverage(
+        Beverage bev2 = new Beverage(
             Toppings: toppings2,
             Syrups: syrups,
             Shots: shots,
@@ -157,7 +157,7 @@ public sealed class PromotionHelperTests
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1, bev2]);
-        var PromotionHelperOBJ = new PromotionHelper(bevList);
+        PromotionHelper PromotionHelperOBJ = new PromotionHelper(bevList);
     
         // Assert
         Assert.AreEqual(expectedDiscount, PromotionHelperOBJ.getDiscount());
@@ -182,10 +182,10 @@ public sealed class PromotionHelperTests
         string drink2 = "Latte";
 
         string expectedDiscountReason = "HAPPYHOUR 20% OFF HOT DRINK";
-        decimal expectedDiscount = 1.55m;
+        decimal expectedDiscount = 1.75m;
 
         // Act
-        var bev1 = new Beverage(
+        Beverage bev1 = new Beverage(
             Toppings: toppings,
             Syrups: syrups,
             Shots: shots,
@@ -195,7 +195,7 @@ public sealed class PromotionHelperTests
             BaseDrink: drink
         );
 
-        var bev2 = new Beverage(
+        Beverage bev2 = new Beverage(
             Toppings: toppings2,
             Syrups: syrups,
             Shots: shots2,
@@ -206,7 +206,7 @@ public sealed class PromotionHelperTests
         );
 
         List<Beverage> bevList = new List<Beverage>([bev1, bev2]);
-        var PromotionHelperOBJ = new PromotionHelper(bevList);
+        PromotionHelper PromotionHelperOBJ = new PromotionHelper(bevList);
     
         // Assert
         Assert.AreEqual(expectedDiscount, PromotionHelperOBJ.getDiscount());

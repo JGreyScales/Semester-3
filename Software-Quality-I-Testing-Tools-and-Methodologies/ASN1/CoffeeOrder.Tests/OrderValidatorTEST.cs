@@ -77,7 +77,7 @@ public sealed class OrderValidatorTests
         List<string> syrups = new List<string>(["Chocolate"]);
 
         // Act
-        bool result = OrderValidator.checkToppings(syrups);
+        bool result = OrderValidator.checkSyrups(syrups);
 
         // Assert
         Assert.IsFalse(result);

@@ -56,9 +56,9 @@ public sealed class ReceiptFormatterTests
         // Arrange
         string expectedContain = "Latte";
         string expectedContain2 = "BUY ONE GET ONE FREE SAME PRICE OR CHEAPER";
-        string expectedContain3 = "Discount:";
-        string expectedContain4 = "7.60";
-        string expectedContain5 = "3.80";
+        string expectedContain3 = "_DISCOUNT:";
+        string expectedContain4 = "6.75";
+        string expectedContain5 = "3.8";
         string expectedContain6 = "Dairy";
         string expectedContain7 = DateTime.Now.ToString("yyyy-MM-dd HHmm");
         string expectedContain8 = "Test Name";

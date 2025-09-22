@@ -17,7 +17,7 @@ public sealed class BeverageClassifierTests
         byte size = 75;
         string drink = "Latte";
 
-        string expectedValue = "Contains ALMONDS";
+        string expectedValue = "Contains Nuts";
         int expectedCount = 1;
 
         // Act

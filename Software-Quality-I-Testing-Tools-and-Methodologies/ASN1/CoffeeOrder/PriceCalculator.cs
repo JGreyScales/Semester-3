@@ -5,18 +5,16 @@ public class PriceCalculator {
 
     // Methods
     public static decimal roundValueToNickle(decimal value){
-        decimal valueToAdd = 0M;
-        int hundredthsPlace = (int)(value * 100) % 10;
+        // Multiply by 20 to scale to nearest 0.05
+        value *= 20;
 
-        // we can type cast this since we know it will be a single digit value & not overflow
-        if (hundredthsPlace < 3) {
-            valueToAdd = ((decimal)hundredthsPlace * -1);
-        } else {
-            valueToAdd = 5M - (decimal)hundredthsPlace;
-        }
+        // Round to nearest whole number (which gives us the nearest multiple of 0.05)
+        value = Math.Round(value);
 
-        value += (valueToAdd / 100);
-        return Math.Round(value,2);
+        // Divide by 20 to scale back down to original decimal place
+        value /= 20;
+
+        return value;
     }
 
     public static decimal calculatePrice(Beverage BeverageOBJ){
@@ -92,6 +90,6 @@ public class PriceCalculator {
 
         orderOBJ.addDiscounts();
         total -= orderOBJ.getDiscount().getDiscount();
-        return total * 1.13M; // add the tax back now that the discount is applied
+        return roundValueToNickle(total * 1.13M); // add the tax back now that the discount is applied
     }
 }

@@ -71,7 +71,7 @@ public class ReceiptFormatter {
         Console.Write($"\n");
         Console.WriteLine($"ALLERGEN NOTICES:");
         foreach (string allergen in allergenList){
-            Console.WriteLine($" allergen");
+            Console.WriteLine($"{allergen}");
         }
         Console.WriteLine($"\nOTHER NOTICES:");
         Console.WriteLine($" Is Decaf: {isDecaf}");
