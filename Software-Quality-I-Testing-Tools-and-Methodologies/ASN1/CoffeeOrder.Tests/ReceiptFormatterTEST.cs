@@ -4,7 +4,7 @@ namespace CoffeeOrder.Tests;
 public sealed class ReceiptFormatterTests
 {
     private Order orderOBJ = new Order();
-    private StringWriter stringWriter;
+    private StringWriter? stringWriter;
     [TestInitialize]
     public void Init(){
         // Arrange
@@ -70,6 +70,8 @@ public sealed class ReceiptFormatterTests
 
         // Act
         ReceiptFormatter.printReceipt(orderOBJ);
+        Assert.IsNotNull(stringWriter); // this must be here to stop a compiler warning
+        // I am very much an advocate for keeping all warnings active & resolving it
         string output = stringWriter.ToString();
 
         // Assert
@@ -85,6 +87,10 @@ public sealed class ReceiptFormatterTests
         StringAssert.Contains(output, expectedContain10);
         StringAssert.Contains(output, expectedContain11);
     }
+
+
+
+
 
     // // Typical cases
     // [TestMethod]

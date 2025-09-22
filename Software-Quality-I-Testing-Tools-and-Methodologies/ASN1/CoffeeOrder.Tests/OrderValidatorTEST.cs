@@ -1,6 +1,3 @@
-#pragma warning disable CS8604 // Possible null reference argument.
-
-
 namespace CoffeeOrder.Tests;
 
 [TestClass]
@@ -39,7 +36,9 @@ public sealed class OrderValidatorTests
         string? milk = null;
 
         // Act
-        bool result = OrderValidator.checkMilk(milk);
+#pragma warning disable CS8604 // Possible null reference argument.
+        bool result = OrderValidator.checkMilk(milk); // must be nulled for this check to work
+#pragma warning restore CS8604 // Possible null reference argument.
 
         // Assert
         Assert.IsTrue(result);
@@ -144,7 +143,9 @@ public sealed class OrderValidatorTests
         string? baseDrink = null;
 
         // Act
-        bool result = OrderValidator.checkBaseDrink(baseDrink);
+#pragma warning disable CS8604 // Possible null reference argument.
+        bool result = OrderValidator.checkBaseDrink(baseDrink); // must be nulled for check
+#pragma warning restore CS8604 // Possible null reference argument.
 
         // Assert
         Assert.IsTrue(result);

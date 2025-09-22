@@ -9,6 +9,7 @@ public class Order {
     // Constructor
     public Order(){
         this.Name = "";
+        this.Date = ""; // set to suppress a compiler warning saying Date must not be nullable
         this.addDate();
         this.Beverages = new List<Beverage>();
         this.Discount = new PromotionHelper(this.Beverages);
