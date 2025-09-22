@@ -1,0 +1,1 @@
+Does not work with a VPN due to the anti-scraping tech put into place on Conestogas website

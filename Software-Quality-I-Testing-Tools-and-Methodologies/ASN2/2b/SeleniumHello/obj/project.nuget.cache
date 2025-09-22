@@ -1,0 +1,12 @@
+{
+  "version": 2,
+  "dgSpecHash": "63mK7LpwjP0=",
+  "success": true,
+  "projectFilePath": "D:\\Programming\\School\\Semester-3\\Software-Quality-I-Testing-Tools-and-Methodologies\\ASN2\\2b\\SeleniumHello\\SeleniumHello.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\JG\\.nuget\\packages\\selenium.support\\4.35.0\\selenium.support.4.35.0.nupkg.sha512",
+    "C:\\Users\\JG\\.nuget\\packages\\selenium.webdriver\\4.35.0\\selenium.webdriver.4.35.0.nupkg.sha512",
+    "C:\\Users\\JG\\.nuget\\packages\\seleniumextras.waithelpers\\1.0.2\\seleniumextras.waithelpers.1.0.2.nupkg.sha512"
+  ],
+  "logs": []
+}
