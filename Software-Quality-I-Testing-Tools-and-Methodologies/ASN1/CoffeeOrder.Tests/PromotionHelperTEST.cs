@@ -166,7 +166,7 @@ public sealed class PromotionHelperTests
 
     [TestMethod]
     public void validate_selectsHappyHourWhenBetterDeal_returnsHappyHourDiscount(){
-// Arrange
+        // Arrange
         List<string> toppings = new List<string>();
         List<string> toppings2 = new List<string>(["Matcha", "Matcha"]);
         List<string> syrups = new List<string>();

@@ -68,11 +68,10 @@ public sealed class ReceiptFormatterTests
         // remove the most accurate form of measure to give a 10 minute window of error
         expectedContain7 = expectedContain7[..^1]; // recommended quick fix for syntax simplfying by VSC dotnet extension
 
-
-
         // Act
         ReceiptFormatter.printReceipt(orderOBJ);
         string output = stringWriter.ToString();
+
         // Assert
         StringAssert.Contains(output, expectedContain);
         StringAssert.Contains(output, expectedContain2);

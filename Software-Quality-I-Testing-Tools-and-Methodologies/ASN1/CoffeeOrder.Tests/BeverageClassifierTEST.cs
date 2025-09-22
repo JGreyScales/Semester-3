@@ -169,7 +169,7 @@ public sealed class BeverageClassifierTests
 
     [TestMethod]
     public void check_vegan_returnsFalse(){
-// Arrange
+        // Arrange
         List<string> toppings = new List<string>(["Milk Foam", "Matcha"]);
         List<string> syrups = new List<string>(["Vanilla"]);
         byte shots = 2;
