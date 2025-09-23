@@ -137,11 +137,12 @@ public class AppDriver{
 
     private static byte getShotCount(){
         Console.WriteLine("Please select how many shots you want:");
+        Console.WriteLine(" 0");
         Console.WriteLine(" 1");
         Console.WriteLine(" 2");
         Console.WriteLine(" 3");
         Console.WriteLine(" 4");
-        byte answer = GetByte(1, 4);
+        byte answer = GetByte(0, 4);
         return answer;
     }
 

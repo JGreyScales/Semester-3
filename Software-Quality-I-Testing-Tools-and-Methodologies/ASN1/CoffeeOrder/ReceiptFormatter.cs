@@ -70,7 +70,8 @@ public class ReceiptFormatter {
         Console.WriteLine($"TOTAL: {PriceCalculator.roundValueToNickle(total - orderOBJ.getDiscount().getDiscount())}");
         Console.Write($"\n");
         Console.WriteLine($"ALLERGEN NOTICES:");
-        foreach (string allergen in allergenList){
+        
+        foreach (string allergen in Utils.dedupeStringList(allergenList)){
             Console.WriteLine($"{allergen}");
         }
         Console.WriteLine($"\nOTHER NOTICES:");
