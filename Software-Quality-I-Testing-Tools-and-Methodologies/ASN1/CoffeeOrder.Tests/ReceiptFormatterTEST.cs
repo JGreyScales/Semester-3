@@ -1,6 +1,10 @@
+using System;
+using System.IO;
+
 namespace CoffeeOrder.Tests;
 
 [TestClass]
+[DoNotParallelize] // because of the stream writers, this must not be parallelized
 public sealed class ReceiptFormatterTests
 {
     private Order orderOBJ = new Order();
@@ -51,6 +55,9 @@ public sealed class ReceiptFormatterTests
     // because of how the method testing works, output kept getting mixed
     // I tried to increase & decrease the scope of test parralization and ended up just turning it completely off
     // issues persisted so this was a last result attempt
+
+    // I ended up discovering how to fix parralization issues with the [DoNotParallelize] tag
+    // but this was moments before submission so...
     public void validate_oneGo_returnsReceiptString()
     {
         // Arrange
@@ -88,8 +95,35 @@ public sealed class ReceiptFormatterTests
         StringAssert.Contains(output, expectedContain11);
     }
 
+    // PENDING TESTS
+    [TestMethod]
+    public void validate_savingFileCreatesFile_returnsFile(){
+        // Arrange
+        string expectedFile = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ReceiptFile.txt");
+
+        // Act
+        ReceiptFormatter.saveReceipt(orderOBJ); // assuming this just hijacks the printReceipt method using a streamwriter
+        bool result = File.Exists(expectedFile);
+
+        // Assert
+        Assert.IsTrue(result);
+    }
 
 
+    [TestMethod]
+    public void validate_savingFileHasFileContent_returnsString(){
+        // Arrange
+        string filePath = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.MyDocuments), "ReceiptFile.txt");
+        string expectedContain = "Latte";
+
+        // Act
+        ReceiptFormatter.saveReceipt(orderOBJ); // assuming this just hijacks the printReceipt method using a streamwriter
+        using StreamReader reader = new(filePath);
+        string result = reader.ReadToEnd();
+
+        // Assert
+        StringAssert.Contains(result, expectedContain);
+    }
 
 
     // // Typical cases

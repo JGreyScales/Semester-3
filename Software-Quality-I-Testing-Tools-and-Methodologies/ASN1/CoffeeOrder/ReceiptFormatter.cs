@@ -1,3 +1,5 @@
+
+
 /// ORDER FOR NAME
 /// DOC: yyyy-MM-dd HHmm
 /// 
@@ -21,7 +23,6 @@
 /// Is Decaf: (true/false)
 /// Is Kid Friendly: (true/false)
 /// Is Vegan: (true/false)
-
 public class ReceiptFormatter {
     // Properties
 
@@ -78,5 +79,11 @@ public class ReceiptFormatter {
         Console.WriteLine($" Is Decaf: {isDecaf}");
         Console.WriteLine($" Is Kid Friendly: {isKidFriendly}");
         Console.WriteLine($" Is Vegan: {isVegan}");
+    }
+
+    // this is created simply to allow the project to compile & run
+    public static void saveReceipt(Order orderOBJ)
+    {
+        throw new NotImplementedException();
     }
 }
