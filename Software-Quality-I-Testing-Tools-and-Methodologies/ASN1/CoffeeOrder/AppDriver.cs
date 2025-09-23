@@ -6,6 +6,7 @@ public class AppDriver{
     // Constructor
     public AppDriver(){
         while(true){
+            // Map app flow is stored here.
             printWelcomeScreen();
 
             Order orderOBJ = new Order();
@@ -47,6 +48,7 @@ public class AppDriver{
 
     }
     private static byte GetByte(byte min = 0, byte max = 255){
+        // gets a single byte value from the user, upper & lower limits are optional
         byte answer = 255;
         while (answer > 200) {
             // if failure
@@ -147,7 +149,8 @@ public class AppDriver{
         List<string> syrups = new List<string>([]);
         byte loopCount = 0;
         bool adding = true;
-        while (adding && loopCount < 5){
+        // the user can add up to 5 syrups
+        while (adding && loopCount < Constants.MAX_SYRUP_TOPPINGS){
             Console.WriteLine("Please select what syrup you want:");
             Console.WriteLine(" 1. Stop adding syrups");
             Console.WriteLine(" 2. Chocolate");
@@ -170,7 +173,8 @@ public class AppDriver{
         List<string> toppings = new List<string>([]);
         byte loopCount = 0;
         bool adding = true;
-        while (adding && loopCount < 5){
+        // the user can add up to 5 toppings
+        while (adding && loopCount < Constants.MAX_SYRUP_TOPPINGS){
             Console.WriteLine("Please select what topping you want:");
             Console.WriteLine(" 1. Stop adding toppings");
             Console.WriteLine(" 2. Cinnamon");

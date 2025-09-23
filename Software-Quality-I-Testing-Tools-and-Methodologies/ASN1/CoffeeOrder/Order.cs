@@ -1,3 +1,4 @@
+// this is a nice & contained way to handle multiple beverages & then apply discounts on them as a group entity
 public class Order {
     // Properties
     private List<Beverage> Beverages {set; get;} 
@@ -9,7 +10,7 @@ public class Order {
     // Constructor
     public Order(){
         this.Name = "";
-        this.Date = ""; // set to suppress a compiler warning saying Date must not be nullable
+        this.Date = ""; // set to suppress a compiler warning saying Date must not be nullable when existing the constructor
         this.addDate();
         this.Beverages = new List<Beverage>();
         this.Discount = new PromotionHelper(this.Beverages);
@@ -19,7 +20,8 @@ public class Order {
 
     // false on failure
     public bool addBeverage(Beverage beverageOBJ){
-        if (this.Beverages.Count < 20){
+        // an order cannot have more than 20 beverages
+        if (this.Beverages.Count < Constants.MAX_BEVERAGES){
             this.Beverages.Add(beverageOBJ);
             return true;
         }

@@ -43,7 +43,7 @@ public class OrderValidator{
 
     public static bool checkToppings(List<string> toppings){
 
-        if (toppings.Count > 5) {return true;}
+        if (toppings.Count > Constants.MAX_SYRUP_TOPPINGS) {return true;}
 
 
         List<string> validOptions = new List<string> {"Cinnamon", "Milk Foam", "Espresso Foam", "Matcha"};
@@ -59,7 +59,7 @@ public class OrderValidator{
 
     public static bool checkSyrups(List<string> syrups){
 
-        if (syrups.Count > 5) {return true;}
+        if (syrups.Count > Constants.MAX_SYRUP_TOPPINGS) {return true;}
 
         List<string> validOptions = new List<string> {"Chocolate", "Strawberry", "Vanilla"};
 
@@ -97,14 +97,14 @@ public class OrderValidator{
     }
 
     public static bool checkSize(byte size){
-        return size > 100 || size < 0;
+        return size > Constants.MAX_SCALE_SIZE || size < Constants.MIN_SCALE_SIZE;
     }
 
     public static bool checkTemp(byte temp){
-        return temp > 100 || temp < 0;
+        return temp > Constants.MAX_SCALE_SIZE || temp < Constants.MIN_SCALE_SIZE;
     }
 
     public static bool checkShots(byte shots, string milk){
-        return shots < 0 | shots > 4 || (shots > 0 && milk == "None");
+        return shots < Constants.MIN_SCALE_SIZE | shots > Constants.MAX_SHOT_COUNT || (shots > Constants.MIN_SCALE_SIZE && milk == "None");
     }
 }

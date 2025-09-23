@@ -1,3 +1,15 @@
+// https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/classes-and-structs/how-to-define-constants
+static class Constants 
+{
+    public const int MAX_BEVERAGES = 20;
+    public const int MAX_SYRUP_TOPPINGS = 5;
+    public const int MAX_SCALE_SIZE = 100;
+    public const int MIN_SCALE_SIZE = 0;
+    public const int MAX_SHOT_COUNT = 4;
+}
+
+
+
 public class Utils {
     public static string getClosetEnum(Enum enumList, byte input){
         // required to figure out what Enum we are working with

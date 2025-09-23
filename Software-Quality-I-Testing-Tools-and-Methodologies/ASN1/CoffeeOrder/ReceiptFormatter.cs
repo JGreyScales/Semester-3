@@ -6,9 +6,9 @@
 /// LINE ITEM 3
 /// LINE ITEM ...
 /// 
-/// SUBTOTAL: XX.XX
-/// DISCOUNT: XX.XX
-/// TAX: XX.XX
+/// _SUBTOTAL: XX.XX
+/// _DISCOUNT: XX.XX
+/// _TAX: XX.XX
 /// TOTAL: XX.XX
 /// 
 /// ALLERGEN NOTICES:

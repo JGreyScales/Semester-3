@@ -1,2 +1,1 @@
-﻿
-AppDriver app = new AppDriver();
+﻿AppDriver app = new AppDriver();

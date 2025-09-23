@@ -9,13 +9,6 @@ public class BeverageClassifier {
 
     // Methods
 
-    // Cannot include
-    // - Espresso Foam
-    // - Latte
-    // - Espresso
-    // - Cappuccino
-    // - Coffee
-    // - Chai-Tea
     public static bool isDecaf(Beverage beverageOBJ)
     {
         return beverageOBJ.getBaseDrink() == "Decaf" && !beverageOBJ.getToppings().Any(str => str.Contains("Espresso Foam"));
@@ -39,12 +32,15 @@ public class BeverageClassifier {
     }
 
     public static bool isKidSafe(Beverage beverageOBJ){
-        return beverageOBJ.getTemp() <= 75 && !beverageOBJ.getToppings().Any(str => str.Contains("Espresso Foam"));
+        // must not be too hot, and must not contain Espresso
+        return beverageOBJ.getTemp() <= 75 && !beverageOBJ.getToppings().Any(str => str.Contains("Espresso Foam")) && beverageOBJ.getBaseDrink() != "Espresso";
     }
 
     public static List<string> getAllergens(Beverage beverageOBJ){
+        // goes through all settings & adds all allergens it finds
+        // once added, it will de-dupelicate the list
         List<string> Allergens =  new List<string>([]);
-
+        
         if (beverageOBJ.getMilk() == "Milk") {Allergens.Add("Contains Dairy");}
         if (beverageOBJ.getMilk() == "Cream") {Allergens.Add("Contains Dairy");}
         if (beverageOBJ.getMilk() == "Oat Milk") {Allergens.Add("Contains Gluten");}

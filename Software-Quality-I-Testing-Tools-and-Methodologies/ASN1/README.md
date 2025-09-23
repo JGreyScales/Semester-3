@@ -1,5 +1,9 @@
 # global git
-https://github.com/JGreyScales/Semester-3/tree/main/Software-Quality-I-Testing-Tools-and-Methodologies
+https://github.com/JGreyScales/Semester-3/tree/main/Software-Quality-I-Testing-Tools-and-Methodologies/ASN1
 
 
-Some test cases use VAR instead of explicit type casting, these cases were written before the "full picture" of methods + properties were defined & I just needed the software to compile
+## execute tests
+``dotnet test``
+
+## execute Program - executed from the ASN1 dir
+``dotnet run --project .\CoffeeOrder\``

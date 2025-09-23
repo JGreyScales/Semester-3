@@ -98,13 +98,13 @@ public class Beverage
     }
 
     public string getTempString(){
-        // pass a random value to the function so it can self delcare the enumType
+        // pass a random value from the temp enum to the function so it can self delcare the enumType
         // and then process the rest of the values
         return Utils.getClosetEnum(tempEnum.RoomTemp, this.getTemp());
     }
 
     public string getSizeString(){
-        // pass a random value to the function so it can self delcare the enumType
+        // pass a random value from the size enum to the function so it can self delcare the enumType
         // and then process the rest of the values
         return Utils.getClosetEnum(sizeEnum.Medium, this.getSize());
     }
