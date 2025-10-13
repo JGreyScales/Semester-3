@@ -1,0 +1,15 @@
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\bin\Debug\net9.0\Testing.exe
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\bin\Debug\net9.0\Testing.deps.json
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\bin\Debug\net9.0\Testing.runtimeconfig.json
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\bin\Debug\net9.0\Testing.dll
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\bin\Debug\net9.0\Testing.pdb
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.GeneratedMSBuildEditorConfig.editorconfig
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.AssemblyInfoInputs.cache
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.AssemblyInfo.cs
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.csproj.CoreCompileInputs.cache
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.sourcelink.json
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.dll
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\refint\Testing.dll
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.pdb
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\Testing.genruntimeconfig.cache
+D:\Programming\School\Semester-3\Software-Quality-I-Testing-Tools-and-Methodologies\ASN2\2a\Testing\obj\Debug\net9.0\ref\Testing.dll
