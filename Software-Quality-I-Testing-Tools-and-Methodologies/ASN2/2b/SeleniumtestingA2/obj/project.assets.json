@@ -659,6 +659,22 @@
           }
         }
       },
+      "Selenium.Support/4.36.0": {
+        "type": "package",
+        "dependencies": {
+          "Selenium.WebDriver": "4.36.0"
+        },
+        "compile": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "related": ".xml"
+          }
+        }
+      },
       "Selenium.WebDriver/4.36.0": {
         "type": "package",
         "compile": {
@@ -1631,6 +1647,20 @@
         "packageIcon.png"
       ]
     },
+    "Selenium.Support/4.36.0": {
+      "sha512": "3/kioF20M28FKkCccmxDqMYZy9j1G4H37dcHfPgTPiOAlQXrqV/moWoV56o2TVFLhZw7o53PlsMp6Y8br9Z3lg==",
+      "type": "package",
+      "path": "selenium.support/4.36.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "icon.png",
+        "lib/netstandard2.0/WebDriver.Support.dll",
+        "lib/netstandard2.0/WebDriver.Support.xml",
+        "selenium.support.4.36.0.nupkg.sha512",
+        "selenium.support.nuspec"
+      ]
+    },
     "Selenium.WebDriver/4.36.0": {
       "sha512": "jYehpVsZyC8Sn6BJJ2xr8vM9QyPTDks7MdrlfZQFxs3wa8Jg4LPHPnzEYRT1CY1vSSydxhBxuDJ8tnUxrXo9Qw==",
       "type": "package",
@@ -1731,6 +1761,7 @@
     "net9.0": [
       "MSTest >= 3.6.4",
       "Microsoft.NET.Test.Sdk >= 17.12.0",
+      "Selenium.Support >= 4.36.0",
       "Selenium.WebDriver >= 4.36.0",
       "Selenium.WebDriver.ChromeDriver >= 141.0.7390.7600"
     ]
@@ -1788,6 +1819,10 @@
           "Microsoft.NET.Test.Sdk": {
             "target": "Package",
             "version": "[17.12.0, )"
+          },
+          "Selenium.Support": {
+            "target": "Package",
+            "version": "[4.36.0, )"
           },
           "Selenium.WebDriver": {
             "target": "Package",
