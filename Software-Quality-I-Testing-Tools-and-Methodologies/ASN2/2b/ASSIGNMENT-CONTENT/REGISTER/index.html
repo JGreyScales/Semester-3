@@ -1,0 +1,131 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.6">
+        <title>THE Event! - Register</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pcmystyle.css">
+
+        <!--    scripts-->
+        <script src="js/lib/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/lib/jquery.validate.js"></script>
+        <script src="js/lib/bootstrap.bundle.min.js"></script>
+
+        <!--   MY scripts-->
+        <script src="js/jsfile.js"></script>
+
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1003.0" data-gr-ext-installed="">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html">THE Event!</a>
+
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://httpstat.us/500">Home</a>
+                    </li>
+					<li class="nav-item">
+                        <a class="nav-link" href="https://www.conestogac.on.ca/about/corporate-information/policies">Link to Conestoga College</a>
+                    </li>
+					
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="container" style="padding-top: 5em">
+            <h1 style="text-align: center;">Register Here</h1>
+
+            <form id="registrationForm">
+                <div class="form-group">
+                    <div class="card" style="">
+                        <div class="card-header">
+                            User information
+                        </div>
+
+                        <div style="padding: 10px">
+                            <div class="form-group">
+                                <label for="firstName">First Name</label>
+                                <input type="text" class="form-control" id="firstName" name="firstName">
+                            </div>
+                            <div class="form-group">
+                                <label for="lastName">Last Name</label>
+                                <input type="text" class="form-control" id="lastName" name="lastName">
+                            </div>
+
+                            <div class="form-group">
+                                <label for="address">Address</label>
+                                <input type="text" class="form-control" id="address" name="address">
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="city">City</label>
+                                    <input type="text" class="form-control" id="city" name="city">
+                                </div>
+                                <div class="form-group col-md-4">
+                                    <label for="province">Province</label>
+                                    <select id="province" class="form-control" name="province">
+                                        <option value="ON" selected>Ontario</option>
+                                        <option value="NL">Newfoundland</option>
+                                        <option value="PE">Prince Edward Island</option>
+                                        <option value="NS">Nova Scotia</option>
+                                        <option value="NB">New Brunswick</option>
+                                        <option value="QC">Quebec</option>
+                                        <option value="SK">Saskatchewan</option>
+                                        <option value="AB">Aberta</option>
+                                        <option value="BC">Columbia British</option>
+                                        <option value="YT">Yukon Territory</option>
+                                        <option value="NT">NorthWest Territories</option>
+                                        <option value="NU">Nunavut</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-2">
+                                    <label for="postalCode">Postal Code</label>
+                                    <input type="text" class="form-control" id="postalCode" name="postalCode">
+                                </div>
+                            </div>
+
+                            <div class="form-row">
+                                <div class="form-group col-md-4">
+                                    <label for="phone">Fone Number</label>
+                                    <input type="text" class="form-control" id="phone" name="phone">
+                                </div>
+
+                                <div class="form-group col-md-8">
+                                    <label for="email">Email address</label>
+                                    <input type="text" class="form-control" id="email" name="email">
+                                </div>
+                            </div>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <label for="numberOfParticipants">How many participants?</label>
+                                    <input type="number" class="form-control" id="numberOfParticipants" name="numberOfParticipants">
+                                </div>
+
+                                <div class="form-group col-md-6">
+                                    <label for="daysRegistered">What days are you registering for?</label>
+                                    <select id="daysRegistered" class="form-control" name="daysRegistered">
+                                        <option value="day1">Day 1</option>
+                                        <option value="day2">Day 2</option>
+                                        <option value="both">Both days</option>
+                                    </select>
+                                </div>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+                </div>
+                <a type="button" class="btn btn-primary" id="btnSubmit" onclick="Register()" style="color: white">Register Now</a>
+            </form>
+        </main>
+    </body>
+</html>
+

@@ -1,0 +1,86 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="description" content="">
+        <meta name="author" content="Mark Otto, Jacob Thornton, and Bootstrap contributors">
+        <meta name="generator" content="Jekyll v3.8.6">
+        <title>THE Event! - View Registration</title>
+
+        <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/starter-template/">
+
+        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="css/pcmystyle.css">
+
+        <!--    scripts-->
+        <script src="js/lib/jquery-3.4.1.slim.min.js"></script>
+        <script src="js/lib/jquery.validate.js"></script>
+        <script src="js/lib/bootstrap.bundle.min.js"></script>
+
+        <!--   MY scripts-->
+        <script src="js/jsfile.js"></script>
+
+        <script>
+            $(document).ready(function () {
+                var id = window.location.search.substring(1);
+                console.log(id);
+
+                LoadRegistrationData(id);
+            });
+
+        </script>
+
+    </head>
+    <body data-new-gr-c-s-check-loaded="14.1003.0" data-gr-ext-installed="">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark fixed-top">
+            <a class="navbar-brand" href="index.html">THE Event!</a>
+
+
+            <div class="collapse navbar-collapse" id="navbarsExampleDefault">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <main role="main" class="container" style="padding-top: 5em">
+            <h1 style="text-align: center;">You have successfully register for THE Event!</h1><br>
+            <div class="form-group">
+
+                <div class="card">
+                    <div class="card-header">
+                        Registration Details
+                    </div>
+                    <div class="card-body col-md-8" style="margin: auto">
+
+                        <div class="form-group ">
+                            <label for="numberOfParticipants">How many participants?</label>
+                            <input type="number" class="form-control" id="numberOfParticipants"
+                                   name="numberOfParticipants" disabled>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="daysRegistered">In what day are you coming?</label>
+                            <select id="daysRegistered" class="form-control" name="daysRegistered" disabled>
+                                <option value="day1">Day 1</option>
+                                <option value="day2">Day 3</option>
+                                <option value="both">Both days</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group ">
+                            <label for="price">Price</label>
+                            <input type="text" class="form-control" id="price" name="price" disabled>
+                        </div>
+
+                    </div>
+                </div>
+                <br><br>
+
+            </div>
+        </main>
+    </body>
+</html>
+
