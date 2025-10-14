@@ -10,6 +10,7 @@
         "dependencies": {
           "MSTest": "3.6.4",
           "Microsoft.NET.Test.Sdk": "17.12.0",
+          "Selenium.Support": "4.36.0",
           "Selenium.WebDriver": "4.36.0",
           "Selenium.WebDriver.ChromeDriver": "141.0.7390.7600",
           "Microsoft.VisualStudio.TestPlatform.TestFramework.Extensions": "14.0.0.0"
@@ -582,6 +583,17 @@
           }
         }
       },
+      "Selenium.Support/4.36.0": {
+        "dependencies": {
+          "Selenium.WebDriver": "4.36.0"
+        },
+        "runtime": {
+          "lib/netstandard2.0/WebDriver.Support.dll": {
+            "assemblyVersion": "4.0.0.0",
+            "fileVersion": "4.0.0.0"
+          }
+        }
+      },
       "Selenium.WebDriver/4.36.0": {
         "runtime": {
           "lib/net8.0/WebDriver.dll": {
@@ -730,6 +742,13 @@
       "sha512": "sha512-ppPFpBcvxdsfUonNcvITKqLl3bqxWbDCZIzDWHzjpdAHRFfZe0Dw9HmA0+za13IdyrgJwpkDTDA9fHaxOrt20A==",
       "path": "newtonsoft.json/13.0.1",
       "hashPath": "newtonsoft.json.13.0.1.nupkg.sha512"
+    },
+    "Selenium.Support/4.36.0": {
+      "type": "package",
+      "serviceable": true,
+      "sha512": "sha512-3/kioF20M28FKkCccmxDqMYZy9j1G4H37dcHfPgTPiOAlQXrqV/moWoV56o2TVFLhZw7o53PlsMp6Y8br9Z3lg==",
+      "path": "selenium.support/4.36.0",
+      "hashPath": "selenium.support.4.36.0.nupkg.sha512"
     },
     "Selenium.WebDriver/4.36.0": {
       "type": "package",
