@@ -5,7 +5,7 @@ Coffee Shop Order Builder (Unit Tests + TDD)
 ## 2a 
 CFG and Linearly Independant Pathing (Knowledge base)
 ## 2b
-Selenium + C#
+Selenium + C# testing of a basic XAMPP hosted website
 
 
 # SETUP STEPS
