@@ -28,7 +28,7 @@ int main()
 
     // Set up the server address structure
     sockaddr_in SvrAddr;
-    int port = 27000;
+    int port = 27500;
     const char * IP = "127.0.0.1";
     SvrAddr.sin_family = AF_INET;
     SvrAddr.sin_port = htons(port); // Convert port to network byte order
