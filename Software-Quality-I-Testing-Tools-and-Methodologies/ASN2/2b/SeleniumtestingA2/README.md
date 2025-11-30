@@ -10,5 +10,3 @@ MSTest
 Selenium.Support
 Selenium.WebDriver
 Selenium.WebDriver.ChromeDriver
-
-## Test results:
