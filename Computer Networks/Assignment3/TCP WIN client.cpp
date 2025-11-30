@@ -14,6 +14,8 @@ int main()
         return 0;
     }
 
+    cout << "SUCCESS: Started WSA" << std::endl;
+
     // Create the socket
     SOCKET ClientSocket = socket(AF_INET, SOCK_STREAM, IPPROTO_TCP);
     if (ClientSocket == INVALID_SOCKET) {
@@ -21,6 +23,8 @@ int main()
         cout << "ERROR: Failed to create ClientSocket" << std::endl;
         return 0;
     }
+
+    cout << "SUCCESS: Started ClientSocket" << std::endl;
 
     // Set up the server address structure
     sockaddr_in SvrAddr;
