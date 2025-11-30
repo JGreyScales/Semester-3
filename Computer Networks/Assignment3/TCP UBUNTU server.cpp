@@ -19,7 +19,7 @@ int main()
 
     // Bind the socket to a port
     sockaddr_in SvrAddr;
-    int port = 27000;
+    int port = 27500;
     SvrAddr.sin_family = AF_INET;
     SvrAddr.sin_addr.s_addr = INADDR_ANY;  // Listen on any available interface
     SvrAddr.sin_port = htons(port);
