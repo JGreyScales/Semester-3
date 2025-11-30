@@ -14,6 +14,8 @@ int main()
         cout << "ERROR: Failed to start WSA" << std::endl;
         return 0;
     }
+    
+    cout << "SUCCESS: Started WSA" << std::endl;
 
     // Socket
     SOCKET ServerSocket;
@@ -25,11 +27,14 @@ int main()
         return 0;
     }
 
+    cout << "SUCCESS: Started ServerSocket" << std::endl;
+
     // Bind
     sockaddr_in SvrAddr;
+    int port = 27000;
     SvrAddr.sin_family = AF_INET;
     SvrAddr.sin_addr.s_addr = INADDR_ANY;
-    SvrAddr.sin_port = htons(27000);
+    SvrAddr.sin_port = htons(port);
     if (bind(ServerSocket, (struct sockaddr *)&SvrAddr, sizeof(SvrAddr)) == SOCKET_ERROR)
     {
         closesocket(ServerSocket); // Close the socket on error
@@ -37,6 +42,9 @@ int main()
         cout << "ERROR: Failed to bind ServerSocket" << std::endl;
         return 0;
     }
+
+    cout << "SUCCESS: Binded ServerSocket to port " << port << std::endl;
+
 
     // Listen
     if (listen(ServerSocket, 1) == SOCKET_ERROR)
@@ -46,6 +54,8 @@ int main()
         cout << "ERROR: Listen failed to configure ServerSocket" << std::endl;
         return 0;
     }
+
+    cout << "SUCCESS: Listening on ServerSocket" << std::endl;
 
     // Accept
     SOCKET ConnectionSocket;
@@ -57,6 +67,9 @@ int main()
         cout << "ERROR: Failed to accept connection" << std::endl;
         return 0;
     }
+
+    cout << "SUCCESS: Accepted connection" << std::endl;
+
 
     // Recieve
     // Buffer to store received data
@@ -73,6 +86,9 @@ int main()
         return 0;
     }
 
+    cout << "SUCCESS: Recieved Data" << std::endl;
+
+
     // Null-terminate the received string and print it
     recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
     cout << "Received from client: " << recvBuffer << endl;
@@ -88,6 +104,9 @@ int main()
         WSACleanup();
         return 0;
     }
+
+    cout << "SUCCESS: Sent data to client" << std::endl;
+
 
     // Cleanup
     closesocket(ConnectionSocket);
