@@ -1,3 +1,5 @@
+Note: The server must be ran first.
+
 To compile the TCP WIN server:
 ```g++ '.\TCP WIN server.cpp' -lws2_32 -o server.exe```  
 ```.\server.exe```
