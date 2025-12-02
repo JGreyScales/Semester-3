@@ -4,11 +4,17 @@ To compile the TCP WIN server:
 ```g++ '.\TCP WIN server.cpp' -lws2_32 -o server.exe```  
 ```.\server.exe```
 
+To compile the TCP WIN multiclient server:
+```g++ '.\assignment3-Content\TCP WIN server multiClient.cpp' -lws2_32 -o server.exe```  
+```.\server.exe```
 
 To compile the TCP WIN client:
 ```g++ '.\TCP WIN client.cpp' -lws2_32 -o client.exe```  
 ```.\client.exe```
 
+To compile the TCP WIN multiclient client:
+```g++ '.\assignment3-Content\TCP WIN client multiClient.cpp' -lws2_32 -o client.exe```  
+```.\client.exe```
 
 The Ubuntu material expects only one of the services to run on the virtual machine, the other service is to be ran on the primary.  
 This means a custom NAT card with port forwarding needs to be configured for it to execute as expected  

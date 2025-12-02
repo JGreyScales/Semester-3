@@ -1,0 +1,59 @@
+#include <string>
+#include <string>
+#include <iostream>
+#include <list>
+
+std::string delimiter = ":";
+std::string GET_NEXT_ITEM(std::string *command)
+{
+    size_t chopPoint = command->find(delimiter);
+    std::string extractedValue;
+    if (chopPoint == std::string::npos)
+    {
+        extractedValue = *command;
+        command->clear();
+    }
+    else
+    {
+        extractedValue = command->substr(0, chopPoint);
+        *command = command->substr(chopPoint + delimiter.length());
+    }
+    return extractedValue;
+}
+
+int ID_COMMAND(std::string *command)
+{
+
+    std::string commandID = GET_NEXT_ITEM(command);
+
+    try
+    {
+        return std::stoi(commandID);
+    }
+    catch (const std::exception &e)
+    {
+        std::cout << e.what() << '\n';
+        return 0;
+    }
+}
+
+std::string CONSTRUCT_SUBMIT_SINGLE_POST(std::string author, std::string topic, std::string body)
+{
+    std::string command = "1";
+    command = command + delimiter + author;
+    command = command + delimiter + topic;
+    command = command + delimiter + body + '\0';
+    return command;
+}
+
+std::list<std::string> EXTRACT_ALL_DATA(std::string *command)
+{
+    std::list<std::string> extractedData;
+
+    while (command->length() > 0){
+        std::string nextValue = GET_NEXT_ITEM(command);
+        extractedData.insert(extractedData.end(), nextValue);
+    }
+
+    return extractedData;
+}
