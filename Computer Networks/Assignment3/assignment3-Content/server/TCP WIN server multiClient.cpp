@@ -1,6 +1,7 @@
 #include <winsock2.h>
 #include <iostream>
 #include "../commands.h"
+#include "fileSaving.h"
 
 using namespace std;
 
@@ -72,7 +73,7 @@ int main()
     cout << "SUCCESS: Accepted connection" << std::endl;
     // Recieve
     // Buffer to store received data
-    char recvBuffer[1024]; // A buffer to store the received string
+    char recvBuffer[BUFFERSIZE]; // A buffer to store the received string
     bool clientStopFlag = true;
     while (clientStopFlag)
     {
@@ -123,7 +124,10 @@ int main()
                 status = " STATUS: success";
                 break;
             }
-
+            case 3: {
+                status = " STATUS: error";
+                cout << "Command GET_ALL_POSTS id found" << endl;
+            }
             default:
                 break;
             }
