@@ -4,6 +4,7 @@
 #include <chrono>
 
 #include "gui.h"
+#include "../commands.h"
 using namespace std;
 
 // Link the Winsock library
@@ -51,11 +52,11 @@ int main()
 
     cout << "SUCCESS: Successfully connected to the server at " << IP << ':' << port << std::endl;
 
-    // Example: Send data to the server (optional)
-    this_thread::sleep_for(std::chrono::milliseconds(500));
 
-    const char *message = "Hello, Server!";
-    int sendResult = send(ClientSocket, message, strlen(message), 0);
+    std::string result = CONSTRUCT_SUBMIT_SINGLE_POST("bob", "topic", "body");
+
+    const char *c_result = result.c_str();
+    int sendResult = send(ClientSocket, c_result, strlen(c_result), 0);
     if (sendResult == SOCKET_ERROR)
     {
         cout << "ERROR: Failed to send data" << std::endl;
@@ -64,7 +65,7 @@ int main()
         return 0;
     }
 
-    cout << "Message sent to server: " << message << endl;
+    cout << "Message sent to server: " << c_result << endl;
 
     char recvBuffer[1024];
 
@@ -81,6 +82,22 @@ int main()
     recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
     cout << "Received from server: " << recvBuffer << endl;
 
+
+    std::string result2 = BEGIN_MULTIPOST();
+    result2 = ADD_TO_MULTIPOST("author 1", "topic 1", "body 1", result2);
+    result2 = ADD_TO_MULTIPOST("author 2", "topic 2", "body 2", result2);
+    result2 = ADD_TO_MULTIPOST("author 3", "topic 3", "body 3", result2);
+    result2 = FINALIZE_MULTIPOST(result2);
+
+    const char *c_result2 = result2.c_str();
+    int sendResult2 = send(ClientSocket, c_result2, strlen(c_result2), 0);
+    if (sendResult2 == SOCKET_ERROR)
+    {
+        cout << "ERROR: Failed to send data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
+    }
     // Cleanup: Close the socket and cleanup Winsock
     closesocket(ClientSocket);
     WSACleanup();

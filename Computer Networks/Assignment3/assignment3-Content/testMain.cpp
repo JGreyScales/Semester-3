@@ -43,4 +43,5 @@ int main(int argc, char* argv[])
     const char* c_result = result.c_str();
     std::cout << "Result as const char*: " << c_result << std::endl;
     return 0;
+
 }

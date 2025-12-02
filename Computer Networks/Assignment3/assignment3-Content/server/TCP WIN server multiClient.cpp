@@ -73,39 +73,95 @@ int main()
     // Recieve
     // Buffer to store received data
     char recvBuffer[1024]; // A buffer to store the received string
-
-    // Receive data from the client
-    int bytesReceived = recv(ConnectionSocket, recvBuffer, sizeof(recvBuffer), 0);
-    if (bytesReceived == SOCKET_ERROR)
+    bool clientStopFlag = true;
+    while (clientStopFlag)
     {
-        cout << "ERROR: Failed to receive data" << std::endl;
-        closesocket(ConnectionSocket);
-        closesocket(ServerSocket);
-        WSACleanup();
-        return 0;
+
+        // Receive data from the client
+        int bytesReceived = recv(ConnectionSocket, recvBuffer, sizeof(recvBuffer), 0);
+
+        if (bytesReceived > 0)
+        {
+            // Null-terminate the received string and print it
+            recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
+            cout << "Received from client: " << recvBuffer << endl;
+            std::string stringBuffer = recvBuffer;
+            std::string status;
+            switch (ID_COMMAND(&stringBuffer))
+            {
+            case 1:
+            {
+                status = " STATUS: error";
+                cout << "Command SUBMIT_SINGLE_POST id found" << endl;
+                std::list<std::string> data = EXTRACT_ALL_DATA(&stringBuffer);
+                for (std::string value : data)
+                {
+                    cout << value << " ";
+                }
+                cout << endl;
+                status = " STATUS: success";
+                break;
+            }
+            case 2:
+            {
+                status = " STATUS: error";
+                cout << "Command SUBMIT_MULTI_POST id found" << endl;
+                std::list<std::string> data = EXTRACT_ALL_DATA(&stringBuffer);
+                // each new POST is 3 items long
+                int ticker = 0;
+                for (std::string value : data)
+                {
+                    if (ticker % 3 == 0)
+                    {
+                        cout << endl;
+                        cout << "Post " << 1 + (ticker / 3) << ":";
+                    }
+                    cout << " " << value;
+                    ticker++;
+                }
+                cout << endl;
+                status = " STATUS: success";
+                break;
+            }
+
+            default:
+                break;
+            }
+
+            std::string result = "message received" + status;
+            const char *c_result = result.c_str();
+            int sendResult = send(ConnectionSocket, c_result, strlen(c_result), 0);
+            if (sendResult == SOCKET_ERROR)
+            {
+                cout << "ERROR: Failed to send data to client" << std::endl;
+                closesocket(ConnectionSocket);
+                return 0;
+            }
+            cout << "SUCCESS: Sent data to client" << std::endl;
+        }
+        else if (bytesReceived == 0)
+        {
+            // Graceful disconnect
+            cout << "Client disconnected gracefully." << endl;
+            closesocket(ConnectionSocket);
+            clientStopFlag = false;
+        }
+        else
+        { // bytesReceived == SOCKET_ERROR
+            int err = WSAGetLastError();
+            if (err == WSAECONNABORTED)
+            {
+                // Client forcibly closed the connection
+                cout << "Client disconnected forcibly." << endl;
+            }
+            else
+            {
+                cout << "recv failed with error: " << err << endl;
+            }
+            closesocket(ConnectionSocket);
+            clientStopFlag = false;
+        }
     }
-
-    cout << "SUCCESS: Recieved Data" << std::endl;
-
-    // Null-terminate the received string and print it
-    recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
-    cout << "Received from client: " << recvBuffer << endl;
-
-    // Send
-    std::string result = CONSTRUCT_SUBMIT_SINGLE_POST("author 1", "topic 1", "body 1");
-    char const * c_result = result.c_str();
-    int sendResult = send(ConnectionSocket, c_result, strlen(c_result), 0);
-    if (sendResult == SOCKET_ERROR)
-    {
-        cout << "ERROR: Failed to send data to client" << std::endl;
-        closesocket(ConnectionSocket);
-        closesocket(ServerSocket);
-        WSACleanup();
-        return 0;
-    }
-
-    cout << "SUCCESS: Sent data to client" << std::endl;
-
     // Cleanup
     closesocket(ConnectionSocket);
     closesocket(ServerSocket);
