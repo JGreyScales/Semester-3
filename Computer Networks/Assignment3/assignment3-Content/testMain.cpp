@@ -7,6 +7,7 @@ int main(int argc, char* argv[])
     std::string singlePostCommand = CONSTRUCT_SUBMIT_SINGLE_POST("Example author", "Example topic", "Example body");
     int singlePostCommandID = ID_COMMAND(&singlePostCommand);
     std::list<std::string> singlePostCommandData = EXTRACT_ALL_DATA(&singlePostCommand);
+    std::cout << "commandID: " <<  singlePostCommandID << std::endl;
 
     for (const auto &item : singlePostCommandData)
     {
@@ -22,11 +23,19 @@ int main(int argc, char* argv[])
 
     int multiPostCommandID = ID_COMMAND(&multiPostCommand);
     std::list<std::string> multiPostCommandData = EXTRACT_ALL_DATA(&multiPostCommand);
+    std::cout << "commandID: " <<  multiPostCommandID << std::endl;
 
     for (const auto &item : multiPostCommandData)
     {
         std::cout << item << std::endl;
     }
+
+
+    std::cout << "-- GET ALL POSTS (wont return anything) --" << std::endl;
+    std::string getAllPostsCommand = CONSTRUCT_GET_ALL_POSTS();
+
+    std::cout << "commandID: " <<  ID_COMMAND(&getAllPostsCommand) << std::endl;
+
 
     return 0;
 }
