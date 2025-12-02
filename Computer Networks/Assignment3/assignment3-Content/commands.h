@@ -46,6 +46,23 @@ std::string CONSTRUCT_SUBMIT_SINGLE_POST(std::string author, std::string topic, 
     return command;
 }
 
+std::string BEGIN_MULTIPOST(){
+    std::string command = "2";
+    return command;
+}
+
+std::string ADD_TO_MULTIPOST(std::string author, std::string topic, std::string body, std::string existingCommand){
+    existingCommand = existingCommand + delimiter + author;
+    existingCommand = existingCommand + delimiter + topic;
+    existingCommand = existingCommand + delimiter + body;
+
+    return existingCommand;
+}
+
+std::string FINALIZE_MULTIPOST(std::string existingCommand){
+    return existingCommand + "\0";
+}
+
 std::list<std::string> EXTRACT_ALL_DATA(std::string *command)
 {
     std::list<std::string> extractedData;
