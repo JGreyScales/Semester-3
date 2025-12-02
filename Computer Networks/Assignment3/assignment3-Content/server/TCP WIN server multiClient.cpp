@@ -134,12 +134,58 @@ int main()
             {
                 status = " STATUS: error";
                 cout << "Command GET_ALL_POSTS id found" << endl;
+                std::list<std::string> packets;
+                std::string lastKnownGoodPacket;
+                std::string packetContent;
+
+                int ticker = 1;
+                for (std::string value : readFromPostsFile())
+                {
+                    packetContent = packetContent + value + delimiter;
+                    // start of a new 3-item packet
+                    if (ticker % 3 == 0)
+                    {
+                        if (lastKnownGoodPacket.length() + packetContent.length() >= BUFFERSIZE)
+                        {
+                            packets.insert(packets.end(), lastKnownGoodPacket);
+                            lastKnownGoodPacket = packetContent;
+
+                        }
+                        else
+                        {
+                            lastKnownGoodPacket = lastKnownGoodPacket + packetContent;
+                        }
+                        packetContent.clear();
+                    }
+                    ticker++;
+                }
+                // ensure no partials are submitted
+                if (lastKnownGoodPacket.length() > 0)
+                {
+                    packets.insert(packets.end(), lastKnownGoodPacket);
+                }
+                std::cout << "Sending " << packets.size() << " packet(s)" << std::endl;
+
+                for (std::string packet : packets)
+                {
+                    const char *c_packet = packet.c_str();
+                    int sendResult = send(ConnectionSocket, c_packet, strlen(c_packet), 0);
+                    if (sendResult == SOCKET_ERROR)
+                    {
+                        cout << "ERROR: Failed to send data to client" << std::endl;
+                        closesocket(ConnectionSocket);
+                        return 0;
+                    }
+                    cout << "SUCCESS: Packet sent to client" << std::endl;
+                }
+                status = " STATUS: success";
+                break;
             }
             default:
                 break;
             }
 
-            std::string result = "message received" + status;
+            std::string result = "\nFIN: message received" + status;
             const char *c_result = result.c_str();
             int sendResult = send(ConnectionSocket, c_result, strlen(c_result), 0);
             if (sendResult == SOCKET_ERROR)
