@@ -100,7 +100,10 @@ int main()
                     cout << value << " ";
                 }
                 cout << endl;
-                status = " STATUS: success";
+                if (appendToPosts(data))
+                {
+                    status = " STATUS: success";
+                }
                 break;
             }
             case 2:
@@ -121,10 +124,14 @@ int main()
                     ticker++;
                 }
                 cout << endl;
-                status = " STATUS: success";
+                if (appendToPosts(data))
+                {
+                    status = " STATUS: success";
+                }
                 break;
             }
-            case 3: {
+            case 3:
+            {
                 status = " STATUS: error";
                 cout << "Command GET_ALL_POSTS id found" << endl;
             }

@@ -29,20 +29,28 @@ bool appendToPosts(std::list<std::string> data)
     {
         recoverPostsFile();
     }
-    std::ofstream postFILE;
 
-    // open in append
-    postFILE.open(POSTFILE, std::ios_base::app);
-    if (postFILE.is_open())
-    {
-        for (std::string value : data)
-        {
-            postFILE << "\n" << value;
-        }
-        postFILE.close();
-        return true;
+    std::ofstream postFILE(POSTFILE, std::ios_base::app);
+    if (!postFILE.is_open())
+        return false;
+
+    // Check if the file is empty
+    bool firstLine = true;
+    std::ifstream checkFile(POSTFILE);
+    if (checkFile.peek() != std::ifstream::traits_type::eof()) {
+        firstLine = false; // file is not empty
     }
-    return false;
+    checkFile.close();
+
+    for (std::string value : data)
+    {
+        if (!firstLine) postFILE << "\n";
+        postFILE << value;
+        firstLine = false;
+    }
+
+    postFILE.close();
+    return true;
 }
 
 std::list<std::string> readFromPostsFile()
