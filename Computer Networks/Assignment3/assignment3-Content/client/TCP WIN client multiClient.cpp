@@ -3,7 +3,7 @@
 #include <thread>
 #include <chrono>
 
-#include <gui.h>
+#include "gui.h"
 using namespace std;
 
 // Link the Winsock library
@@ -52,38 +52,35 @@ int main()
     cout << "SUCCESS: Successfully connected to the server at " << IP << ':' << port << std::endl;
 
     // Example: Send data to the server (optional)
-    while (true)
+    this_thread::sleep_for(std::chrono::milliseconds(500));
+
+    const char *message = "Hello, Server!";
+    int sendResult = send(ClientSocket, message, strlen(message), 0);
+    if (sendResult == SOCKET_ERROR)
     {
-        this_thread::sleep_for(std::chrono::milliseconds(500));
-
-        const char *message = "Hello, Server!";
-        int sendResult = send(ClientSocket, message, strlen(message), 0);
-        if (sendResult == SOCKET_ERROR)
-        {
-            cout << "ERROR: Failed to send data" << std::endl;
-            closesocket(ClientSocket);
-            WSACleanup();
-            return 0;
-        }
-
-        cout << "Message sent to server: " << message << endl;
-
-        char recvBuffer[1024];
-
-        int bytesReceived = recv(ClientSocket, recvBuffer, sizeof(recvBuffer), 0);
-        if (bytesReceived == SOCKET_ERROR)
-        {
-            cout << "ERROR: Failed to receive data" << std::endl;
-            closesocket(ClientSocket);
-            WSACleanup();
-            return 0;
-        }
-
-        cout << "SUCCESS: Recieved Data" << std::endl;
-        recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
-        cout << "Received from server: " << recvBuffer << endl;
+        cout << "ERROR: Failed to send data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
     }
-    
+
+    cout << "Message sent to server: " << message << endl;
+
+    char recvBuffer[1024];
+
+    int bytesReceived = recv(ClientSocket, recvBuffer, sizeof(recvBuffer), 0);
+    if (bytesReceived == SOCKET_ERROR)
+    {
+        cout << "ERROR: Failed to receive data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
+    }
+
+    cout << "SUCCESS: Recieved Data" << std::endl;
+    recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
+    cout << "Received from server: " << recvBuffer << endl;
+
     // Cleanup: Close the socket and cleanup Winsock
     closesocket(ClientSocket);
     WSACleanup();

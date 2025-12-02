@@ -36,6 +36,11 @@ int main(int argc, char* argv[])
 
     std::cout << "commandID: " <<  ID_COMMAND(&getAllPostsCommand) << std::endl;
 
+    std::cout << "-- MISC --" << std::endl;
 
+    // how to convert these commands to a const char *
+    std::string result = CONSTRUCT_SUBMIT_SINGLE_POST("x", "y", "z");
+    const char* c_result = result.c_str();
+    std::cout << "Result as const char*: " << c_result << std::endl;
     return 0;
 }
