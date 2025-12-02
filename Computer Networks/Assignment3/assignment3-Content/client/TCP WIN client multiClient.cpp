@@ -83,6 +83,7 @@ int main()
         recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
         cout << "Received from server: " << recvBuffer << endl;
     }
+    
     // Cleanup: Close the socket and cleanup Winsock
     closesocket(ClientSocket);
     WSACleanup();

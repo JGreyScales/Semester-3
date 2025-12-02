@@ -63,6 +63,10 @@ std::string FINALIZE_MULTIPOST(std::string existingCommand){
     return existingCommand + "\0";
 }
 
+std::string CONSTRUCT_GET_ALL_POSTS(){
+    return "3\0";
+}
+
 std::list<std::string> EXTRACT_ALL_DATA(std::string *command)
 {
     std::list<std::string> extractedData;
