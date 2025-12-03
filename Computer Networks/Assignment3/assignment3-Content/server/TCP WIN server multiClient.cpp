@@ -1,4 +1,4 @@
-// TOTAL LINE COUNT FOR ENTIRE MULTITHREADED SERVER: 416 cpp lines
+// TOTAL LINE COUNT FOR ENTIRE MULTITHREADED SERVER: 416 cpp lines, including whitespace, comments, and couts
 
 
 #include <iostream>
