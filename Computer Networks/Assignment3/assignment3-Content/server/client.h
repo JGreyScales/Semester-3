@@ -63,6 +63,8 @@ int clientHandler(bool* abortAllConnections, SOCKET ConnectionSocket, int client
                 if (appendToPosts(data))
                 {
                     status = " STATUS: success";
+                } else {
+                    std::cout << "Failed to save to file" << std::endl;
                 }
                 break;
             }

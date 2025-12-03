@@ -52,63 +52,63 @@ int main()
 
     cout << "SUCCESS: Successfully connected to the server at " << IP << ':' << port << std::endl;
 
-    // std::string result = CONSTRUCT_SUBMIT_SINGLE_POST("bob", "topic", "body");
+    std::string result = CONSTRUCT_SUBMIT_SINGLE_POST("bob", "topic", "body");
 
-    // const char *c_result = result.c_str();
-    // int sendResult = send(ClientSocket, c_result, strlen(c_result), 0);
-    // if (sendResult == SOCKET_ERROR)
-    // {
-    //     cout << "ERROR: Failed to send data" << std::endl;
-    //     closesocket(ClientSocket);
-    //     WSACleanup();
-    //     return 0;
-    // }
+    const char *c_result = result.c_str();
+    int sendResult = send(ClientSocket, c_result, strlen(c_result), 0);
+    if (sendResult == SOCKET_ERROR)
+    {
+        cout << "ERROR: Failed to send data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
+    }
 
-    // cout << "Message sent to server: " << c_result << endl;
+    cout << "Message sent to server: " << c_result << endl;
 
     char recvBuffer[1024];
 
-    // int bytesReceived = recv(ClientSocket, recvBuffer, sizeof(recvBuffer), 0);
-    // if (bytesReceived == SOCKET_ERROR)
-    // {
-    //     cout << "ERROR: Failed to receive data" << std::endl;
-    //     closesocket(ClientSocket);
-    //     WSACleanup();
-    //     return 0;
-    // }
+    int bytesReceived = recv(ClientSocket, recvBuffer, sizeof(recvBuffer), 0);
+    if (bytesReceived == SOCKET_ERROR)
+    {
+        cout << "ERROR: Failed to receive data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
+    }
 
-    // cout << "SUCCESS: Recieved Data" << std::endl;
-    // recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
-    // cout << "Received from server: " << recvBuffer << endl;
+    cout << "SUCCESS: Recieved Data" << std::endl;
+    recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
+    cout << "Received from server: " << recvBuffer << endl;
 
-    // std::string result2 = BEGIN_MULTIPOST();
-    // result2 = ADD_TO_MULTIPOST("author 1", "topic 1", "body 1", result2);
-    // result2 = ADD_TO_MULTIPOST("author 2", "topic 2", "body 2", result2);
-    // result2 = ADD_TO_MULTIPOST("author 3", "topic 3", "body 3", result2);
-    // result2 = FINALIZE_MULTIPOST(result2);
+    std::string result2 = BEGIN_MULTIPOST();
+    result2 = ADD_TO_MULTIPOST("author 1", "topic 1", "body 1", result2);
+    result2 = ADD_TO_MULTIPOST("author 2", "topic 2", "body 2", result2);
+    result2 = ADD_TO_MULTIPOST("author 3", "topic 3", "body 3", result2);
+    result2 = FINALIZE_MULTIPOST(result2);
 
-    // const char *c_result2 = result2.c_str();
-    // int sendResult2 = send(ClientSocket, c_result2, strlen(c_result2), 0);
-    // if (sendResult2 == SOCKET_ERROR)
-    // {
-    //     cout << "ERROR: Failed to send data" << std::endl;
-    //     closesocket(ClientSocket);
-    //     WSACleanup();
-    //     return 0;
-    // }
+    const char *c_result2 = result2.c_str();
+    int sendResult2 = send(ClientSocket, c_result2, strlen(c_result2), 0);
+    if (sendResult2 == SOCKET_ERROR)
+    {
+        cout << "ERROR: Failed to send data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
+    }
 
-    // bytesReceived = recv(ClientSocket, recvBuffer, sizeof(recvBuffer), 0);
-    // if (bytesReceived == SOCKET_ERROR)
-    // {
-    //     cout << "ERROR: Failed to receive data" << std::endl;
-    //     closesocket(ClientSocket);
-    //     WSACleanup();
-    //     return 0;
-    // }
+    bytesReceived = recv(ClientSocket, recvBuffer, sizeof(recvBuffer), 0);
+    if (bytesReceived == SOCKET_ERROR)
+    {
+        cout << "ERROR: Failed to receive data" << std::endl;
+        closesocket(ClientSocket);
+        WSACleanup();
+        return 0;
+    }
 
-    // cout << "SUCCESS: Recieved Data" << std::endl;
-    // recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
-    // cout << "Received from server: " << recvBuffer << endl;
+    cout << "SUCCESS: Recieved Data" << std::endl;
+    recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
+    cout << "Received from server: " << recvBuffer << endl;
 
     std::string getFromServer = CONSTRUCT_GET_ALL_POSTS();
     const char *c_getFromServer = getFromServer.c_str();

@@ -1,6 +1,3 @@
-// TOTAL LINE COUNT FOR ENTIRE MULTITHREADED WINDOWS SERVER: 416 cpp lines, including whitespace, comments, and couts
-
-
 #include <iostream>
 #include "client.h"
 using namespace std;

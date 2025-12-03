@@ -5,7 +5,8 @@
 #include <sys/stat.h>
 #include <mutex>
 
-std::mutex fileLock;
+std::mutex fileLock; // we will use lock_guard so that when it goes out of scope it unlocks on its own
+// its one less headache to worry about
 const int BUFFERSIZE = 1024;
 const std::string POSTFILE = "posts.txt";
 
@@ -13,52 +14,56 @@ const std::string POSTFILE = "posts.txt";
 bool postsFileExists()
 {
     struct stat buffer;
-    fileLock.lock();
+    // Locking the mutex using lock_guard
+    std::lock_guard<std::mutex> lock(fileLock);
     bool fileExists = (stat(POSTFILE.c_str(), &buffer) == 0);
-    fileLock.unlock();
     return fileExists;
 }
 
 void recoverPostsFile()
 {
     std::cout << "Creating storage file" << std::endl;
-    std::ofstream file;
-    fileLock.lock();
-    file.open(POSTFILE);
-    file.close();
-    fileLock.unlock();
+    // Locking the mutex using lock_guard
+    std::lock_guard<std::mutex> lock(fileLock);
+    std::ofstream file(POSTFILE);
+    // No need to manually unlock, it's done automatically by lock_guard
 }
 
 bool appendToPosts(std::list<std::string> data)
 {
+    std::cout << "appending to file" << std::endl;
     if (!postsFileExists())
     {
         recoverPostsFile();
     }
 
-    fileLock.lock();
+    // Locking the mutex using lock_guard
+    std::lock_guard<std::mutex> lock(fileLock);
+
     std::ofstream postFILE(POSTFILE, std::ios_base::app);
     if (!postFILE.is_open())
-        fileLock.unlock();
+    {
         return false;
+    }
 
     // Check if the file is empty
     bool firstLine = true;
     std::ifstream checkFile(POSTFILE);
-    if (checkFile.peek() != std::ifstream::traits_type::eof()) {
-        firstLine = false; // file is not empty
+    if (checkFile.peek() != std::ifstream::traits_type::eof())
+    {
+        firstLine = false;  // file is not empty
     }
     checkFile.close();
 
-    for (std::string value : data)
+    for (const std::string& value : data)
     {
-        if (!firstLine) postFILE << "\n";
+        if (!firstLine) 
+            postFILE << "\n";
         postFILE << value;
         firstLine = false;
     }
 
     postFILE.close();
-    fileLock.unlock();
     return true;
 }
 
@@ -68,18 +73,21 @@ std::list<std::string> readFromPostsFile()
     {
         recoverPostsFile();
     }
-    fileLock.lock();
+
+    // Locking the mutex using lock_guard
+    std::lock_guard<std::mutex> lock(fileLock);
+
     std::ifstream postFILE(POSTFILE);
     std::list<std::string> results;
     std::string stream;
-    if (postFILE.is_open()){
-        while (getline(postFILE, stream)){
-            results.insert(results.end(), stream);
+    if (postFILE.is_open())
+    {
+        while (getline(postFILE, stream))
+        {
+            results.push_back(stream);
         }
         postFILE.close();
     }
-    // outside conditional incase it fails so we dont hard lock
-    fileLock.unlock();
+
     return results;
 }
-
