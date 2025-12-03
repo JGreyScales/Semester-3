@@ -1,3 +1,6 @@
+// TOTAL LINE COUNT FOR ENTIRE MULTITHREADED SERVER: 416 cpp lines
+
+
 #include <iostream>
 #include "client.h"
 using namespace std;
