@@ -136,7 +136,7 @@ int clientHandler(bool* abortAllConnections, SOCKET ConnectionSocket, int client
         else if (bytesReceived == 0)
         {
             // Graceful disconnect
-            std::cout << "Client " << clientID << "disconnected gracefully." << std::endl;
+            std::cout << "Client " << clientID << " disconnected gracefully." << std::endl;
             closesocket(ConnectionSocket);
             return 0;
         }
@@ -147,13 +147,13 @@ int clientHandler(bool* abortAllConnections, SOCKET ConnectionSocket, int client
             if (err == WSAECONNABORTED)
             {
                 // Client forcibly closed the connection
-                std::cout << "Client " << clientID << "disconnected forcibly." << std::endl;
+                std::cout << "Client " << clientID << " disconnected forcibly." << std::endl;
                 return 0;
             }
             else
             {
                 std::cout << "recv failed with error: " << err << std::endl;
-                std::cout << "Issue likely stems from client " << clientID << "disconnecting incorrectly" << std::endl;
+                std::cout << "Issue likely stems from client " << clientID << " disconnecting incorrectly" << std::endl;
                 return 1;
             }
         }
