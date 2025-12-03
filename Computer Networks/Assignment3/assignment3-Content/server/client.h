@@ -21,7 +21,7 @@ int clientHandler(bool* abortAllConnections, SOCKET ConnectionSocket, int client
         {
             // Null-terminate the received string and print it
             recvBuffer[bytesReceived] = '\0'; // Null-terminate the string
-            std::cout << "Received from client " << clientID << ":" << recvBuffer << std::endl;
+            std::cout << "Received from client " << clientID << ": " << recvBuffer << std::endl;
             std::string stringBuffer = recvBuffer;
             std::string status;
             switch (ID_COMMAND(&stringBuffer))
