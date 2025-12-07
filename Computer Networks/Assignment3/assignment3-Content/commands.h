@@ -4,6 +4,8 @@
 #include <list>
 
 std::string delimiter = ":";
+const int BUFFERSIZE = 1024;
+
 std::string GET_NEXT_ITEM(std::string *command)
 {
     size_t chopPoint = command->find(delimiter);
@@ -21,6 +23,12 @@ std::string GET_NEXT_ITEM(std::string *command)
     return extractedValue;
 }
 
+
+// 1 = submit single post
+// 2 = submit multipost
+// 3 = fetch all posts
+// 4 = user auth
+// 5 = user signup
 int ID_COMMAND(std::string *command)
 {
 
