@@ -1,16 +1,12 @@
-#include <sys/socket.h>
-#include <netinet/in.h>
-#include <arpa/inet.h>
-#include <unistd.h>
-#include <cstring>
+#include <winsock2.h>
 #include <thread>
 #include "fileSaving.h"
-#include "commands.h"
+#include "../commands.h"
 
 // 0 == success
 // 1 == client disconnected incorrectly
 // 2 == unable to send to client
-int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
+int clientHandler(bool* abortAllConnections, SOCKET ConnectionSocket, int clientID)
 {
     std::cout << "SUCCESS: Accepted connection to client: " << clientID << std::endl;
     std::cout << "Running on thread: " << std::this_thread::get_id() << std::endl;
@@ -30,12 +26,6 @@ int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
             std::string status;
             switch (ID_COMMAND(&stringBuffer))
             {
-                /*
-                * The Server assumes it can only send a "success" response for a post (Commands 1 or 2) after successfully saving and
-                closing the updated post data in the persistent file (posts.txt). If the file operation fails for any reason, 
-                the Server is programmed to immediately send an "error" status to the Client.
-                This guarantees the Server maintains data integrity and never lies to the Client about successfully saving a post.
-                */
             case 1:
             {
                 status = " STATUS: error";
@@ -78,15 +68,6 @@ int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
                 }
                 break;
             }
-
-            /*
-               When responding to the GET_ALL_POSTS request (Command 3), the Server assumes it must maintain packet integrity.
-               This means that if the Server's output stream hits its network buffer limit,
-               it must not break a single post (Author:Topic:Body) between two different packets.
-               The Server's logic ensures that any packet split occurs only after a complete,
-               3-field post is fully assembled, preventing the Client's parsing functions from failing on integration.
-             */
-
             case 3:
             {
                 status = " STATUS: error";
@@ -115,7 +96,6 @@ int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
                     }
                     ticker++;
                 }
-
                 // ensure no partials are submitted
                 if (lastKnownGoodPacket.length() > 0)
                 {
@@ -127,10 +107,10 @@ int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
                 {
                     const char *c_packet = packet.c_str();
                     int sendResult = send(ConnectionSocket, c_packet, strlen(c_packet), 0);
-                    if (sendResult < 0)
+                    if (sendResult == SOCKET_ERROR)
                     {
                         std::cout << "ERROR: Failed to send data to client " << clientID << std::endl;
-                        close(ConnectionSocket);
+                        closesocket(ConnectionSocket);
                         return 2;
                     }
                     std::cout << "SUCCESS: Packet sent to client " << clientID << std::endl;
@@ -145,10 +125,10 @@ int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
             std::string result = "\nFIN: message received" + status;
             const char *c_result = result.c_str();
             int sendResult = send(ConnectionSocket, c_result, strlen(c_result), 0);
-            if (sendResult < 0)
+            if (sendResult == SOCKET_ERROR)
             {
                 std::cout << "ERROR: Failed to send data to client " << clientID << std::endl;
-                close(ConnectionSocket);
+                closesocket(ConnectionSocket);
                 return 2;
             }
             std::cout << "SUCCESS: Sent data to client " << clientID << std::endl;
@@ -157,15 +137,25 @@ int clientHandler(bool* abortAllConnections, int ConnectionSocket, int clientID)
         {
             // Graceful disconnect
             std::cout << "Client " << clientID << " disconnected gracefully." << std::endl;
-            close(ConnectionSocket);
+            closesocket(ConnectionSocket);
             return 0;
         }
         else
-        { // bytesReceived < 0
-            close(ConnectionSocket);
-            // Client forcibly closed the connection
-            std::cout << "Client " << clientID << " disconnected." << std::endl;
-            return 0;
+        { // bytesReceived == SOCKET_ERROR
+            int err = WSAGetLastError();
+            closesocket(ConnectionSocket);
+            if (err == WSAECONNABORTED)
+            {
+                // Client forcibly closed the connection
+                std::cout << "Client " << clientID << " disconnected forcibly." << std::endl;
+                return 0;
+            }
+            else
+            {
+                std::cout << "recv failed with error: " << err << std::endl;
+                std::cout << "Issue likely stems from client " << clientID << " disconnecting incorrectly" << std::endl;
+                return 1;
+            }
         }
     }
     return 0;

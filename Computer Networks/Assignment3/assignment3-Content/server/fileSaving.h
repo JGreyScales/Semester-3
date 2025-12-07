@@ -9,7 +9,6 @@ std::mutex fileLock; // we will use lock_guard so that when it goes out of scope
 // its one less headache to worry about
 const int BUFFERSIZE = 1024;
 const std::string POSTFILE = "posts.txt";
-const std::string delimiter = ":";
 
 // https://stackoverflow.com/questions/12774207/fastest-way-to-check-if-a-file-exists-using-standard-c-c11-14-17-c
 bool postsFileExists()
